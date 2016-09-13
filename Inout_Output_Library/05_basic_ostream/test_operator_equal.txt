@@ -1,0 +1,5 @@
+	test_operator_equal.txt
+	test_operator_equal.txt
+	test_operator_equal.txt
+	test_operator_equal.txt
+	test_operator_equal.txt

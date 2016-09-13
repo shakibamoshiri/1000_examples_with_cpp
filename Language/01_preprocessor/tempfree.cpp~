@@ -1,0 +1,25 @@
+///
+/// preprocessor
+///
+/**
+The preprocessor supports conditional compilation of parts of source
+file. This behavior is controlled by :
+#if #else #elif #ifedf # ifndef and #endif directives.
+
+**/
+
+
+//#include <unistd.h>
+#include <iostream>
+
+int main(){
+
+
+    { /// my sample
+
+    }
+    { /// en.reference.com
+    }
+
+
+}

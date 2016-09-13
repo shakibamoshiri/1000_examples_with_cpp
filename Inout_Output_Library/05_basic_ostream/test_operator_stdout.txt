@@ -1,0 +1,17 @@
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream
+0	test_operator_stdout in the basic_ostream

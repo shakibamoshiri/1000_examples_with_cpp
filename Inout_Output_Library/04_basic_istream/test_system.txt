@@ -1,0 +1,27 @@
+total 104
+-rw-rw-r-- 1 shu shu 1433 مه    16 18:08 00_std::basic_istream::cin_wcin.cpp
+-rw-rw-r-- 1 shu shu 2438 مه    16 17:35 01_std::std::basic_istream::constructor.cpp
+-rw-rw-r-- 1 shu shu 1092 مه    16 17:50 02_std::basic_istream::destructor.cpp
+-rw-rw-r-- 1 shu shu 1345 مه    16 18:30 03_std::basic_istream::oprtator=.cpp
+-rw-rw-r-- 1 shu shu 3327 مه    16 19:13 04_std::basic_istream::operator>>.cpp
+-rw-rw-r-- 1 shu shu 2551 مه    17 19:10 05_std::basic_istream::get.cpp
+-rw-rw-r-- 1 shu shu 1082 مه    17 19:25 06_std::basic_istream::peek.cpp
+-rw-rw-r-- 1 shu shu  919 مه    17 19:40 07_std::basic_istream::unget.cpp
+-rw-rw-r-- 1 shu shu 1441 مه    18 16:47 08_std::basic_istream::putback.cpp
+-rw-rw-r-- 1 shu shu 1037 مه    18 17:02 09_std::basic_istream::getline.cpp
+-rw-rw-r-- 1 shu shu  926 مه    18 17:23 10_std::basic_istram::ignore.cpp
+-rw-rw-r-- 1 shu shu 1570 مه    18 18:18 11_std::basic_istream::read.cpp
+-rw-rw-r-- 1 shu shu 1042 مه    18 18:30 12_std::basic_istream::readsome.cpp
+-rw-rw-r-- 1 shu shu 1124 مه    18 18:43 13_std::basic_istream::gcount.cpp
+-rw-rw-r-- 1 shu shu  995 مه    18 18:57 14_std::basic_istream::tellg.cpp
+-rw-rw-r-- 1 shu shu 1003 مه    18 19:14 16_std::basic_istream::seekg.cpp
+-rw-rw-r-- 1 shu shu 1480 مه    18 19:44 17_std::basic_istream::sync.cpp
+-rw-rw-r-- 1 shu shu 1248 مه    19 18:36 18_std::basic_istream::swap.cpp
+-rw-rw-r-- 1 shu shu 1534 مه    19 19:13 19_std::basic_istream::sentry.cpp
+-rw-rw-r-- 1 shu shu 2435 مه    19 19:39 20_std::basic_istream::operator>>_2.cpp
+-rwxrwxr-x 1 shu shu 8180 مه    19 21:55 TEMPFREE
+-rw-rw-r-- 1 shu shu 2095 مه    19 21:55 TEMPFREE.cpp
+-rw-rw-r-- 1 shu shu 2476 مه    19 21:55 TEMPFREE.o
+-rw-rw-r-- 1 shu shu   60 مه    18 17:53 test_read.txt
+-rw-rw-r-- 1 shu shu    4 مه    18 19:46 test_sync.txt
+-rw-rw-r-- 1 shu shu    0 مه    19 21:55 test_system.txt
