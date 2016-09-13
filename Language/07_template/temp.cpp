@@ -11,7 +11,6 @@ Template:
     09 sizeof ... operator
     10 fold expression
     11 dependent names
-
     12 SFINAE
 
     13 constraints and concepts
@@ -22,28 +21,29 @@ Template:
 #include <utility>
 
 
-/// 11 SFINAE ( Subsituation Failure Is Not An Error )
-// This rule applies during overload resolution of function template:
-// When sub-situating the deduced type for the template parameter fails,
-// the specialization is discarded form the overload set instead of causing
-// a compile error.
-// This feature is used in template meta-programming. for more detail read main site: en.cppreference.com
+/// 13 constraints and concepts
+// This page describes an experimental core language feature. For named type
+// requirement used in the specialization of the standard library, see: library concepts.
+// class template, function template, and non-template functions ( typically members of
+// class template ) may be associated with a constraint, which specified the requirements
+// on template argument, which can be used to select the most appropriate function overload
+// and template specialization
+//
+// Constraint may also be used to limit automatic type deduction in variable declaration
+// and function return types to only the types that specify specified requirement.
+//
+// Nmaes sets of such requirements are called 'concepts'. Each concepts is predicate, evaluated
+// at compile time, and becomes a part of the interface of a template where it is used as a constraint
 //
 //
-/// Library support
-// read main site
-//
-//
-/// Alternatives
-// read main site
-//
-//
-/// Examples
-// A common idiom is to use expression SFINAE on the return type, where the
-// expression uses the comma operator, whose left sub-expression is the one
-// that is being examined ( cast to void to ensure the user-defined operator
-// comma on the returned type is not selected ), and the right sub-expression
-// has the type that the function is supported to return.
+// Declaration of the concept "EqualityComparable", which is satisfied by
+// and type T such that for values a and b of type T, the expression a == b
+// compiles and its result is convertible to boolean.
+template<typename T>
+concept bool EqualityComparable = requires(T a, T b){
+    { a == b } -> bool;
+};
+
 
 int main(){}
 

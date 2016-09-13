@@ -21,7 +21,7 @@ Template:
 #include <iterator>
 #include <utility>
 
-/// 11 SFINAE ( Subsituation Failure Is Not An Error )
+/// 12 SFINAE ( Subsituation Failure Is Not An Error )
 // This rule applies during overload resolution of function template:
 // When sub-situating the deduced type for the template parameter fails,
 // the specialization is discarded form the overload set instead of causing
