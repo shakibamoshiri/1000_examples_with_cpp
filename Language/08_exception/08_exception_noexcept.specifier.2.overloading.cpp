@@ -28,15 +28,12 @@ Exception:
 // as part of a lambda ... f m d r m s.
 //
 //
-// NOTEs
-// One of the use of constant expression is ( along with the noexcept operator )
-// to define function templates that declare 'noexcept' for some types of not others.
-//
-// A noexcept specification on a function is not a compile-time check; it is merely
-// a method for a programmer to inform the compiler whether or not a function should
-// throw exceptions.
-/// Deprecates
-// noexcept is an improved version of throw(), which is deprecated in c++11. Unlike
-// throw(), noexcept will not call std::unexcepted and may or may not unwind the stack
-// which potentially allows the complier to implement noexcept without the runtime
-// overhead of throw()
+// If any declaration of a function has a specification that is not 'noexcept(false)'
+// other declaration of the same function have to have the same noexcept-specialization.
+void f() noexcept;          // f() does not throw
+vodi f()                    // error, incompatible exception specification
+
+void g() noexcept(false);   // g() may throw
+void g();                   // okay
+
+

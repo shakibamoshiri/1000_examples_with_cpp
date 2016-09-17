@@ -27,16 +27,19 @@ Exception:
 // The noexcept-specification ( just like dynamic exception specification ) can appear
 // as part of a lambda ... f m d r m s.
 //
+// It cannot appear in a typedef or type alias declaration
+
+void f() noexcept;              // the function f() does not throw
+
+void f1() noexcept(true);       // the function f1() does not throw
+
+void (*fp)() noexcept(false);   // fp points to function that may throw
+
+void f2 (void pfa() noexcept);  // f2 takes a pointer to function that does not throw
+
+typedef int {*pf)() noexcept;   // error
+
+// The noexcept-specification is not a part of the function type.
 //
-// NOTEs
-// One of the use of constant expression is ( along with the noexcept operator )
-// to define function templates that declare 'noexcept' for some types of not others.
-//
-// A noexcept specification on a function is not a compile-time check; it is merely
-// a method for a programmer to inform the compiler whether or not a function should
-// throw exceptions.
-/// Deprecates
-// noexcept is an improved version of throw(), which is deprecated in c++11. Unlike
-// throw(), noexcept will not call std::unexcepted and may or may not unwind the stack
-// which potentially allows the complier to implement noexcept without the runtime
-// overhead of throw()
+// The noexcept-specification is a part of the function type and may appear
+// as part of any function declaration ( since c++ 17 )
