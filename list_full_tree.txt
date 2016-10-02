@@ -1,4 +1,13 @@
 .
+├── [   4]  908_c++_file_are_here_now
+├── [4.0K]  Algorithm_library
+│   ├── [6.7K]  00_brife_contents_of_algorithm_library.cpp
+│   ├── [3.8K]  01_algorithm_all_of.none_of.any_of.cpp
+│   ├── [2.6K]  02_algorithm_for_each.cpp
+│   ├── [3.8K]  03_algorithm_count.count_if.cpp
+│   ├── [8.0K]  temp
+│   ├── [3.8K]  temp.cpp
+│   └── [3.1K]  temp.o
 ├── [4.0K]  Container
 │   ├── [4.0K]  01_std::array
 │   │   ├── [ 997]  00_std::array_initialization.cpp
@@ -213,6 +222,7 @@
 │       ├── [7.5K]  useful
 │       ├── [ 194]  useful.cpp
 │       └── [1.8K]  useful.o
+├── [ 150]  find_numbers_of_exmples.txt
 ├── [4.0K]  Inout_Output_Library
 │   ├── [4.0K]  03_basic_streambuf
 │   │   ├── [1.1K]  00_std::basic_streambuf_destrucotr.cpp
@@ -925,15 +935,45 @@
 │   │   ├── [1.8K]  02_exception_try-block.cpp
 │   │   ├── [1.4K]  03_exception_try-block.2.base-catch-clause_and_derived-catch-cluase.cpp
 │   │   ├── [1.5K]  04_exception_try-block.3.example.cpp
-│   │   ├── [ 12K]  temp
-│   │   ├── [1.5K]  temp.cpp
-│   │   └── [3.4K]  temp.o
+│   │   ├── [1.2K]  05_exception_function-try-block.cpp
+│   │   ├── [1.9K]  06_exception_function-try-block.2.notes.cpp
+│   │   ├── [1.3K]  07_exception_noexcept.specifier.cpp
+│   │   ├── [1.1K]  08_exception_noexcept.specifier.2.overloading.cpp
+│   │   ├── [1.8K]  09_exception_noexcept.specifier.3.cpp
+│   │   ├── [2.8K]  10_exception_noexcept_operator.cpp
+│   │   ├── [1.4K]  11_exception_dynamic_exception.cpp
+│   │   ├── [2.3K]  12_exception_dynamic_exception.2.cpp
+│   │   ├── [1.3K]  13_exception_dynamic_exception.3.example.cpp
+│   │   ├── [8.2K]  temp
+│   │   ├── [1.3K]  temp.cpp
+│   │   └── [3.7K]  temp.o
 │   ├── [4.0K]  09_statement
+│   │   ├── [2.2K]  01_statement_range-base-for.cpp
+│   │   ├── [8.0K]  temp
+│   │   ├── [2.2K]  temp.cpp
+│   │   └── [3.0K]  temp.o
 │   └── [4.0K]  10_miscellaneous
+│       ├── [1.6K]  01_miscellaneous_asm.cpp
+│       ├── [1.2K]  02_miscellaneous_extend_namespace_std.cpp
+│       ├── [2.1K]  03_miscellaneous_undefined_behavior.cpp
+│       ├── [2.0K]  04_miscellaneous_RAII.cpp
+│       ├── [1.5K]  05_miscellaneous_rude_of_three.cpp
+│       ├── [1.6K]  06_miscellaneous_rule_of_five.cpp
+│       ├── [1.4K]  07_miscellaneous_rule_of_zero.cpp
+│       ├── [1.6K]  08_miscellaneous_copy_elision.cpp
+│       ├── [7.3K]  09_miscellaneous_empty_base_optimization
+│       ├── [1.2K]  09_miscellaneous_empty_base_optimization.cpp
+│       ├── [1.5K]  09_miscellaneous_empty_base_optimization.o
+│       ├── [1.7K]  10_miscellaneous_empty_base_optimization.2.cpp
+│       ├── [7.5K]  temp
+│       ├── [1.2K]  temp.cpp
+│       └── [1.8K]  temp.o
 ├── [ 201]  LICENSE.md
-├── [   0]  list_of_file_in_tree_style_+_size.txt
-├── [ 59K]  list_of_file_in_tree_style.txt
-├── [2.2K]  README.md
+├── [   0]  list_full_tree.txt
+├── [1.3K]  list_tree.txt
+├── [ 87K]  logo_codeblocks.png
+├── [4.5K]  README.md
+├── [   6]  size_of_the_whole_examples.txt
 ├── [4.0K]  String_Library
 │   ├── [4.0K]  null_terminated_string
 │   │   ├── [1.2K]  00_std::isalnum.cpp
@@ -1037,6 +1077,6 @@
 │       ├── [ 761]  TEMPFREE.cpp
 │       ├── [ 719]  TEMPFREE.h
 │       └── [2.3K]  TEMPFREE.o
-└── [1.3K]  tree.txt
+└── [ 167]  up.sh
 
-40 directories, 999 files
+41 directories, 1038 files
