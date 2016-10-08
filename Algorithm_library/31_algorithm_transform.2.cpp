@@ -47,28 +47,39 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
-#include <iterator>
+#include <vector>
+#include <string>
+
+#include <ctype.h>  // toupper(), tolower(), ...
+//#include <functional>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
-
+/// transform           applies a function to a range of elements
+// std::transform applies the given function to a range stores
+// the result in another range, beginning at d_first ( see implementation in the main site)
+//
+// NTOE
+// std::transform does not guarantee in-order application of unary_op binary_op.
+// To apply a function to a sequence in-order or to apply a function that modifies
+// the elements of a sequence, use std::for_each
 
 int main(){
-    const std::size_t N=5;
+    // first alternative
+    std::string str("abce_efjh");   // not changing
+    std::cout<<"Before: \t";        for(short i=0; i<str.size();i++) std::cout<<str[i];
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    // second alternate             // all goes to upper
+    // wrong syntax,
+    // std::for_each(str.begin(),str.end(), [&](char c){ c = ::toupper(c);} );
+    // it does not capture anything by reference
+    // but this syntax is correct:           // all goes to upper
+    std::for_each(str.begin(),str.end(), [](char& c){ c = ::toupper(c);} );
+    std::cout<<"\nAfter : \t";      for(short i=0; i<str.size();i++) std::cout<<str[i];
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    // third alternative            // all goes to lower
+    for ( char& c : str) c = ::tolower(c);
+    std::cout<<"\nAfter : \t";      for(short i=0; i<str.size();i++) std::cout<<str[i];
 
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
 
 }
 

@@ -12,11 +12,11 @@ Non-modifying sequence operation
     all_of
     any_of
     noun_of             check, if the predicate is true for all, any, or none of the element is a range
-
     for_each            applies a function to a range of element
     count
     count_if            return the number of elements satisfying specific criteria
     mismatch            find the first position, where to ranges differ
+
     equal               determines if two set of elements are the same
     find
     find_if
@@ -27,68 +27,34 @@ Non-modifying sequence operation
     search              searches for a range of elements
     search_n            search for a number consecutive copies of an element in a range.
 */
-
 /// You can read the original implementation in:
 /// stl_algobase.h and stl_algo.h
-
 
 #include <iostream>
 #include <algorithm>
 
-/// std::for_each
-// Applies the given function iterator, f may modify the elements of the range
-// through the dereferenced iterator if f return a result, the result is ignored.
+/// std::equal
+// Two implementation return true if the range [first,last) is equal to the range
+// [first2, first2 + ( last1 - first1 )), and false otherwise.
+// Another two implementation return true if the range [first, last) t equal to the range
+// [first2, last2) and false otherwise.
 //
-// Possible implementation
-template<class InputIt, class UnaryFunction>
-UnaryFunction for_each (InputIt first, InputIt last, UnaryFunction f){
-    for(; first != last; ++first){
-        f(*first);
-    }
+//
+// Example
+// The following code uses equal() to test if a string is a palindrome ( madam == madam )
+
+#include <string>
+
+
+bool is_palindrome(const std::string& s){
+    return std::equal(s.begin(),s.begin()+s.size()/2,s.rbegin());
 }
-
-// example
-// The following example uses the lambda function to increment all of the element
-// of a vector and then uses and overloaded operator() in a function to compute
-// their sum
-
-#include <vector>
-
-struct Sum {
-    int sum;
-
-    Sum(){ sum = 0; }
-    void operator()(int t){ sum+=t; }
-};
-
 
 int main(){
 
-    std::vector<int> num{3,4,2,9,15,267};
-    std::cout<<"before ";
-    for ( int t : num )
-        std::cout<<' '<<t;
+ if ( is_palindrome("madam") )
+    std::cout<<"Oh, madam is a palindrome\n";
 
-
-    // for_each does ++t on each element of num
-    std::for_each(num.begin(), num.end(), [](int &t){ ++t;});
-
-
-    std::cout<<"\nAfter for_each ";
-    for(int t : num )
-        std::cout<<' '<<t;
-
-    // calls Sum::operator) for each number
-    Sum s = std::for_each(num.begin(), num.end(), Sum());
-
-    std::cout<<"\nSum of the num is "
-             <<s.sum;
-
-    // Does for_each with range-base-for
-    std::cout<<"\nUsing range-base-for, instead of for_each ";
-    for( int& t : num )
-        ++t;
-
-    for (int t : num )
-        std::cout<<' '<<t;
+ if ( !is_palindrome("k-five") )
+    std::cout<<"Are you kidding me? Of course it is not a palindrome\n";
 }

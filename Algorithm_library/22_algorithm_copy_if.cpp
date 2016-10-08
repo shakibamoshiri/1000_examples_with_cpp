@@ -14,6 +14,7 @@ Defined in header <algorithm>
 Modifying sequence operation
     copy
     copy_if             copies a range of elements to a new location
+
     copy_n              copies a number of elements to a new location
     copy_backward       copies a range of elements in backward order
     move                moves a range of elements to a new location
@@ -47,28 +48,67 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
+#include <vector>
 #include <iterator>
+#include <numeric>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
+
+
+/// copy
+/// copy_if             copies a range of elements to a new location
+// Copies the elements in the range, defined by [first, last) to
+// another range beginning at d_first. Something like this:
+// std::copy ( input first, input last, output first)
 
 
 int main(){
-    const std::size_t N=5;
+    std::vector<int> vi(10);
+    std::iota(vi.begin(),vi.end(),0);   // put 0 to 9 in the vi
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::vector<int> vi2;
+    std::vector<int>::iterator itvi = vi2.begin();
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    // Some of ERRORs
+    // std::copy_if(vi.begin(), vi.end(), vi2, [](const int i){return i%2;});
+    // no match to operator*
 
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
+    // std::copy_if(vi.begin(), vi.end(), vi2.begin(), [](const int i){return i%2;});
+    // segmentation fault
 
+    // std::copy_if(vi.begin(), vi.end(), itvi, [](const int i){return i%2;});
+    // with the iterator itvi stiil output is
+    // segmentation fault
+    // why?
+    // because the vi2 has no member. I am not sure, but I think the empty container
+    // is always assigns to null
+    // if you create:
+    // std::vector<int> vi2(5), it works fine.
+
+
+    // So here we use std::back_iterator to fill the empty container
+    std::copy_if(vi.begin(), vi.end(), std::back_inserter(vi2), [](const int i){return i%2!=0;}); // or i%2;
+
+    std::cout<<"vi2: ";
+    for (const int t : vi2) std::cout<<t<<' ';
+    std::cout<<std::endl;
+
+    std::vector<int> vi3(5);
+    // not need to use std::back_inserter
+    std::copy_if(vi.begin(), vi.end(), vi3.begin(), [](const int i){return i%2==0;});
+    std::cout<<"vi3: ";
+    for (const int t : vi3) std::cout<<t<<' ';
+
+    /** implementation:
+
+    for (; __first != __last; ++__first)
+        if (__pred(*__first))               // the lambda expression is inserted here
+        {
+            *__result = *__first;
+            ++__result;
+        }
+        return __result;
+    }
+    **/
 }
 

@@ -47,28 +47,31 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
+#include <vector>
 #include <iterator>
+#include <numeric>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
 
+
+/// copy_backward       copies a range of elements in backward order
+
+// Copies the elements from the range, defined by [first, last),
+// to another range ending at d_last. The elements are copied in reverse order
 
 int main(){
-    const std::size_t N=5;
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::vector<int> from_vector;
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    for (int i = 0; i < 10; i++) from_vector.push_back(i);
 
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
+    for (const short i : from_vector ) std::cout<<i<<' ';   std::cout<<std::endl;
+
+    std::vector<int> to_vector(15);
+
+    std::copy_backward(from_vector.begin(), from_vector.end(), to_vector.end());    // coying end to end, not copying end to frond
+
+    std::cout << "to_vector contains: ";    for (unsigned int i = 0; i < to_vector.size(); i++) std::cout << to_vector[i] << " ";
 
 }
 

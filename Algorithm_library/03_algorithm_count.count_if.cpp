@@ -27,6 +27,10 @@ Non-modifying sequence operation
     search              searches for a range of elements
     search_n            search for a number consecutive copies of an element in a range.
 */
+/// You can read the original implementation in:
+/// stl_algobase.h and stl_algo.h
+
+
 #include <iostream>
 #include <algorithm>
 

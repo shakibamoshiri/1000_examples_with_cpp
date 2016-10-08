@@ -47,28 +47,29 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
-#include <iterator>
+#include <vector>
+#include <string>
+
+#include <ctype.h>
+//#include <functional>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
-
+/// transform           applies a function to a range of elements
+// std::transform applies the given function to a range stores
+// the result in another range, beginning at d_first ( see implementation in the main site)
+//
+// NTOE
+// std::transform does not guarantee in-order application of unary_op binary_op.
+// To apply a function to a sequence in-order or to apply a function that modifies
+// the elements of a sequence, use std::for_each
 
 int main(){
-    const std::size_t N=5;
+    std::string str("abce_efjh");
+    std::cout<<"Before: \t";        for(short i=0; i<str.size();i++) std::cout<<str[i];
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::transform(str.begin(),str.end(),str.begin(), ::toupper);
+    std::cout<<"\nAfter : \t";      for(short i=0; i<str.size();i++) std::cout<<str[i];
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
-
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
 
 }
 

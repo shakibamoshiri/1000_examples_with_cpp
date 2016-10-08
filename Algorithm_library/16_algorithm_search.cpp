@@ -12,7 +12,6 @@ Non-modifying sequence operation
     all_of
     any_of
     noun_of             check, if the predicate is true for all, any, or none of the element is a range
-
     for_each            applies a function to a range of element
     count
     count_if            return the number of elements satisfying specific criteria
@@ -24,71 +23,49 @@ Non-modifying sequence operation
     find_end            find the last sequence of elements in certain range
     find_first_of       search for any one of a set of elements
     adjacent_find       find the first two adjacent items that are equal (or satisfy a given predicate)
+
     search              searches for a range of elements
     search_n            search for a number consecutive copies of an element in a range.
 */
-
 /// You can read the original implementation in:
-/// stl_algobase.h and stl_algo.h
-
+/// stl_algobase.h and stl_algo.h and algorithmfwd.h
 
 #include <iostream>
 #include <algorithm>
-
-/// std::for_each
-// Applies the given function iterator, f may modify the elements of the range
-// through the dereferenced iterator if f return a result, the result is ignored.
-//
-// Possible implementation
-template<class InputIt, class UnaryFunction>
-UnaryFunction for_each (InputIt first, InputIt last, UnaryFunction f){
-    for(; first != last; ++first){
-        f(*first);
-    }
-}
-
-// example
-// The following example uses the lambda function to increment all of the element
-// of a vector and then uses and overloaded operator() in a function to compute
-// their sum
-
 #include <vector>
+// #include <iterator>
 
-struct Sum {
-    int sum;
 
-    Sum(){ sum = 0; }
-    void operator()(int t){ sum+=t; }
-};
 
+
+/// search          searches for a range of elements
+// Searches for the first occurrence of the subsequence of elements
+// (s_first,s_last] in the range (first, last] - (s_last, s_fist)).
+//
+// return value:
+// An iterator to the beginning of the first subsequence
+
+template<typename Container>
+bool in_quote(const Container& cont, const std::string& s){
+    return std::search(cont.begin(), cont.end(),s.begin(),s.end()) != cont.end();
+}
 
 int main(){
+    std::string str ("why waste time learning, when ignorance is instantaneous?");
 
-    std::vector<int> num{3,4,2,9,15,267};
-    std::cout<<"before ";
-    for ( int t : num )
-        std::cout<<' '<<t;
+    // str.find can be use as well
+    std::size_t sz = str.find("time");
+    for(;sz < str.size();sz++)
+        std::cout<<str[sz];
+
+    std::boolalpha(std::cout);
+    std::cout<<"\nIs \"time\" word in the str? "<<in_quote(str, "time")<<std::endl;
+    std::cout<<"\nIs \"IS\" word in the str? "<<in_quote(str, "IS")<<std::endl;
+
+    std::vector<char> vt(str.begin(),str.end());
+    std::cout<<"\nIs \"time\" word in the vt? "<<in_quote(vt, "time")<<std::endl;
+    std::cout<<"\nIs \"IS\" word in the vt? "<<in_quote(vt, "IS")<<std::endl;
 
 
-    // for_each does ++t on each element of num
-    std::for_each(num.begin(), num.end(), [](int &t){ ++t;});
-
-
-    std::cout<<"\nAfter for_each ";
-    for(int t : num )
-        std::cout<<' '<<t;
-
-    // calls Sum::operator) for each number
-    Sum s = std::for_each(num.begin(), num.end(), Sum());
-
-    std::cout<<"\nSum of the num is "
-             <<s.sum;
-
-    // Does for_each with range-base-for
-    std::cout<<"\nUsing range-base-for, instead of for_each ";
-    for( int& t : num )
-        ++t;
-
-    for (int t : num )
-        std::cout<<' '<<t;
 }
+

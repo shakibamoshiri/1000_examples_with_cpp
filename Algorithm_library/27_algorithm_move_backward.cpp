@@ -47,28 +47,30 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
-#include <iterator>
+#include <vector>
+#include <string>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
+
+/// move_backward       moves a range of elements to a new location in backward order
+// When moving overlapping ranges std::move is appropriate when moving
+// to the left (beginning of the destination range is outside the source
+// range ) with std::move_backward is appropriate when moving to the right
+// ( end of the destination range is outside the source range)
+
+
 
 
 int main(){
-    const std::size_t N=5;
+    std::vector<std::string> src{"one", "two", "three"};
+    std::vector<std::string> dest(src.size());
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::cout<<"src: \t";     for(const std::string& s : src) std::cout<<s<<' ';
+    std::cout<<"\ndest: \t";  for(const std::string& s : dest) std::cout<<s<<' ';
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::move_backward(src.begin(), src.end(), dest.end());
 
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
-
+    std::cout<<"\nsrc: \t";   for(const std::string& s : src) std::cout<<s<<' ';
+    std::cout<<"\ndest: \t";  for(const std::string& s : dest) std::cout<<s<<' ';
 }
 

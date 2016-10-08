@@ -210,3 +210,7 @@ C Library
     qsort               sorts a range of elements with unspecific type
 
     bserach             searches an array from an elements of unspecified type
+*/
+
+/// You can read the original implementation in:
+/// stl_algobase.h and stl_algo.h

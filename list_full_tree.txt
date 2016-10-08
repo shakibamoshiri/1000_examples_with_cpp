@@ -1,13 +1,43 @@
 .
-├── [   4]  908_c++_file_are_here_now
+├── [   4]  930_c++_file_are_here_now
 ├── [4.0K]  Algorithm_library
-│   ├── [6.7K]  00_brife_contents_of_algorithm_library.cpp
-│   ├── [3.8K]  01_algorithm_all_of.none_of.any_of.cpp
-│   ├── [2.6K]  02_algorithm_for_each.cpp
-│   ├── [3.8K]  03_algorithm_count.count_if.cpp
-│   ├── [8.0K]  temp
-│   ├── [3.8K]  temp.cpp
-│   └── [3.1K]  temp.o
+│   ├── [6.8K]  00_brife_contents_of_algorithm_library.cpp
+│   ├── [3.9K]  01_algorithm_all_of.none_of.any_of.cpp
+│   ├── [2.7K]  02_algorithm_for_each.cpp
+│   ├── [3.9K]  03_algorithm_count.count_if.cpp
+│   ├── [2.1K]  04_algorithm_mismatch.cpp
+│   ├── [2.1K]  05_algorithm_equal.cpp
+│   ├── [2.6K]  06_algorithm_equal.2.cpp
+│   ├── [2.4K]  07_algorithm_find.cpp
+│   ├── [3.5K]  08_algorithm_find_if.cpp
+│   ├── [2.4K]  09_algorithm_find_if_not.cpp
+│   ├── [2.4K]  10_algorithm_find_end.cpp
+│   ├── [2.2K]  11_algorithm_find_first_of.cpp
+│   ├── [2.3K]  12_algorithm_find_first_of.2.custom.implementraion.cpp
+│   ├── [2.1K]  13_algorithm_adjacent_find.cpp
+│   ├── [2.0K]  14_algorithm_adjacent_find.2.cpp
+│   ├── [2.2K]  15_algorithm_adjacent_find.3.cpp
+│   ├── [2.5K]  16_algorithm_search.cpp
+│   ├── [2.3K]  17_algorithm_search_n.cpp
+│   ├── [2.3K]  18_algorithm_search_n.2.custom.cpp
+│   ├── [2.4K]  19_algorithm_search_n.3.custom.cpp
+│   ├── [2.3K]  20_algorithm_search_n.4.custom.cpp
+│   ├── [4.1K]  21_algorithm_copy.cpp
+│   ├── [4.3K]  22_algorithm_copy_if.cpp
+│   ├── [3.0K]  23_algorithm_copy_n.cpp
+│   ├── [3.1K]  24_algorithm_copy_backward.cpp
+│   ├── [3.2K]  25_algorithm_copy_backward,2.cpp
+│   ├── [3.4K]  26_algorithm_move.cpp
+│   ├── [3.3K]  27_algorithm_move_backward.cpp
+│   ├── [2.8K]  28_algorithm_fill.cpp
+│   ├── [3.2K]  29_algorithm_fill_n.cpp
+│   ├── [3.2K]  30_algorithm_transform.cpp
+│   ├── [3.8K]  31_algorithm_transform.2.cpp
+│   ├── [3.5K]  32_algorithm_generate.cpp
+│   ├── [3.2K]  33_algorithm_generate_n.cpp
+│   ├── [7.7K]  temp
+│   ├── [3.2K]  temp.cpp
+│   └── [2.4K]  temp.o
 ├── [4.0K]  Container
 │   ├── [4.0K]  01_std::array
 │   │   ├── [ 997]  00_std::array_initialization.cpp
@@ -32,8 +62,7 @@
 │   │   ├── [ 751]  19_std::tuple_element_std::array.cpp
 │   │   ├── [1.2K]  std::03_std::array_front.cpp
 │   │   ├── [7.8K]  tempfree
-│   │   ├── [ 751]  tempfree.cpp
-│   │   └── [2.5K]  tempfree.o
+│   │   └── [ 751]  tempfree.cpp
 │   ├── [4.0K]  02_std::deque
 │   │   ├── [3.6K]  00_std::deque_deque.cpp
 │   │   ├── [ 735]  01_std::deque_destructor.cpp
@@ -67,8 +96,7 @@
 │   │   ├── [2.4K]  30_std::deque_operator_comprison.cpp
 │   │   ├── [1.3K]  std::swap_algorithm.cpp
 │   │   ├── [ 12K]  tempfree
-│   │   ├── [1.3K]  tempfree.cpp
-│   │   └── [5.3K]  tempfree.o
+│   │   └── [1.3K]  tempfree.cpp
 │   ├── [4.0K]  03_std::vector
 │   │   ├── [3.6K]  00_std::vector_vector.cpp
 │   │   ├── [ 950]  01_std::vector_destructor.cpp
@@ -102,8 +130,7 @@
 │   │   ├── [3.9K]  29_std::vector_operator_comparison.cpp
 │   │   ├── [2.3K]  30_std::swap_std::vector.cpp
 │   │   ├── [ 13K]  tempfree
-│   │   ├── [1.6K]  tempfree.cpp
-│   │   └── [7.4K]  tempfree.o
+│   │   └── [1.6K]  tempfree.cpp
 │   ├── [4.0K]  04_std::list
 │   │   ├── [2.0K]  00_std::list_explanation.cpp
 │   │   ├── [4.0K]  01_std::list_list_or_constructor.cpp
@@ -143,10 +170,8 @@
 │   │   ├── [ 13K]  tempfree
 │   │   ├── [1.6K]  tempfree.cpp
 │   │   ├── [1.8K]  tempfree.cpp~
-│   │   ├── [5.4K]  tempfree.o
 │   │   ├── [7.4K]  useful
-│   │   ├── [  95]  useful.cpp
-│   │   └── [1.5K]  useful.o
+│   │   └── [  95]  useful.cpp
 │   ├── [4.0K]  05_std::forward_list
 │   ├── [4.0K]  06_std::set
 │   │   ├── [2.2K]  00_std::set.cpp
@@ -178,10 +203,8 @@
 │   │   ├── [1.2K]  26_std::swap_set.cpp
 │   │   ├── [ 13K]  tempfree
 │   │   ├── [1.3K]  tempfree.cpp
-│   │   ├── [6.9K]  tempfree.o
 │   │   ├── [8.0K]  useful
-│   │   ├── [ 456]  useful.cpp
-│   │   └── [2.6K]  useful.o
+│   │   └── [ 456]  useful.cpp
 │   ├── [4.0K]  07_std::multiset
 │   │   └── [1.3K]  multiset_test.cpp
 │   └── [4.0K]  08_std::map
@@ -218,10 +241,8 @@
 │       ├── [1.2K]  30_std::swap_algorithm.cpp
 │       ├── [ 13K]  tempfree
 │       ├── [1.2K]  tempfree.cpp
-│       ├── [7.7K]  tempfree.o
 │       ├── [7.5K]  useful
-│       ├── [ 194]  useful.cpp
-│       └── [1.8K]  useful.o
+│       └── [ 194]  useful.cpp
 ├── [ 150]  find_numbers_of_exmples.txt
 ├── [4.0K]  Inout_Output_Library
 │   ├── [4.0K]  03_basic_streambuf
@@ -265,18 +286,14 @@
 │   │   │   ├── [1.2K]  33_std::basic_streambuf::pbump.cpp
 │   │   │   ├── [1.5K]  34_std::basic_streambuf::setp.cpp
 │   │   │   ├── [1.4K]  35_std::baisc_streambuf::pbackfail.cpp
-│   │   │   ├── [ 21K]  a.out
 │   │   │   ├── [ 14K]  t
 │   │   │   ├── [ 847]  t.cpp
 │   │   │   ├── [7.8K]  TEMPFREE
 │   │   │   ├── [1.2K]  TEMPFREE.cpp
-│   │   │   ├── [2.3K]  TEMPFREE.o
-│   │   │   ├── [  38]  test_pbump.txt
-│   │   │   └── [6.7K]  t.o
+│   │   │   └── [  38]  test_pbump.txt
 │   │   ├── [ 774]  std::ifstream_overloading.cpp
 │   │   ├── [ 12K]  TEMPFREE
 │   │   ├── [1.3K]  TEMPFREE.cpp
-│   │   ├── [3.4K]  TEMPFREE.o
 │   │   └── [   6]  test_streambuf.txt
 │   ├── [4.0K]  04_basic_istream
 │   │   ├── [1.4K]  00_std::basic_istream::cin_wcin.cpp
@@ -301,7 +318,6 @@
 │   │   ├── [2.4K]  20_std::basic_istream::operator>>_2.cpp
 │   │   ├── [7.9K]  TEMPFREE
 │   │   ├── [ 440]  TEMPFREE.cpp
-│   │   ├── [3.2K]  TEMPFREE.o
 │   │   ├── [  60]  test_read.txt
 │   │   ├── [   4]  test_sync.txt
 │   │   └── [1.9K]  test_system.txt
@@ -321,12 +337,10 @@
 │   │   ├── [1.0K]  12_std::basic_ostream::swap.cpp
 │   │   ├── [1.3K]  13_std::basic_ostream::sentry.cpp
 │   │   ├── [1.6K]  14_std::basic_ostream::operator_output.cpp
-│   │   ├── [ 14K]  a.out
 │   │   ├── [  25]  fstream.txt
 │   │   ├── [ 656]  std::basic_ostream::overload<<.cpp
 │   │   ├── [ 14K]  TEMPFREE
 │   │   ├── [2.0K]  TEMPFREE.cpp
-│   │   ├── [5.4K]  TEMPFREE.o
 │   │   ├── [ 125]  test_operator_equal.txt
 │   │   └── [ 748]  test_operator_stdout.txt
 │   ├── [4.0K]  06_basic_iostream
@@ -354,7 +368,6 @@
 │   │   ├── [ 766]  15_std::basic_filebuf::imbue.cpp
 │   │   ├── [ 14K]  TEMPFREE
 │   │   ├── [ 631]  TEMPFREE.cpp
-│   │   ├── [7.7K]  TEMPFREE.o
 │   │   ├── [   0]  test_is_open.txt
 │   │   ├── [   0]  test.out
 │   │   ├── [  10]  test_seekoff.txt
@@ -369,8 +382,7 @@
 │   │   ├── [ 624]  07_std::basic_ifstream::close.cpp
 │   │   ├── [ 601]  08_std::basic_ifstream::swap_2.cpp
 │   │   ├── [ 13K]  TEMPFREE
-│   │   ├── [ 601]  TEMPFREE.cpp
-│   │   └── [5.1K]  TEMPFREE.o
+│   │   └── [ 601]  TEMPFREE.cpp
 │   ├── [4.0K]  09_basic_ofstream
 │   │   ├── [1.8K]  00_std::basic_ofstream::constrcutor.cpp
 │   │   ├── [ 443]  01_std::basic_ofstream::operator=.cpp
@@ -388,7 +400,6 @@
 │   │   ├── [   0]  some_file
 │   │   ├── [8.1K]  TEMPFREE
 │   │   ├── [1.1K]  TEMPFREE.cpp
-│   │   ├── [3.0K]  TEMPFREE.o
 │   │   └── [   0]  test.bin
 │   ├── [4.0K]  10_basic_fstream
 │   │   ├── [1.7K]  00_std::basic_fstream::constructor.cpp
@@ -405,8 +416,7 @@
 │   │   ├── [   0]  example.3
 │   │   ├── [   0]  some_file
 │   │   ├── [8.1K]  TEMPFREE
-│   │   ├── [ 297]  TEMPFREE.cpp
-│   │   └── [3.0K]  TEMPFREE.o
+│   │   └── [ 297]  TEMPFREE.cpp
 │   ├── [4.0K]  11_basic_stringbuf
 │   │   ├── [2.3K]  00_std::basic_stringbuf::basic_stringbuf.cpp
 │   │   ├── [1.2K]  01_std::basic_stringbuf::operator=.cpp
@@ -420,10 +430,8 @@
 │   │   ├── [2.0K]  09_std::basic_stringbuf::seekoff.cpp
 │   │   ├── [1.4K]  10_std::basic_stringbuf::seekpos.cpp
 │   │   ├── [ 632]  11_std::swap.cpp
-│   │   ├── [8.5K]  a.out
 │   │   ├── [ 14K]  TEMPFREE
-│   │   ├── [ 632]  TEMPFREE.cpp
-│   │   └── [8.6K]  TEMPFREE.o
+│   │   └── [ 632]  TEMPFREE.cpp
 │   ├── [4.0K]  12_basic_istringstream
 │   │   ├── [1.6K]  00_std::basic_istringstream::constructor.cpp
 │   │   ├── [1000]  01_std::istringstream::operator=.cpp
@@ -432,8 +440,7 @@
 │   │   ├── [1.4K]  04_std::basic_istingstream::str.cpp
 │   │   ├── [ 740]  05_std::swap_algorithm.cpp
 │   │   ├── [ 13K]  TEMPFREE
-│   │   ├── [ 740]  TEMPFREE.cpp
-│   │   └── [4.8K]  TEMPFREE.o
+│   │   └── [ 740]  TEMPFREE.cpp
 │   ├── [4.0K]  13_basic_ostringstream
 │   │   ├── [1.6K]  00_std::basic_ostringstream::constructor.cpp
 │   │   ├── [ 465]  01_std::basic_ostringstream::operartor=.cpp
@@ -442,8 +449,7 @@
 │   │   ├── [1.4K]  04_std::basic_ostringstream::str.cpp
 │   │   ├── [ 732]  05_std::swap_algorithm.cpp
 │   │   ├── [ 13K]  TEMPFREE
-│   │   ├── [ 732]  TEMPFREE.cpp
-│   │   └── [4.8K]  TEMPFREE.o
+│   │   └── [ 732]  TEMPFREE.cpp
 │   ├── [4.0K]  14_basic_stringstream
 │   │   ├── [1.6K]  00_std::basic_stringstream::constructor.cpp
 │   │   ├── [ 458]  01_std::basic_stringstrea;:operator=.cpp
@@ -453,8 +459,7 @@
 │   │   ├── [ 760]  #05_std::swap.cpp#
 │   │   ├── [ 732]  05_std::swap.cpp
 │   │   ├── [ 13K]  TEMPFREE
-│   │   ├── [1.4K]  TEMPFREE.cpp
-│   │   └── [4.8K]  TEMPFREE.o
+│   │   └── [1.4K]  TEMPFREE.cpp
 │   ├── [4.0K]  basic_ios
 │   │   ├── [ 884]  03_std::basic_ios::good.cpp
 │   │   ├── [ 907]  04_std::basic_ios::eof.cpp
@@ -471,22 +476,18 @@
 │   │   ├── [ 812]  15_std::basic_ios::imbue.cpp
 │   │   ├── [ 12K]  15_std::basic_ios::rdbuf
 │   │   ├── [1.3K]  15_std::basic_ios::rdbuf.cpp
-│   │   ├── [3.5K]  15_std::basic_ios::rdbuf.o
 │   │   ├── [1.2K]  16_std::basic_ios::tie.cpp
 │   │   ├── [ 728]  17_std::basic_ios::narrow.cpp
 │   │   ├── [ 735]  18_std::basic_ios::widen.cpp
 │   │   ├── [1.4K]  19_std::basic_ios::init.cpp
 │   │   ├── [ 13K]  20_std::basic_ios::move
 │   │   ├── [1.1K]  20_std::basic_ios::move.cpp
-│   │   ├── [4.8K]  20_std::basic_ios::move.o
 │   │   ├── [1.1K]  21_std::basic_ios::swap.cpp
 │   │   ├── [ 970]  22_std::basic_ios::set_rdbuf.cpp
 │   │   ├── [7.8K]  i3_shu_bar
 │   │   ├── [ 158]  i3_shu_bar.cpp
-│   │   ├── [2.4K]  i3_shu_bar.o
 │   │   ├── [ 13K]  TEMPFREE
 │   │   ├── [2.4K]  TEMPFREE.cpp
-│   │   ├── [4.8K]  TEMPFREE.o
 │   │   ├── [  24]  test_bad.txt
 │   │   └── [  35]  test.txt
 │   ├── [4.0K]  I_O_manipulators
@@ -517,8 +518,7 @@
 │   │   ├── [2.1K]  24_std::quoted.cpp
 │   │   ├── [7.7K]  TEMPFREE
 │   │   ├── [1.7K]  TEMPFREE.cpp
-│   │   ├── [ 209]  TEMPFREE.h
-│   │   └── [2.4K]  TEMPFREE.o
+│   │   └── [ 209]  TEMPFREE.h
 │   └── [4.0K]  ios_base
 │       ├── [ 696]  03_std::ios_base::flags_2.cpp
 │       ├── [ 927]  03_std::ios_base::flags.cpp
@@ -541,10 +541,8 @@
 │       ├── [ 683]  20_std::ios_base::seekdir.cpp
 │       ├── [ 801]  21_std::ios_base::event.cpp
 │       ├── [ 455]  22_std::ios_base::event_callback.cpp
-│       ├── [8.7K]  a.out
 │       ├── [7.6K]  TEMPFREE
-│       ├── [1.4K]  TEMPFREE.cpp
-│       └── [1.9K]  TEMPFREE.o
+│       └── [1.4K]  TEMPFREE.cpp
 ├── [4.0K]  Language
 │   ├── [4.0K]  01_preprocessor
 │   │   ├── [1.2K]  01_preprocessor_if_ifdef_ifndef_else_elif_endif_if-defined.cpp
@@ -553,8 +551,7 @@
 │   │   ├── [ 631]  04_preprocessor_filename_and_line_information.cpp
 │   │   ├── [7.5K]  tempfree
 │   │   ├── [ 840]  tempfree.cpp
-│   │   ├── [ 320]  tempfree.cpp~
-│   │   └── [1.6K]  tempfree.o
+│   │   └── [ 320]  tempfree.cpp~
 │   ├── [4.0K]  02_expression
 │   │   ├── [ 840]  01_expression_constexpr.cpp
 │   │   ├── [4.3K]  02_expression_assignment_operator_inside_class.cpp
@@ -680,8 +677,7 @@
 │   │   ├── [ 759]  9991_morePractice_R-value_L-value.cpp
 │   │   ├── [ 862]  9992_morePractice_pointer_to_member-data-and-function_2.cpp
 │   │   ├── [7.9K]  temp
-│   │   ├── [1.4K]  temp.cpp
-│   │   └── [3.1K]  temp.o
+│   │   └── [1.4K]  temp.cpp
 │   ├── [4.0K]  04_initialization
 │   │   ├── [1.8K]  01_initialization_value.cpp
 │   │   ├── [2.9K]  02_initialization_value_2.cpp
@@ -695,8 +691,7 @@
 │   │   ├── [ 982]  10_initialization_zero.cpp
 │   │   ├── [ 957]  11_initialization_constant.cpp
 │   │   ├── [7.7K]  temp
-│   │   ├── [ 957]  temp.cpp
-│   │   └── [2.0K]  temp.o
+│   │   └── [ 957]  temp.cpp
 │   ├── [4.0K]  05_function
 │   │   ├── [1.6K]  01_function_declaration_return-type.cpp
 │   │   ├── [2.4K]  02_function_declaration_return-type_2.cpp
@@ -721,8 +716,7 @@
 │   │   ├── [2.2K]  21_function_pass-a-lambda-to-a-generic-algorithm.cpp
 │   │   ├── [1.8K]  22_function_address_of_opperator_overloading.cpp
 │   │   ├── [8.0K]  temp
-│   │   ├── [ 802]  temp.cpp
-│   │   └── [2.6K]  temp.o
+│   │   └── [ 802]  temp.cpp
 │   ├── [ 12K]  06_classes
 │   │   ├── [2.6K]  01_classes_forward-declaration.cpp
 │   │   ├── [3.4K]  02_classes_member-specification.cpp
@@ -817,8 +811,7 @@
 │   │   ├── [1.5K]  classes_conversion_constructor_morePractice_3.cpp
 │   │   ├── [1.3K]  classes_conversion_constructor_morePractice.cpp
 │   │   ├── [7.4K]  temp
-│   │   ├── [2.7K]  temp.cpp
-│   │   └── [1.5K]  temp.o
+│   │   └── [2.7K]  temp.cpp
 │   ├── [ 12K]  07_template
 │   │   ├── [2.0K]  01_template_explanation.cpp
 │   │   ├── [1.4K]  02_template_template-argument.cpp
@@ -917,7 +910,6 @@
 │   │   ├── [1.7K]  88_template_constraints_and_concepts.4.concepts.cpp
 │   │   ├── [8.5K]  89_template_constraints_and_concepts.5.constraints.cpp
 │   │   ├── [2.0K]  90_template_constraints_and_concepts.6.partial.ordering.cpp
-│   │   ├── [7.5K]  a.out
 │   │   ├── [7.9K]  temp
 │   │   ├── [2.0K]  temp.cpp
 │   │   ├── [1.7K]  template_alias.template.morePractice.cpp
@@ -928,8 +920,7 @@
 │   │   ├── [1.7K]  template_template.template.function.cpp
 │   │   ├── [1.7K]  template_type.alias.morePractice_2.cpp
 │   │   ├── [1.6K]  template_type.alias.morePractice.cpp
-│   │   ├── [ 831]  template_usefull_syntax.cpp
-│   │   └── [2.9K]  temp.o
+│   │   └── [ 831]  template_usefull_syntax.cpp
 │   ├── [4.0K]  08_exception
 │   │   ├── [2.3K]  01_exception_throw.expression.cpp
 │   │   ├── [1.8K]  02_exception_try-block.cpp
@@ -945,13 +936,11 @@
 │   │   ├── [2.3K]  12_exception_dynamic_exception.2.cpp
 │   │   ├── [1.3K]  13_exception_dynamic_exception.3.example.cpp
 │   │   ├── [8.2K]  temp
-│   │   ├── [1.3K]  temp.cpp
-│   │   └── [3.7K]  temp.o
+│   │   └── [1.3K]  temp.cpp
 │   ├── [4.0K]  09_statement
 │   │   ├── [2.2K]  01_statement_range-base-for.cpp
 │   │   ├── [8.0K]  temp
-│   │   ├── [2.2K]  temp.cpp
-│   │   └── [3.0K]  temp.o
+│   │   └── [2.2K]  temp.cpp
 │   └── [4.0K]  10_miscellaneous
 │       ├── [1.6K]  01_miscellaneous_asm.cpp
 │       ├── [1.2K]  02_miscellaneous_extend_namespace_std.cpp
@@ -963,16 +952,14 @@
 │       ├── [1.6K]  08_miscellaneous_copy_elision.cpp
 │       ├── [7.3K]  09_miscellaneous_empty_base_optimization
 │       ├── [1.2K]  09_miscellaneous_empty_base_optimization.cpp
-│       ├── [1.5K]  09_miscellaneous_empty_base_optimization.o
 │       ├── [1.7K]  10_miscellaneous_empty_base_optimization.2.cpp
 │       ├── [7.5K]  temp
-│       ├── [1.2K]  temp.cpp
-│       └── [1.8K]  temp.o
+│       └── [1.2K]  temp.cpp
 ├── [ 201]  LICENSE.md
 ├── [   0]  list_full_tree.txt
 ├── [1.3K]  list_tree.txt
 ├── [ 87K]  logo_codeblocks.png
-├── [4.5K]  README.md
+├── [ 855]  README.md
 ├── [   6]  size_of_the_whole_examples.txt
 ├── [4.0K]  String_Library
 │   ├── [4.0K]  null_terminated_string
@@ -1019,8 +1006,7 @@
 │   │   ├── [1.1K]  40_std::memmove.cpp
 │   │   ├── [2.7K]  41_std::strerror.cpp
 │   │   ├── [7.8K]  tempfree
-│   │   ├── [2.7K]  tempfree.cpp
-│   │   └── [2.3K]  tempfree.o
+│   │   └── [2.7K]  tempfree.cpp
 │   └── [4.0K]  std::basic_string
 │       ├── [2.3K]  01_string_constructor.cpp
 │       ├── [1.1K]  02_string_operator=.cpp
@@ -1072,11 +1058,9 @@
 │       ├── [2.0K]  47_std::to_string.cpp
 │       ├── [ 993]  48_std::literals::string_literals::operator""s.cpp
 │       ├── [ 761]  49_std::hash.cpp
-│       ├── [ 14K]  a.out
 │       ├── [7.9K]  TEMPFREE
 │       ├── [ 761]  TEMPFREE.cpp
-│       ├── [ 719]  TEMPFREE.h
-│       └── [2.3K]  TEMPFREE.o
-└── [ 167]  up.sh
+│       └── [ 719]  TEMPFREE.h
+└── [ 199]  up.sh
 
-41 directories, 1038 files
+41 directories, 1022 files

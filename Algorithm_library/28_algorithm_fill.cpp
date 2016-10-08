@@ -47,28 +47,19 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
-#include <iterator>
+#include <vector>
+#include <string>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
+/// fill                assigns a range of elements a certain value
+// Assigns the given value to the elements in the range [first,last).
+
 
 
 int main(){
-    const std::size_t N=5;
+    std::vector<int> vec{0,1,2,3,4,5,6,7,8,9};
+    std::fill(vec.begin(),vec.end(), -1);
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
-
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
-
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
-
+    std::cout<<"vec: ";     for(const int i : vec) std::cout<<i<<' ';
 }
 

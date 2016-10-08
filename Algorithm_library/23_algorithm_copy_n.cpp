@@ -47,28 +47,26 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
+#include <vector>
 #include <iterator>
+#include <numeric>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
 
+
+/// copy_n              copies a number of elements to a new location
+//
+// Copies exactly count value form the range beginning at first to the
+// range beginning at result, if count > 0.
+// Otherwise does nothing.
 
 int main(){
-    const std::size_t N=5;
+    std::string number("0123456789");
+    std::string str;    // be default has no member, so = null or nothing
+                        // so we need to use std::back_inserter
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
-
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
-
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
+    std::copy_n(number.begin(),5,std::back_inserter(str));
+    std::operator<<(std::cout,str);     // output is: 01234
 
 }
 

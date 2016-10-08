@@ -14,6 +14,7 @@ Defined in header <algorithm>
 Modifying sequence operation
     copy
     copy_if             copies a range of elements to a new location
+
     copy_n              copies a number of elements to a new location
     copy_backward       copies a range of elements in backward order
     move                moves a range of elements to a new location
@@ -47,28 +48,50 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
+#include <vector>
 #include <iterator>
+#include <numeric>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
 
+
+/// copy
+/// copy_if             copies a range of elements to a new location
+// Copies the elements in the range, defined by [first, last) to
+// another range beginning at d_first. Something like this:
+// std::copy ( input first, input last, output first)
+//
+//
+// Note:
+// When copying overlapping range, std::copy is appropriate when copying
+// to the left (beginning of the destination range is outside the source range)
+// while std::copy_backward is appropriate when copying to the right (end of the
+// destination range is outside the source range ).
 
 int main(){
-    const std::size_t N=5;
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::vector<int> from_vector(10);
+    std::iota(from_vector.begin(),from_vector.end(),0);     // puts 0 to 9 into the from_vector
+    for ( const int t : from_vector)    std::cout<<t<<' ';
+    std::cout<<std::endl;
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::vector<int> to_vector;
+    std::copy(from_vector.begin(),from_vector.end(),std::back_inserter(to_vector));
+    // The std::back_inserter is a member of iterator library which put the given value
+    // at the end of a container. Because to_vector is empty, back_inserter
+    // put the first value at the first and the second at the second and so on.
+    // It is a convenience function template that constructs a std::back_insert_iterator
 
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
+    // other alternatively
+    // std::vector<int> to_vector(from_vector.size());
+    // std::copy (from_vector.being(), from_vector.end(), to_vector.begin());
+
+    // either was is equivalent to
+    // std::vector<int> to_vector = from_vector;
+
+    std::cout<<"to_vector containers: ";
+    std::copy(to_vector.begin(),to_vector.end(),std::ostream_iterator<int>(std::cout," "));
+
 
 }
 

@@ -47,28 +47,39 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
-#include <iterator>
+#include <vector>
+#include <list>
+#include <chrono>
+#include <thread>
 
 
-///     generate_n          saves the result of N applications of a function
-// Assigns values, generate by given function object g, ( see implementation in the main site)
-// to the first count elements in the range beginning at first , if count > 0.
-// Does nothing otherwise.
 
+
+/// move                moves a range of elements to a new location
+//  Moves the elements in the range [first, last) to another range
+// beginning at first. After this operation the elements in the
+// moved-from range will still contain valid of the appropriate type,
+// but no necessary the same value as before the move.
+//
+// return value:
+// output iterator to the elements past the last elements moved
+// ( d_first + (last - first ))
+
+void f (int n){
+    std::this_thread::sleep_for(std::chrono::seconds(n));
+    std::cout<<"thread "<<n<<" ended."<<std::endl;
+}
 
 int main(){
-    const std::size_t N=5;
+    std::vector<std::thread> v;
+    v.emplace_back(f, 1);
+    v.emplace_back(f, 2);
+    v.emplace_back(f, 3);
 
-    int arr[N]{0};
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
+    std::list<std::thread> l;
+    // copy() would not compile, because std::thread is non-copyable
 
-    std::generate_n(arr,N-1,std::rand);     // using the C function rand()
-    std::cout<<"\narr:\t";      for(const int i: arr) std::cout<<i<<' ';
-
-    // print using std::copy and std::ostream_iterator
-    std::cout<<"\narr\t";
-    std::copy(arr,arr+N, std::ostream_iterator<int>(std::cout," "));
-
+    std::move(v.begin(),v.end(), std::back_inserter(l));
+    for (std::thread& t : l) t.join();
 }
 
