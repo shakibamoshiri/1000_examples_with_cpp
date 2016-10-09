@@ -49,7 +49,7 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <iterator>
+#include <vector>
 #include <string>
 #include <array>
 
@@ -68,13 +68,15 @@ int main(){
 
     std::array<int, 10> arr{1,2,4,6,7,2,3,5,6,1};
 
-    std::replace_copy_if(arr.begin(),                               // beginning of arr
-                      arr.end(),                                    // ending of arr
-                      std::ostream_iterator<int>(std::cout," "),    // only send to STOUT
-                      [](int i){return i==1;},                      // old_value, same as the 2 previous one, but with a lambda expression
-                      1000);                                        // new_value
+    std::vector<int> tmp;
 
+    std::replace_copy_if(arr.begin(),               // beginning of arr
+                      arr.end(),                    // ending of arr
+                      std::back_inserter(tmp),      // push to empty container
+                      [](int i){return i==1;},      // old_value, same as the previous one, but with a lambda expression
+                      1000);                        // new_value
 
+    for (const short i : tmp) std::cout<<i<<' ';
 
 
 

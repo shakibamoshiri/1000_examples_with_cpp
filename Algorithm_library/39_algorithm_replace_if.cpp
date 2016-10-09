@@ -27,12 +27,11 @@ Modifying sequence operation
     remove_if           removes elements satisfying specific criteria
     remove_copy
     remove_copy_if      copies a range of elements omitting those that satisfy specific criteria
+
     replace
     replace_if          replaces all value satisfying specific criteria with another value
-
     replace_copy
     replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-
     swap                swaps the value of two objects
     swap_range          swaps the two range of elements
     iter_swap           swaps the elements pointed to by two iterator
@@ -49,36 +48,39 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <iterator>
+#include <cstdlib>
 #include <string>
 #include <array>
+#include <ctime>
+/// replace
+/// replace_if          replaces all value satisfying specific criteria with another value
+// Replaces all elements satisfied criteria whit a new_value in the range
+// [first, last).
+// The replace version, replaces all elements that are equal to old_value
+// and the replace_if version, replaces elements for which predicate
+// return true.
 
-
-/// replace_copy
-/// replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-// Same as replace but not change the original containers
-// The first version, replaces the elements that are equal to old_value
-// and the second version, replaces elements for which predicate p return true.
-// The source and destination ranges cannot overlap.
-
-
-
-
+// note:
+// More than once run the program, because of rand number filing
 int main(){
 
-    std::array<int, 10> arr{1,2,4,6,7,2,3,5,6,1};
+    std::srand(std::time(0));   // helps rand function
 
-    std::replace_copy_if(arr.begin(),                               // beginning of arr
-                      arr.end(),                                    // ending of arr
-                      std::ostream_iterator<int>(std::cout," "),    // only send to STOUT
-                      [](int i){return i==1;},                      // old_value, same as the 2 previous one, but with a lambda expression
-                      1000);                                        // new_value
+    std::array<int, 10> arr;
+    for ( int& i : arr) i = (1+std::rand()%9);  // fill with random number form 1 to 9
 
+    std::cout<<"arr:\t";    for ( int i : arr) std::cout<<i<<' ';
 
+    // each 5 number replaces with 500
 
+    // this replacing is same as the previous replacing ( see file: 38_algorithm_replace.2.cpp)
+    // but with using replace_if
+    std::replace_if(arr.begin(),
+                    arr.end(),
+                    [](int& i){ return i%5==0;},    // predicate function
+                    500);                           // the new_value for replacing
 
-
-
+    std::cout<<"\narr:\t";  for ( int i : arr) std::cout<<i<<' ';
 }
 
 

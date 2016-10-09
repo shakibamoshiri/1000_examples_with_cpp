@@ -25,14 +25,13 @@ Modifying sequence operation
     generate_n          saves the result of N applications of a function
     remove
     remove_if           removes elements satisfying specific criteria
+
     remove_copy
     remove_copy_if      copies a range of elements omitting those that satisfy specific criteria
     replace
     replace_if          replaces all value satisfying specific criteria with another value
-
     replace_copy
     replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-
     swap                swaps the value of two objects
     swap_range          swaps the two range of elements
     iter_swap           swaps the elements pointed to by two iterator
@@ -49,50 +48,46 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <iterator>
+#include <cstdlib>
 #include <string>
-#include <array>
+#include <iterator> // need for ostream_iterator
 
-
-/// replace_copy
-/// replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-// Same as replace but not change the original containers
-// The first version, replaces the elements that are equal to old_value
-// and the second version, replaces elements for which predicate p return true.
-// The source and destination ranges cannot overlap.
+/// remove_copy
+/// remove_copy_if      copies a range of elements omitting those that satisfy specific criteria
+// Copies elements form the range [first, last), to another range beginning
+// at the d_first (see implementation in the main site) omitting the elements
+// which satisfy specific criteria. ( omit: it means: leave out, not include something and someone)
+//
+// The remove_copy version, ignore the elements that are equal to value
+// the remove_copy_if version, ignores the elements for which predicate p
+// return true.
+// Source and destination ranges cannot overlap.
 
 
 
 
 int main(){
+    std::string str("Text with some    spaces");
+    std::cout<<"str:\t"<<str<<std::endl;
 
-    std::array<int, 10> arr{1,2,4,6,7,2,3,5,6,1};
+    std::string rem;
 
-    std::replace_copy_if(arr.begin(),                               // beginning of arr
-                      arr.end(),                                    // ending of arr
-                      std::ostream_iterator<int>(std::cout," "),    // only send to STOUT
-                      [](int i){return i==1;},                      // old_value, same as the 2 previous one, but with a lambda expression
-                      1000);                                        // new_value
+    std::remove_copy(str.begin(), str.end(), std::back_inserter(rem), ' ');
+    std::cout<<"calls the std::remove_copy()"<<std::endl;
+    std::cout<<"str:\t"<<str<<std::endl;
+    std::cout<<"rem\t"<<rem<<std::endl;
+    // As you can see it copy the result of removing into rem string
+    // So you can put it to STOUT
 
+    // error, because:
+    // basic_ostream(const basic_ostream&) = delete;
+    // in the implementation
+    //
+    // std::remove_copy(str.begin(), str.end(), std::cout,' ');
 
-
-
-
+    // but it is correct with ostream_iterator
+    // with #include <iterator> library.
+    std::remove_copy(str.begin(), str.end(), std::ostream_iterator<char>(std::cout),' ');
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

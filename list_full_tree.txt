@@ -1,5 +1,5 @@
 .
-├── [   4]  930_c++_file_are_here_now
+├── [   4]  938_c++_file_are_here_now
 ├── [4.0K]  Algorithm_library
 │   ├── [6.8K]  00_brife_contents_of_algorithm_library.cpp
 │   ├── [3.9K]  01_algorithm_all_of.none_of.any_of.cpp
@@ -35,9 +35,19 @@
 │   ├── [3.8K]  31_algorithm_transform.2.cpp
 │   ├── [3.5K]  32_algorithm_generate.cpp
 │   ├── [3.2K]  33_algorithm_generate_n.cpp
-│   ├── [7.7K]  temp
-│   ├── [3.2K]  temp.cpp
-│   └── [2.4K]  temp.o
+│   ├── [3.4K]  34_algorithm_remove_and_remove_if.cpp
+│   ├── [3.9K]  35_algorithm_remove_copy.cpp
+│   ├── [3.5K]  36_algorithm_remove_copy_if.cpp
+│   ├── [3.3K]  37_algorithm_replace.cpp
+│   ├── [3.3K]  38_algorithm_replace.2.cpp
+│   ├── [3.6K]  39_algorithm_replace_if.cpp
+│   ├── [3.5K]  40_algorithm_replace_if.2.cpp
+│   ├── [3.3K]  41_algorithm_replace_copy.cpp
+│   ├── [3.4K]  42_algorithm_replace_copy_if.cpp
+│   ├── [3.4K]  43_algorithm_replace_copy_if.2.cpp
+│   ├── [7.6K]  temp
+│   ├── [3.4K]  temp.cpp
+│   └── [2.0K]  temp.o
 ├── [4.0K]  Container
 │   ├── [4.0K]  01_std::array
 │   │   ├── [ 997]  00_std::array_initialization.cpp
@@ -1063,4 +1073,4 @@
 │       └── [ 719]  TEMPFREE.h
 └── [ 199]  up.sh
 
-41 directories, 1022 files
+41 directories, 1032 files

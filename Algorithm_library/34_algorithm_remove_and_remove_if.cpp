@@ -29,10 +29,8 @@ Modifying sequence operation
     remove_copy_if      copies a range of elements omitting those that satisfy specific criteria
     replace
     replace_if          replaces all value satisfying specific criteria with another value
-
     replace_copy
     replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-
     swap                swaps the value of two objects
     swap_range          swaps the two range of elements
     iter_swap           swaps the elements pointed to by two iterator
@@ -49,50 +47,32 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <iterator>
+#include <cstdlib>
 #include <string>
-#include <array>
 
 
-/// replace_copy
-/// replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-// Same as replace but not change the original containers
-// The first version, replaces the elements that are equal to old_value
-// and the second version, replaces elements for which predicate p return true.
-// The source and destination ranges cannot overlap.
-
-
-
+///     remove
+///     remove_if           removes elements satisfying specific criteria
+// Removes all satisfying specific criteria from the range [first, last)
+// and returns a past-the-end iterator for the new end of the range.
+// the remove version, removes all elements that are equal to value,
+// the remove_if version, removes all elements for which predicate
+// p return true.
 
 int main(){
+    std::string str("Text with some    spaces");
+    std::cout<<str<<std::endl;
 
-    std::array<int, 10> arr{1,2,4,6,7,2,3,5,6,1};
+    str.erase(std::remove(str.begin(),str.end(),' '),str.end());
+    std::cout<<str<<std::endl;
 
-    std::replace_copy_if(arr.begin(),                               // beginning of arr
-                      arr.end(),                                    // ending of arr
-                      std::ostream_iterator<int>(std::cout," "),    // only send to STOUT
-                      [](int i){return i==1;},                      // old_value, same as the 2 previous one, but with a lambda expression
-                      1000);                                        // new_value
+    std::string str2("Text\n with\tsome \t whitespaces");
+    std::cout<<str2<<std::endl;
 
+    str2.erase(std::remove_if(str2.begin(), str2.end(),[](char c){return std::isspace(c);}),    str2.end());
+    // the first argument of erase is: std::remove_if(str2.begin(), str2.end(),[](char c){return std::isspace(c);})
+    // the second is:                  str2.end()
 
-
-
-
-
+    std::cout<<str2<<std::endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

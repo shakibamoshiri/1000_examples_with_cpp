@@ -27,12 +27,11 @@ Modifying sequence operation
     remove_if           removes elements satisfying specific criteria
     remove_copy
     remove_copy_if      copies a range of elements omitting those that satisfy specific criteria
+
     replace
     replace_if          replaces all value satisfying specific criteria with another value
-
     replace_copy
     replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-
     swap                swaps the value of two objects
     swap_range          swaps the two range of elements
     iter_swap           swaps the elements pointed to by two iterator
@@ -49,50 +48,28 @@ Modifying sequence operation
 
 #include <iostream>
 #include <algorithm>
-#include <iterator>
+#include <cstdlib>
 #include <string>
-#include <array>
+#include <iterator> // need for ostream_iterator
 
-
-/// replace_copy
-/// replace_copy_if     copies a range, replacing elements satisfying specific criteria with another value
-// Same as replace but not change the original containers
-// The first version, replaces the elements that are equal to old_value
-// and the second version, replaces elements for which predicate p return true.
-// The source and destination ranges cannot overlap.
-
-
+/// replace
+/// replace_if          replaces all value satisfying specific criteria with another value
+// Replaces all elements satisfied criteria whit a new_value in the range
+// [first, last).
+// The replace version, replaces all elements that are equal to old_value
+// and the replace_if version, replaces elements for which predicate
+// return true.
 
 
 int main(){
+    std::string str("Text with some    spaces");
+    std::cout<<"str:\t"<<str<<std::endl;
 
-    std::array<int, 10> arr{1,2,4,6,7,2,3,5,6,1};
+    // replacing all space with underline:
+    std::replace(str.begin(),   // beginning of the string
+                 str.end(),     // ending of the string
+                 ' ',           // the old_value, I choose space
+                 '_');          // the new_value, I choose underline
 
-    std::replace_copy_if(arr.begin(),                               // beginning of arr
-                      arr.end(),                                    // ending of arr
-                      std::ostream_iterator<int>(std::cout," "),    // only send to STOUT
-                      [](int i){return i==1;},                      // old_value, same as the 2 previous one, but with a lambda expression
-                      1000);                                        // new_value
-
-
-
-
-
-
+    std::cout<<"str:\t"<<str<<std::endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
