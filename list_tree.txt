@@ -1,14 +1,14 @@
 .
 ├── Algorithm_library
 ├── Container
-│   ├── 01_std::array
-│   ├── 02_std::deque
-│   ├── 03_std::vector
-│   ├── 04_std::list
-│   ├── 05_std::forward_list
-│   ├── 06_std::set
-│   ├── 07_std::multiset
-│   └── 08_std::map
+│   ├── 01_std_array
+│   ├── 02_std_deque
+│   ├── 03_std_vector
+│   ├── 04_std_list
+│   ├── 05_std_forward_list
+│   ├── 06_std_set
+│   ├── 07_std_multiset
+│   └── 08_std_map
 ├── Inout_Output_Library
 │   ├── 03_basic_streambuf
 │   │   └── protected_member
@@ -39,6 +39,6 @@
 │   └── 10_miscellaneous
 └── String_Library
     ├── null_terminated_string
-    └── std::basic_string
+    └── std_basic_string
 
 41 directories
