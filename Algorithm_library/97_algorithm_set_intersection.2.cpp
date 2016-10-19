@@ -45,19 +45,26 @@ Set operation ( or sorted range )
 
 
 int main(){
-    // using a readable form
-    std::vector<int> one {1,2,3,4,5,6,7,8,};
-    std::vector<int> two {        5,  7,  9,10};
-    // pay attention to:  _,_,_,_,5,_,7,_,_,_
-    // only 5 and 7 are common
+    std::vector<int> one{0,4,1,3,4,5,6,7,7,9};
+    std::vector<int> two{2,4,6,8};
 
-    std::set_intersection(one.begin(),
-                          one.end(),
-                          two.begin(),
-                          two.end(),
-                          std::ostream_iterator<int>(std::cout<<"The output:\t"," "),
-                          // using a lambda expression
-                          [](int a,int b){return a!=b;}); // the output 5 7
+
+    std::vector<int> out;
+    bool (*compFunc)(int,int)=[](int a,int b){return a==b;};        // if ( !comp(*first2, first1) )
+                                                                    // if not 0 == 2 => true, so put 0 to output
+                                                                    // if not 4 == 4 => false, ++first1
+                                                                    // if not 1 == 6 => true, so put 1 to output
+                                                                    // if not 3 == 8 => true, so out 3 to output
+                                                                    // if not 4 = nothing => true, so put 4 to output
+                                                                    // the output will 0 1 3 4
+
+    std::set_intersection(one.begin(),one.end(),    // input one
+                        two.begin(),two.end(),      // input two
+                        std::back_inserter(out),    // output       // for more detail about set::back_inserter, see iterator library
+                        compFunc);
+
+    std::cout<<"The common values are:\t";
+    for(const int i:out) std::cout<<i<<' ';
 }
 
 

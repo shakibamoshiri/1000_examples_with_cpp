@@ -22,11 +22,12 @@ Set operation ( or sorted range )
     set_union           computes the union of two sets
 
 */
-/// set_intersection
-// Constructs a sorted range beginning at d_first consisting of elements
-// that are found in both sorted range [first1,last1) and [first2,last2).
-// The first version expects both input ranges to be sorted with operator <
-// the second version expects them to be sorted with the given comparison function comp
+/// inplace_marge
+// Merges two consecutive sorted range [first,middle) and [middle, last)
+// into one sorted range [first,last). The order of equal elements is
+// guaranteed to be preserved.
+// The first version uses operator < to compare,
+// and the second, uses the given comparison function comp.
 
 #include <iostream>
 #include <algorithm>
@@ -42,22 +43,24 @@ Set operation ( or sorted range )
 // #include <cstdlib>
 // #include <ctime>
 
+template<typename Iter> void merge_sort (Iter first, Iter last){
+    if(last - first > 1){
+        Iter middle = first + ( last - first) / 2;
+        merge_sort(first, middle);
+        merge_sort(middle,last);
+        std::inplace_merge(first,middle,last);
+    }
+}
 
 
 int main(){
-    // using a readable form
-    std::vector<int> one {1,2,3,4,5,6,7,8,};
-    std::vector<int> two {        5,  7,  9,10};
-    // pay attention to:  _,_,_,_,5,_,7,_,_,_
-    // only 5 and 7 are common
+    std::vector<int> vec{-1,3,-4,-4,33,43,1,34,98,0,9,7,7,7,2};
 
-    std::set_intersection(one.begin(),
-                          one.end(),
-                          two.begin(),
-                          two.end(),
-                          std::ostream_iterator<int>(std::cout<<"The output:\t"," "),
-                          // using a lambda expression
-                          [](int a,int b){return a!=b;}); // the output 5 7
+    merge_sort(vec.begin(), vec.end());
+
+    std::vector<int>::iterator itbeg=std::begin(vec);
+    std::cout<<"The output:\t";
+    while(itbeg != std::end(vec))std::cout<<*itbeg++<<' ';
 }
 
 

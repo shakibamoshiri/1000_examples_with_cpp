@@ -33,7 +33,7 @@ Set operation ( or sorted range )
 #include <iomanip>
 
 #include <iterator>
-#include <functional> // std::greater<int>()
+// #include <functional> // std::greater<int>()
 #include <vector>
 // #include <string>
 
@@ -55,9 +55,7 @@ int main(){
                           one.end(),
                           two.begin(),
                           two.end(),
-                          std::ostream_iterator<int>(std::cout<<"The output:\t"," "),
-                          // using a lambda expression
-                          [](int a,int b){return a!=b;}); // the output 5 7
+                          std::ostream_iterator<int>(std::cout<<"The output:\t"," ")); // 5 7
 }
 
 

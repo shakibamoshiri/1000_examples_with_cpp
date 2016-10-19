@@ -45,19 +45,19 @@ Set operation ( or sorted range )
 
 
 int main(){
-    // using a readable form
-    std::vector<int> one {1,2,3,4,5,6,7,8,};
-    std::vector<int> two {        5,  7,  9,10};
-    // pay attention to:  _,_,_,_,5,_,7,_,_,_
-    // only 5 and 7 are common
+    std::vector<int> one{0,1,1,3,4,5,6,7,7,9};
+    std::vector<int> two{2,4,6,8};
+    // common elements are:     4 6
 
-    std::set_intersection(one.begin(),
-                          one.end(),
-                          two.begin(),
-                          two.end(),
-                          std::ostream_iterator<int>(std::cout<<"The output:\t"," "),
-                          // using a lambda expression
-                          [](int a,int b){return a!=b;}); // the output 5 7
+
+    std::vector<int> out;
+
+    std::set_intersection(one.begin(),one.end(),    // input one
+                        two.begin(),two.end(),      // input two
+                        std::back_inserter(out));   // output       // for more detail about set::back_inserter, see iterator library
+
+    std::cout<<"The common values are:\t";
+    for(const int i:out) std::cout<<i<<' ';
 }
 
 

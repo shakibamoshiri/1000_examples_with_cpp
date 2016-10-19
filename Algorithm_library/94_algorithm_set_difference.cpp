@@ -22,11 +22,12 @@ Set operation ( or sorted range )
     set_union           computes the union of two sets
 
 */
-/// set_intersection
-// Constructs a sorted range beginning at d_first consisting of elements
-// that are found in both sorted range [first1,last1) and [first2,last2).
-// The first version expects both input ranges to be sorted with operator <
-// the second version expects them to be sorted with the given comparison function comp
+/// set_difference
+// Copies the elements from the sorted range [first1,last1) which are not
+// found in the sorted range [first1,last1) to the range beginning at d_first.
+// The resulting range is also sorted. The first version expects both input
+// ranges to be sorted with operator <, the second version expects them to be
+// sorted with the given comparison function comp.
 
 #include <iostream>
 #include <algorithm>
@@ -45,19 +46,18 @@ Set operation ( or sorted range )
 
 
 int main(){
-    // using a readable form
-    std::vector<int> one {1,2,3,4,5,6,7,8,};
-    std::vector<int> two {        5,  7,  9,10};
-    // pay attention to:  _,_,_,_,5,_,7,_,_,_
-    // only 5 and 7 are common
+    std::vector<int> one{1,2,3,4,5,6,7,8,9};
+    std::vector<int> two{2,4,6,8};
+    // The difference is:	1 3 5 7 9
 
-    std::set_intersection(one.begin(),
-                          one.end(),
-                          two.begin(),
-                          two.end(),
-                          std::ostream_iterator<int>(std::cout<<"The output:\t"," "),
-                          // using a lambda expression
-                          [](int a,int b){return a!=b;}); // the output 5 7
+    std::vector<int> out;
+
+    std::set_difference(one.begin(),one.end(),
+                        two.begin(),two.end(),
+                        std::back_inserter(out)); // set the output to out vector
+
+    std::cout<<"The difference is:\t";
+    for(const int i:out) std::cout<<i<<' ';
 }
 
 
