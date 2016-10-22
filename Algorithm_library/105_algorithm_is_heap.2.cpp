@@ -21,15 +21,13 @@ Heap Operation
     sort_heap           turns a max heap into a range of elements sorted in according order
 
 */
-/// pop_heap
-// Swaps the value in the position first and the value in the position last-1
-// and make the subrange [first,last-1) into a max heap. The has the effect of
-// removing the first (largest) element from the heap defined by the range [first,last).
+/// is_heap
+// Checks if the elements in range [first,last) are a max heap
 // One version uses operator < to compare elements,
 // another uses the given comparison function comp.
 //
 // Return value:
-// None.
+// true if the range is max heap, false otherwise
 //
 // NOTE:
 // A max heap is a range of elements [first,last) the has the following properties:
@@ -41,39 +39,35 @@ Heap Operation
 #include <algorithm>
 #include <iomanip>
 
-// #include <iterator>
-// #include <functional> // std::greater<int>()
+#include <iterator>
+#include <functional> // std::greater<int>()
 #include <vector>
 // #include <string>
 
 // #include <array>
-// #include <random>
+#include <random>
 // #include <cstdlib>
 // #include <ctime>
-// #include <unistd.h>
+
+
+
 
 
 int main(){
-    std::vector<int> vec{3,2,1,0,9,99,999};
 
-    std::make_heap(vec.begin(),vec.end());    // moves the largest element in front of all
-    std::cout<<"After make_heap(vec):\t";
-    for(const int i:vec) std::cout<<i<<' ';
+    std::vector<int> v{3,1,4,1,5,9};
 
-    std::pop_heap(vec.begin(),vec.end());   // moves the largest element in back of all
-    std::cout<<"\nAfter pop_heap(vec)\t:";
-    for(const int i:vec)std::cout<<i<<' ';
+    std::cout<<"initially, v: ";
+    for(const int i: v)std::cout<<i<<' ';
+    std::cout<<'\n';
 
-    // now the last element is the largest element
-    const int largest=vec.back();
-    std::cout<<"\nThe largest element is vec:\t"<<largest<<'\n';
+    if(!std::is_heap(v.begin(),v.end())){
+        std::cout<<"making heap ... \n";
+        std::make_heap(v.begin(),v.end());
+    }
 
-    vec.pop_back();                         // now the last element is popped ( removed )
-
-    std::cout<<"After popping the last element:\t";
-    for(const int i:vec)std::cout<<i<<' ';
-
-
+    std::cout<<"After using make_heap(), v: \n";
+    for(const int i:v)std::cout<<i<<' ';
 
 
 return 0;}

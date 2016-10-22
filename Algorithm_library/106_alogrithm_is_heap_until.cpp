@@ -21,15 +21,14 @@ Heap Operation
     sort_heap           turns a max heap into a range of elements sorted in according order
 
 */
-/// pop_heap
-// Swaps the value in the position first and the value in the position last-1
-// and make the subrange [first,last-1) into a max heap. The has the effect of
-// removing the first (largest) element from the heap defined by the range [first,last).
+/// is_heap_until
+// Examines the range [first,last) and find the largest beginning at first which is a max heap.
 // One version uses operator < to compare elements,
 // another uses the given comparison function comp.
 //
 // Return value:
-// None.
+// The upper bound of the largest range beginning at first which is a max heap.
+// That is, the last iterator it for which range [first, it) is a max heap.
 //
 // NOTE:
 // A max heap is a range of elements [first,last) the has the following properties:
@@ -41,40 +40,42 @@ Heap Operation
 #include <algorithm>
 #include <iomanip>
 
-// #include <iterator>
-// #include <functional> // std::greater<int>()
+#include <iterator>
+#include <functional> // std::greater<int>()
 #include <vector>
 // #include <string>
 
 // #include <array>
-// #include <random>
+#include <random>
 // #include <cstdlib>
 // #include <ctime>
-// #include <unistd.h>
+
+
+
 
 
 int main(){
-    std::vector<int> vec{3,2,1,0,9,99,999};
 
-    std::make_heap(vec.begin(),vec.end());    // moves the largest element in front of all
-    std::cout<<"After make_heap(vec):\t";
-    for(const int i:vec) std::cout<<i<<' ';
+    std::vector<int> v{3,1,4,1,5,9};
 
-    std::pop_heap(vec.begin(),vec.end());   // moves the largest element in back of all
-    std::cout<<"\nAfter pop_heap(vec)\t:";
-    for(const int i:vec)std::cout<<i<<' ';
+    std::make_heap(v.begin(),v.end());
 
-    // now the last element is the largest element
-    const int largest=vec.back();
-    std::cout<<"\nThe largest element is vec:\t"<<largest<<'\n';
+    // probably mess up the heap
+    v.push_back(2);
+    v.push_back(6);
 
-    vec.pop_back();                         // now the last element is popped ( removed )
+    const int* heap_end = &(*std::is_heap_until(v.begin(),v.end()));
+    // Of course you can use auto keyword if you are confusing with int*
+    auto heap_end_2 = std::is_heap(v.begin(),v.end());
 
-    std::cout<<"After popping the last element:\t";
-    for(const int i:vec)std::cout<<i<<' ';
+    std::cout<<"All of v:\t";
+    for(const int i:v)std::cout<<i<<' ';
+    std::cout<<'\n';
 
-
-
+    std::cout<<"Only heap of v:\t";
+    const int* bv=&(*std::begin(v));
+    // Of course you can use for_range if you are confusing with this form of while that I have written
+    while(bv != heap_end)std::cout<<*bv++<<' ';
 
 return 0;}
 

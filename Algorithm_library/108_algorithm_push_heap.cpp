@@ -21,10 +21,8 @@ Heap Operation
     sort_heap           turns a max heap into a range of elements sorted in according order
 
 */
-/// pop_heap
-// Swaps the value in the position first and the value in the position last-1
-// and make the subrange [first,last-1) into a max heap. The has the effect of
-// removing the first (largest) element from the heap defined by the range [first,last).
+/// push_heap
+// Insert the element at the position last-1 into the max defined by the range [first,last-1).
 // One version uses operator < to compare elements,
 // another uses the given comparison function comp.
 //
@@ -53,26 +51,23 @@ Heap Operation
 // #include <unistd.h>
 
 
+
+
 int main(){
-    std::vector<int> vec{3,2,1,0,9,99,999};
 
-    std::make_heap(vec.begin(),vec.end());    // moves the largest element in front of all
-    std::cout<<"After make_heap(vec):\t";
-    for(const int i:vec) std::cout<<i<<' ';
+    std::vector<int> vec{3,5,9,1,0};
 
-    std::pop_heap(vec.begin(),vec.end());   // moves the largest element in back of all
-    std::cout<<"\nAfter pop_heap(vec)\t:";
+    // puts the largest element in front of all
+    std::make_heap(vec.begin(),vec.end());
+
+    // now vec contains: 9, ... and so on
+    vec.push_back(10);
+    // now vec contains: 9, ..., 10 in back of all
+
+    std::push_heap(vec.begin(),vec.end());
+    // now because 10 is the largest element, it goes to front of all
     for(const int i:vec)std::cout<<i<<' ';
-
-    // now the last element is the largest element
-    const int largest=vec.back();
-    std::cout<<"\nThe largest element is vec:\t"<<largest<<'\n';
-
-    vec.pop_back();                         // now the last element is popped ( removed )
-
-    std::cout<<"After popping the last element:\t";
-    for(const int i:vec)std::cout<<i<<' ';
-
+    // now vec contains: 10, ... and so on
 
 
 

@@ -21,15 +21,13 @@ Heap Operation
     sort_heap           turns a max heap into a range of elements sorted in according order
 
 */
-/// pop_heap
-// Swaps the value in the position first and the value in the position last-1
-// and make the subrange [first,last-1) into a max heap. The has the effect of
-// removing the first (largest) element from the heap defined by the range [first,last).
+/// is_heap
+// Checks if the elements in range [first,last) are a max heap
 // One version uses operator < to compare elements,
 // another uses the given comparison function comp.
 //
 // Return value:
-// None.
+// true if the range is max heap, false otherwise
 //
 // NOTE:
 // A max heap is a range of elements [first,last) the has the following properties:
@@ -41,39 +39,42 @@ Heap Operation
 #include <algorithm>
 #include <iomanip>
 
-// #include <iterator>
-// #include <functional> // std::greater<int>()
+#include <iterator>
+#include <functional> // std::greater<int>()
 #include <vector>
 // #include <string>
 
 // #include <array>
-// #include <random>
+#include <random>
 // #include <cstdlib>
 // #include <ctime>
-// #include <unistd.h>
+
+
+
 
 
 int main(){
-    std::vector<int> vec{3,2,1,0,9,99,999};
 
-    std::make_heap(vec.begin(),vec.end());    // moves the largest element in front of all
-    std::cout<<"After make_heap(vec):\t";
-    for(const int i:vec) std::cout<<i<<' ';
-
-    std::pop_heap(vec.begin(),vec.end());   // moves the largest element in back of all
-    std::cout<<"\nAfter pop_heap(vec)\t:";
-    for(const int i:vec)std::cout<<i<<' ';
-
-    // now the last element is the largest element
-    const int largest=vec.back();
-    std::cout<<"\nThe largest element is vec:\t"<<largest<<'\n';
-
-    vec.pop_back();                         // now the last element is popped ( removed )
-
-    std::cout<<"After popping the last element:\t";
-    for(const int i:vec)std::cout<<i<<' ';
+    std::vector<int> v1{0,2,34,3,4,9,10};
 
 
+    std::cout<<std::boolalpha<<std::is_heap(v1.begin(),v1.end())<<std::endl;
+    std::make_heap(v1.begin(),v1.end()); // push the largest element in the beginning
+    std::cout<<std::boolalpha<<std::is_heap(v1.begin(),v1.end())<<std::endl;
+
+    for(const int i:v1)std::cout<<i<<' ';
+    std::cout<<'\n';
+
+    std::vector<int> v2{0,2,34,3,4,9,10};
+
+    // Is v2 heap?
+    std::sort(v2.begin(),v2.end());
+    if(std::is_heap(v2.begin(),v2.end())) std::cout<<"After sorting, okay, v2 is heap\n";
+    else                                  std::cout<<"After sorting, no, v2 is not heap\n";
+
+    // Is v2 heap?
+    std::reverse(v2.begin(),v2.end()); // goes the largest element in the beginning
+    if(std::is_heap(v2.begin(),v2.end())) std::cout<<"After revering, okay, v2 is heap\n";
 
 
 return 0;}

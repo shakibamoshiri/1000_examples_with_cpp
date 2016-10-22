@@ -21,10 +21,8 @@ Heap Operation
     sort_heap           turns a max heap into a range of elements sorted in according order
 
 */
-/// pop_heap
-// Swaps the value in the position first and the value in the position last-1
-// and make the subrange [first,last-1) into a max heap. The has the effect of
-// removing the first (largest) element from the heap defined by the range [first,last).
+/// make_heap
+// Constructs a max heap in the range [first,last)
 // One version uses operator < to compare elements,
 // another uses the given comparison function comp.
 //
@@ -41,40 +39,44 @@ Heap Operation
 #include <algorithm>
 #include <iomanip>
 
-// #include <iterator>
-// #include <functional> // std::greater<int>()
+#include <iterator>
+#include <functional> // std::greater<int>()
 #include <vector>
 // #include <string>
 
 // #include <array>
-// #include <random>
+#include <random>
 // #include <cstdlib>
 // #include <ctime>
-// #include <unistd.h>
+
+
+
 
 
 int main(){
-    std::vector<int> vec{3,2,1,0,9,99,999};
 
-    std::make_heap(vec.begin(),vec.end());    // moves the largest element in front of all
-    std::cout<<"After make_heap(vec):\t";
-    for(const int i:vec) std::cout<<i<<' ';
+    std::vector<int> v{0,1,4,1,5,9,3};
 
-    std::pop_heap(vec.begin(),vec.end());   // moves the largest element in back of all
-    std::cout<<"\nAfter pop_heap(vec)\t:";
-    for(const int i:vec)std::cout<<i<<' ';
+    int front = v.front();  // 0 in the front
+    int back =  v.back();   // 2 in the back
+    std::cout<<"Beginning of the v: ["<<front<<"] and ending of the v: ["<<back<<"]\n";
 
-    // now the last element is the largest element
-    const int largest=vec.back();
-    std::cout<<"\nThe largest element is vec:\t"<<largest<<'\n';
+    std::make_heap(v.begin(),v.end()); // now, the largest element in the front
 
-    vec.pop_back();                         // now the last element is popped ( removed )
-
-    std::cout<<"After popping the last element:\t";
-    for(const int i:vec)std::cout<<i<<' ';
+    std::cout<<"After make_heap(v):\t";
+    for(auto i:v)std::cout<<i<<' ';
 
 
+    std::pop_heap(v.begin(),v.end()); // now, the largest element in the back
+    front = v.front();
+    back =  v.back();
+    std::cout<<"\nBeginning of the v: ["<<front<<"] and ending of the v: ["<<back<<']';
+    std::cout<<"\nAfter pop_heap(v):\t";
+    for(auto i:v)std::cout<<i<<' ';
+    v.pop_back();   // now, remove the 9 form the end of v
 
+    std::cout<<"\nAfter removing the largest element:\t";
+    for(auto i:v)std::cout<<i<<' ';
 
 return 0;}
 
