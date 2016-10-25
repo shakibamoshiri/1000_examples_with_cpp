@@ -1,5 +1,5 @@
 .
-├── [  25]  1004_examples_are_here_now
+├── [  25]  1024_examples_are_here_now
 ├── [ 12K]  Algorithm_library
 │   ├── [6.8K]  000_brife_contents_of_algorithm_library.cpp
 │   ├── [3.9K]  001_algorithm_all_of.none_of.any_of.cpp
@@ -111,7 +111,38 @@
 │   ├── [2.5K]  107_algorihtm_make_heap.cpp
 │   ├── [2.2K]  108_algorithm_push_heap.cpp
 │   ├── [2.6K]  109_algorithm_pop_heap.cpp
-│   ├── [2.6K]  temp.cpp
+│   ├── [2.1K]  110_algorithm_sort_heap.cpp
+│   ├── [2.4K]  111_algorithm_max.cpp
+│   ├── [2.7K]  112_algorithm_max_element.cpp
+│   ├── [2.6K]  113_algorithm_max_element.2.cpp
+│   ├── [2.2K]  114_algorithm_min.cpp
+│   ├── [2.4K]  115_algorithm_min_element.cpp
+│   ├── [2.5K]  116_algorithm_minmax.cpp
+│   ├── [2.3K]  117_algorithm_minmax.2.cpp
+│   ├── [2.6K]  118_algorithm_minmax.3.note.cpp
+│   ├── [4.4K]  119_algorithm_minmax_element.cpp
+│   ├── [3.4K]  120_algorithm_lexicographical_compare.cpp
+│   ├── [2.8K]  121_algorithm_is_permutation.cpp
+│   ├── [2.8K]  122_algorithm_is_permutation.2.cpp
+│   ├── [2.4K]  123_algorithm_is_permutation.3.cpp
+│   ├── [2.7K]  124_algorithm_next_permutation.cpp
+│   ├── [2.9K]  125_algorithm_prev_permutation.cpp
+│   ├── [2.1K]  126_algorithm_iota.cpp
+│   ├── [2.5K]  127_algorithm_iota.2.cpp
+│   ├── [2.1K]  128_algorithm_accumulate.cpp
+│   ├── [2.2K]  129_algorithm_accumulate.2.cpp
+│   ├── [2.4K]  130_algorithm_accumulate.3.cpp
+│   ├── [2.6K]  131_algorithm_accumulate.3.cpp
+│   ├── [2.8K]  132_algorithm_accumulate.4.note.cpp
+│   ├── [2.4K]  133_algorithm_inner_product.cpp
+│   ├── [2.3K]  134_algorithm_adjacent_difference.cpp
+│   ├── [2.1K]  135_algorithm_adjacent_difference.2.cpp
+│   ├── [2.4K]  136_algorithm_partial_sum.cpp
+│   ├── [2.2K]  137_algorithm_qsort_C_library.cpp
+│   ├── [3.0K]  138_algorithm_bsearch_C_library.cpp
+│   ├── [7.8K]  temp
+│   ├── [3.0K]  temp.cpp
+│   ├── [2.8K]  temp.o
 │   └── [1.2K]  vocabulray.txt
 ├── [4.0K]  Container
 │   ├── [4.0K]  01_std_array
@@ -319,7 +350,7 @@
 │       ├── [7.5K]  useful
 │       └── [ 194]  useful.cpp
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 67K]  full_list_in_order.txt
+├── [ 69K]  full_list_in_order.txt
 ├── [4.0K]  Inout_Output_Library
 │   ├── [4.0K]  03_basic_streambuf
 │   │   ├── [1.1K]  00_std_basic_streambuf_destrucotr.cpp
@@ -1139,4 +1170,4 @@
 │       └── [ 719]  TEMPFREE.h
 └── [ 401]  up.sh
 
-41 directories, 1098 files
+41 directories, 1129 files
