@@ -1,0 +1,12 @@
+
+template<class T,std::size_t N> std::size_t size(const T (&arr)[N]){
+    return N-1;
+}
+
+template<class T> std::size_t size(const T* &arr){
+    return strlen(arr);
+}
+
+template<class T> std::size_t size(const std::initializer_list<T> list){
+    return list.size();
+}

@@ -9,6 +9,7 @@
 │   ├── 06_std_set
 │   ├── 07_std_multiset
 │   └── 08_std_map
+├── helpful
 ├── Inout_Output_Library
 │   ├── 03_basic_streambuf
 │   │   └── protected_member
@@ -26,6 +27,7 @@
 │   ├── basic_ios
 │   ├── I_O_manipulators
 │   └── ios_base
+├── Iterator_Library
 ├── Language
 │   ├── 01_preprocessor
 │   ├── 02_expression
@@ -37,8 +39,9 @@
 │   ├── 08_exception
 │   ├── 09_statement
 │   └── 10_miscellaneous
+├── Regex_Library
 └── String_Library
     ├── null_terminated_string
     └── std_basic_string
 
-41 directories
+44 directories

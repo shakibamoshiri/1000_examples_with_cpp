@@ -1,5 +1,5 @@
 .
-├── [  25]  1024_examples_are_here_now
+├── [  25]  1033_examples_are_here_now
 ├── [ 12K]  Algorithm_library
 │   ├── [6.8K]  000_brife_contents_of_algorithm_library.cpp
 │   ├── [3.9K]  001_algorithm_all_of.none_of.any_of.cpp
@@ -351,6 +351,9 @@
 │       └── [ 194]  useful.cpp
 ├── [ 150]  find_numbers_of_exmples.txt
 ├── [ 69K]  full_list_in_order.txt
+├── [4.0K]  helpful
+│   ├── [ 752]  print_container
+│   └── [ 266]  size
 ├── [4.0K]  Inout_Output_Library
 │   ├── [4.0K]  03_basic_streambuf
 │   │   ├── [1.1K]  00_std_basic_streambuf_destrucotr.cpp
@@ -650,6 +653,67 @@
 │       ├── [ 455]  22_std_ios_base_event_callback.cpp
 │       ├── [7.6K]  TEMPFREE
 │       └── [1.4K]  TEMPFREE.cpp
+├── [4.0K]  Iterator_Library
+│   ├── [2.7K]  01_iterator_iterator.tags.cpp
+│   ├── [2.7K]  02_iterator_iterator.tags.alias.cpp
+│   ├── [3.1K]  03_iterator_iterator.tags.3.cpp
+│   ├── [3.3K]  04_iterator_reverse_iterator.cpp
+│   ├── [3.1K]  05_iterator_reverse_iterator.2.cpp
+│   ├── [3.1K]  06_iterator_reverse_iterator.3.cpp
+│   ├── [3.1K]  07_iterator_reverse_iterator.4.cpp
+│   ├── [3.0K]  08_iterator_reverse_iterator.5.cpp
+│   ├── [2.3K]  09_iterator_make_reverse_iterator.cpp
+│   ├── [2.4K]  10_iterator_make_reverse_iterator.2.cpp
+│   ├── [2.2K]  11_iterator_make_reverse_iterator.3.cpp
+│   ├── [2.6K]  12_iterator_move_iterator.cpp
+│   ├── [2.6K]  13_iterator_make_move_iterator.cpp
+│   ├── [2.9K]  14_iterator_make_move_iterator.NOTE.cpp
+│   ├── [2.2K]  15_iterator_back_insert_iterator.cpp
+│   ├── [2.4K]  16_iterator_back_insert_iterator.2.cpp
+│   ├── [2.0K]  17_iterator_back_inserter.cpp
+│   ├── [2.1K]  18_iterator_back_inserter.OBFUSCATE.CODE.C++.cpp
+│   ├── [2.3K]  19_iterator_front_insert_iterator.cpp
+│   ├── [2.3K]  20_iterator_front_insert_iterator.2.cpp
+│   ├── [2.5K]  21_iterator_front_insert_iterator.3.cpp
+│   ├── [2.5K]  22_iterator_front_inserter.cpp
+│   ├── [2.6K]  23_iterator_insert_iterator.cpp
+│   ├── [2.3K]  24_iterator_insert_iterator.2.cpp
+│   ├── [2.4K]  25_iterator_istream_iterator.cpp
+│   ├── [2.4K]  26_iterator_istream_iterator.2.NOTE.cpp
+│   ├── [2.0K]  27_iterator_istream_iterator.3..cpp
+│   ├── [2.2K]  28_iterator_ostream_iterator.cpp
+│   ├── [2.2K]  29_iterator_isterambuf_iterator.cpp
+│   ├── [2.3K]  30_iterator_isterambuf_iterator.2.cpp
+│   ├── [2.0K]  31_iterator_ostreambuf_iterator.cpp
+│   ├── [1.5K]  32_iterator_advance.cpp
+│   ├── [1.6K]  33_iterator_dsitance.cpp
+│   ├── [1.7K]  34_iterator_next.cpp
+│   ├── [1.5K]  35_iterator_prev.cpp
+│   ├── [2.6K]  36_iterator_begin.cpp
+│   ├── [3.4K]  37_iterator_begin.2.cpp
+│   ├── [2.9K]  38_iterator_begin.3.array.C.type.cpp
+│   ├── [2.7K]  39_iterator_cbegin.cpp
+│   ├── [2.8K]  40_iterator_end.cpp
+│   ├── [2.9K]  41_iterator_end.2.array.C-type.cpp
+│   ├── [2.7K]  42_iterator_cend.NOTE.cpp
+│   ├── [2.3K]  43_iterator_rbegin.cpp
+│   ├── [2.5K]  44_iterator_crbegin.cpp
+│   ├── [2.9K]  45_iterator_rend.crend.cpp
+│   ├── [2.3K]  46_iterator_rend.crend.2.cpp
+│   ├── [3.2K]  47_iterator_rend.crend.3.NOTE.cpp
+│   ├── [2.4K]  48_iterator_rend.crend.4.cpp
+│   ├── [1.4K]  49_iterator_size.cpp
+│   ├── [1.9K]  50_iterator_size.2.cpp
+│   ├── [1.6K]  51_iterator_empty.cpp
+│   ├── [1.4K]  52_iterator_empty.2.cpp
+│   ├── [1.3K]  53_iterator_empty.3.cpp
+│   ├── [1.5K]  54_iterator_empty.cpp
+│   ├── [2.6K]  Iterator_LIbrary_New_Word.csv
+│   ├── [4.7K]  Iterator_Library_Summary.cpp
+│   ├── [ 499]  print_container
+│   ├── [7.7K]  temp
+│   ├── [1.2K]  temp.cpp
+│   └── [2.3K]  temp.o
 ├── [4.0K]  Language
 │   ├── [4.0K]  01_preprocessor
 │   │   ├── [1.2K]  01_preprocessor_if_ifdef_ifndef_else_elif_endif_if-defined.cpp
@@ -1064,9 +1128,14 @@
 │       └── [1.2K]  temp.cpp
 ├── [ 202]  LICENSE.md
 ├── [   0]  list_full_tree.txt
-├── [1.3K]  list_tree.txt
+├── [1.4K]  list_tree.txt
 ├── [ 87K]  logo_codeblocks.png
 ├── [ 855]  README.md
+├── [4.0K]  Regex_Library
+│   ├── [2.9K]  00_regex_summary.cpp
+│   ├── [118K]  temp
+│   ├── [ 820]  temp.cpp
+│   └── [209K]  temp.o
 ├── [   6]  size_of_the_whole_examples.txt
 ├── [4.0K]  String_Library
 │   ├── [4.0K]  null_terminated_string
@@ -1170,4 +1239,4 @@
 │       └── [ 719]  TEMPFREE.h
 └── [ 401]  up.sh
 
-41 directories, 1129 files
+44 directories, 1195 files

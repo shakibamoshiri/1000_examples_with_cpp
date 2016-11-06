@@ -1,0 +1,27 @@
+#include <vector>
+#include <list>
+#include <set>
+
+
+
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const std::vector<T>& vector){
+    for( const T t:vector)out<<t<<' ';
+    return out;
+}
+
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const std::list<T>& list){
+    for( const T t:list)out<<t<<' ';
+    return out;
+}
+
+
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const std::set<T>& set){
+    for( const T t:set)out<<t<<' ';
+    return out;
+}
+
+
+

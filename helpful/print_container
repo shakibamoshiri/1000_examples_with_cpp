@@ -1,0 +1,30 @@
+#include <vector>
+#include <list>
+#include <set>
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const std::vector<T>& vector){
+    for( const T t:vector)out<<t<<' ';
+    return out;
+}
+
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const std::list<T>& list){
+    for( const T t:list)out<<t<<' ';
+    return out;
+}
+
+
+template<typename T>
+std::ostream& operator<<(std::ostream& out,const std::set<T>& set){
+    for( const T t:set)out<<t<<' ';
+    return out;
+}
+
+// for array like int arr[4]
+// not using << as operator just use < (less than) because of operator overloading get ambiguous
+template<typename T,int N>
+std::ostream& operator<(std::ostream& out,T (&arr)[N]){
+	for (const T t:arr)out<<t<<' ';
+	return out;
+}
+
