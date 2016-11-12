@@ -23,6 +23,5 @@ You can see the major reference sites:
     > cplusplus.com  
     > msdn.microsoft.com  
 
-![alt text][logo]
 
-![logo]: https://github.com/k-five/1000_examples_with_cpp/blob/master/logo_codeblocks.png
+![Image of codeblock](https://github.com/k-five/1000_examples_with_cpp/blob/master/logo_codeblocks.png)
