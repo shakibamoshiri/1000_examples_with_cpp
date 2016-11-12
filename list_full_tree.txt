@@ -1,5 +1,5 @@
 .
-├── [  25]  1033_examples_are_here_now
+├── [  25]  1089_examples_are_here_now
 ├── [ 12K]  Algorithm_library
 │   ├── [6.8K]  000_brife_contents_of_algorithm_library.cpp
 │   ├── [3.9K]  001_algorithm_all_of.none_of.any_of.cpp
@@ -350,7 +350,7 @@
 │       ├── [7.5K]  useful
 │       └── [ 194]  useful.cpp
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 69K]  full_list_in_order.txt
+├── [ 72K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   └── [ 266]  size
@@ -1130,12 +1130,45 @@
 ├── [   0]  list_full_tree.txt
 ├── [1.4K]  list_tree.txt
 ├── [ 87K]  logo_codeblocks.png
-├── [ 855]  README.md
+├── [ 963]  README.md
 ├── [4.0K]  Regex_Library
 │   ├── [2.9K]  00_regex_summary.cpp
-│   ├── [118K]  temp
-│   ├── [ 820]  temp.cpp
-│   └── [209K]  temp.o
+│   ├── [ 679]  01_regex_main_class.this.section.has.no.example.cpp
+│   ├── [1.3K]  02_regex_regex_match.cpp
+│   ├── [1.9K]  03_regex_regex_match.2.cpp
+│   ├── [1.8K]  04_regex_regex_match.3.cpp
+│   ├── [1.5K]  05_regex_regex_sreach.cpp
+│   ├── [1.9K]  06_regex_regex_sreach.2.cpp
+│   ├── [2.2K]  07_regex_regex_sreach.3.cpp
+│   ├── [1.4K]  08_regex_regex_replace.cpp
+│   ├── [1.1K]  09_regex_regex_replace.2.cpp
+│   ├── [3.3K]  10_regex_regex_iterator.cpp
+│   ├── [1.8K]  11_regex_regex_token_iterator.cpp
+│   ├── [2.0K]  12_regex_regex_token_iterator.2.cpp
+│   ├── [1.0K]  13_regex_regex_error.cpp
+│   ├── [1.8K]  14_regex_regex_traits.constructor.cpp
+│   ├── [1.8K]  15_regex_regex_traits.length.cpp
+│   ├── [2.0K]  16_regex_regex_traits.translate.cpp
+│   ├── [2.1K]  17_regex_regex_traits.translate.2.cpp
+│   ├── [2.1K]  18_regex_regex_traits.translate.3.cpp
+│   ├── [1.9K]  19_regex_regex_traits.translate_nocase.cpp
+│   ├── [2.0K]  20_regex_regex_traits.translate_nocase.2.cpp
+│   ├── [2.2K]  21_regex_regex_traits.transform.NO.EXAMPLE.cpp
+│   ├── [2.2K]  22_regex_regex_traits.transform_primary.cpp
+│   ├── [3.8K]  23_regex_regex_traits.lookup_collatename.cpp
+│   ├── [5.2K]  24_regex_regex_traits.lookup_classname.cpp
+│   ├── [3.5K]  25_regex_regex_traits.isctype.cpp
+│   ├── [4.2K]  26_regex_regex_traits.value.cpp
+│   ├── [2.8K]  27_regex_regex_traits.imbue.NO.EXAMPLE.cpp
+│   ├── [2.8K]  28_regex_regex_traits.getloc.NO.EXAMPLE.cpp
+│   ├── [5.0K]  29_regex_regex_constants.syntax.option.type.cpp
+│   ├── [3.4K]  30_regex_regex_constants.match_flag_type.NO.EXAMPLE.cpp
+│   ├── [3.2K]  31_regex_regex_constants.error_type.cpp
+│   ├── [  95]  README.md
+│   ├── [  90]  README.md~
+│   ├── [139K]  temp
+│   ├── [3.2K]  temp.cpp
+│   └── [245K]  temp.o
 ├── [   6]  size_of_the_whole_examples.txt
 ├── [4.0K]  String_Library
 │   ├── [4.0K]  null_terminated_string
@@ -1239,4 +1272,4 @@
 │       └── [ 719]  TEMPFREE.h
 └── [ 401]  up.sh
 
-44 directories, 1195 files
+44 directories, 1228 files
