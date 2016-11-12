@@ -22,5 +22,58 @@ If you are confusing with my examples, I apologize to you.
 
 ![Image of codeblock](https://github.com/k-five/1000_examples_with_cpp/blob/master/logo_codeblocks.png)
 
-[[https://github.com/k-five/1000_examples_with_cpp/blob/master/logo_codeblocks.png|alt=octocat]]
 
+# how many way do you know for "hello world" in C++?
+```C++
+#include <iostream>
+#include <sstream>
+#define HW(...) std::cout<<"1:\t"<<#__VA_ARGS__<<std::endl;
+
+int main(){
+
+	HW(hello world!);
+
+	std::cout<<"2:\thello world!"<<std::endl;
+
+	std::operator<<(std::cout,"3:\thello world!")<<(std::endl);
+
+	endl(std::cout<<"4:\thello world!");
+
+	std::cout.put('5')
+	         .put(':')
+			 .put('\t')
+			 .put('h')
+			 .put('e')
+			 .put('l')
+			 .put('l')
+			 .put('o')
+			 .put(' ')
+			 .put('w')
+			 .put('o')
+			 .put('r')
+			 .put('l')
+			 .put('d')
+			 .put('!')
+			 .put('\n');
+
+	for(const char* hw("6:\thello world!\n");
+		*hw!='\0';
+		std::cout<<*hw++);
+
+	[]{std::cout<<"7:\thello world!\n";}();
+
+	std::istringstream("8:\thello world!\n")>>std::cout.rdbuf();
+}
+```
+
+**output**
+`
+1:	hello world!
+2:	hello world!
+3:	hello world!
+4:	hello world!
+5:	hello world!
+6:	hello world!
+7:	hello world!
+8:	hello world!
+`
