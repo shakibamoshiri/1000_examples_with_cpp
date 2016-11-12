@@ -82,9 +82,9 @@ int main(){
 
 # How about obfuscation a code?
 ```C++
-#include 	                 <iostream>
-#include                       	 <sstream>
-#define    		           HW(...)\
+#include                         <iostream>
+#include                          <sstream>
+#define                            HW(...)\
 std::cout<<"1:\t"<<#__VA_ARGS__<<std::endl;
 int main(){HW(hello world!);std::cout<<""""
 "2:\thello world!"<<std::endl;std::operator
