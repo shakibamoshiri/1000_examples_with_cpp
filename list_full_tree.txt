@@ -1,5 +1,5 @@
 .
-├── [  25]  1089_examples_are_here_now
+├── [  25]  1120_examples_are_here_now
 ├── [ 12K]  Algorithm_library
 │   ├── [6.8K]  000_brife_contents_of_algorithm_library.cpp
 │   ├── [3.9K]  001_algorithm_all_of.none_of.any_of.cpp
@@ -350,7 +350,7 @@
 │       ├── [7.5K]  useful
 │       └── [ 194]  useful.cpp
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 72K]  full_list_in_order.txt
+├── [ 74K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   └── [ 266]  size
@@ -1130,7 +1130,7 @@
 ├── [   0]  list_full_tree.txt
 ├── [1.4K]  list_tree.txt
 ├── [ 87K]  logo_codeblocks.png
-├── [ 963]  README.md
+├── [2.8K]  README.md
 ├── [4.0K]  Regex_Library
 │   ├── [2.9K]  00_regex_summary.cpp
 │   ├── [ 679]  01_regex_main_class.this.section.has.no.example.cpp
@@ -1270,6 +1270,81 @@
 │       ├── [7.9K]  TEMPFREE
 │       ├── [ 761]  TEMPFREE.cpp
 │       └── [ 719]  TEMPFREE.h
+├── [4.0K]  Type_Support
+│   ├── [1.6K]  01_type_support_size_t.cpp
+│   ├── [2.0K]  02_type_support_ptrdiff_t.cpp
+│   ├── [1.5K]  03_type_support_nullptr_t.cpp
+│   ├── [1.6K]  04_type_support_NULL_macro.cpp
+│   ├── [1.4K]  05_type_support_max_align_t.cpp
+│   ├── [1.8K]  06_type_support_offsetof_macro.function.cpp
+│   ├── [ 457]  07_type_support_fixed_width_integer_type_c++11.cpp
+│   ├── [3.9K]  08_type_support_class.cpp
+│   ├── [3.1K]  09_type_support_is_specialized.cpp
+│   ├── [3.1K]  10_type_support_is_signed.cpp
+│   ├── [2.7K]  11_type_support_the_rest_of_the_constants.hpp
+│   ├── [1.8K]  12_type_support_numeric_limits_function_min.cpp
+│   ├── [2.0K]  13_type_support_numeric_limits_function_lowest.cpp
+│   ├── [1.8K]  14_type_support_numeric_limits_function_max.cpp
+│   ├── [2.4K]  15_type_support_numeric_limits_function_max.2.cpp
+│   ├── [2.3K]  16_type_support_numeric_limits_function_epsilon.cpp
+│   ├── [1.9K]  17_type_support_numeric_limits_function_round_error.cpp
+│   ├── [   0]  17_ZER0_Tue Nov 15 19:37:22 2016
+│   ├── [1.8K]  18_type_support_numeric_limits_function_infinity.cpp
+│   ├── [2.3K]  19_type_support_numeric_limits_function_quiet_NaN.cpp
+│   ├── [2.5K]  20_type_support_numeric_limits_function_signaling_NaN.cpp
+│   ├── [1.8K]  21_type_support_numeric_limits_function_denorm_min.cpp
+│   ├── [2.9K]  22_type_support_type_info_operator==.cpp
+│   ├── [2.7K]  23_type_support_type_info_before.cpp
+│   ├── [3.6K]  24_type_support_type_info_hash_code.cpp
+│   ├── [3.0K]  25_type_support_type_info_name.cpp
+│   ├── [3.6K]  26_type_support_type_index.cpp
+│   ├── [1.5K]  27_type_support_bad_typeid.cpp
+│   ├── [1.5K]  28_type_support_bad_cast.cpp
+│   ├── [1.8K]  29_type_support_type_traits_is_void.cpp
+│   ├── [1.9K]  30_type_support_type_traits_is_null_pointer.cpp
+│   ├── [2.2K]  31_type_support_type_traits_is_integral.cpp
+│   ├── [2.0K]  32_type_support_type_traits_is_floating_point.cpp
+│   ├── [1.9K]  33_type_support_type_traits_is_array.cpp
+│   ├── [2.0K]  34_type_support_type_traits_is_array.2.cpp
+│   ├── [1.9K]  35_type_support_type_traits_is_enum.cpp
+│   ├── [2.0K]  36_type_support_type_traits_is_union.cpp
+│   ├── [2.0K]  37_type_support_type_traits_is_class.cpp
+│   ├── [2.0K]  38_type_support_type_traits_is_function.cpp
+│   ├── [2.3K]  39_type_support_type_traits_is_pointer.cpp
+│   ├── [2.2K]  40_type_support_type_traits_is_l-value_reference.cpp
+│   ├── [2.2K]  41_type_support_type_traits_is_r-value_reference.cpp
+│   ├── [2.2K]  42_type_support_type_traits_is_member_object_pointer.cpp
+│   ├── [2.2K]  43_type_support_type_traits_is_member_function_pointer.cpp
+│   ├── [2.0K]  44_type_support_type_traits_is_fundamental.cpp
+│   ├── [2.0K]  45_type_support_type_traits_is_arithmetic.cpp
+│   ├── [2.1K]  46_type_support_type_traits_is_arithmetic.2.cpp
+│   ├── [1.5K]  47_type_support_type_traits_is_scalar.cpp
+│   ├── [1.5K]  48_type_support_type_traits_is_object.cpp
+│   ├── [1.5K]  49_type_support_type_traits_is_compound.cpp
+│   ├── [1.8K]  50_type_support_type_traits_is_reference.cpp
+│   ├── [1.5K]  51_type_support_type_traits_is_member_pointer.cpp
+│   ├── [2.0K]  52_type_support_type_traits_is_const.cpp
+│   ├── [1.8K]  53_type_support_type_traits_is_volatile.cpp
+│   ├── [2.3K]  54_type_support_type_traits_is_triavial.cpp
+│   ├── [3.2K]  55_type_support_type_traits_is_triavial_copyable.cpp
+│   ├── [2.4K]  56_type_support_type_traits_is_standard_layout.cpp
+│   ├── [2.2K]  57_type_support_type_traits_is_POS.plain.old.data.cpp
+│   ├── [2.1K]  58_type_support_type_traits_is_literal_type.cpp
+│   ├── [2.3K]  59_type_support_type_traits_is_empty.cpp
+│   ├── [2.2K]  60_type_support_type_traits_is_polymorphic.cpp
+│   ├── [2.0K]  61_type_support_type_traits_is_final.cpp
+│   ├── [2.3K]  62_type_support_type_traits_is_abstract.cpp
+│   ├── [2.4K]  63_type_support_type_traits_is_signed.cpp
+│   ├── [2.3K]  64_type_support_type_traits_is_unsigned.cpp
+│   ├── [1.3K]  65_type_support_type_traits_is_alignment_of.cpp
+│   ├── [1000]  66_type_supprot_type_traits_is_rank.cpp
+│   ├── [1.4K]  67_type_supprot_type_traits_is_extent.cpp
+│   ├── [   0]  67_ZER0_Sat Nov 19 18:27:59 2016
+│   ├── [ 144]  README.md
+│   ├── [7.5K]  temp
+│   ├── [ 470]  temp.cpp
+│   ├── [2.0K]  temp.o
+│   └── [ 11K]  type_type_support_support_summary.txt
 └── [ 401]  up.sh
 
-44 directories, 1228 files
+45 directories, 1302 files

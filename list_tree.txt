@@ -40,8 +40,9 @@
 │   ├── 09_statement
 │   └── 10_miscellaneous
 ├── Regex_Library
-└── String_Library
-    ├── null_terminated_string
-    └── std_basic_string
+├── String_Library
+│   ├── null_terminated_string
+│   └── std_basic_string
+└── Type_Support
 
-44 directories
+45 directories
