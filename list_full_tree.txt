@@ -1,5 +1,5 @@
 .
-├── [  25]  1120_examples_are_here_now
+├── [  25]  1186_examples_are_here_now
 ├── [ 12K]  Algorithm_library
 │   ├── [6.8K]  000_brife_contents_of_algorithm_library.cpp
 │   ├── [3.9K]  001_algorithm_all_of.none_of.any_of.cpp
@@ -144,6 +144,7 @@
 │   ├── [3.0K]  temp.cpp
 │   ├── [2.8K]  temp.o
 │   └── [1.2K]  vocabulray.txt
+├── [167K]  codeblocks.png
 ├── [4.0K]  Container
 │   ├── [4.0K]  01_std_array
 │   │   ├── [ 997]  00_std_array_initialization.cpp
@@ -350,7 +351,7 @@
 │       ├── [7.5K]  useful
 │       └── [ 194]  useful.cpp
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 74K]  full_list_in_order.txt
+├── [ 78K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   └── [ 266]  size
@@ -1129,8 +1130,8 @@
 ├── [ 202]  LICENSE.md
 ├── [   0]  list_full_tree.txt
 ├── [1.4K]  list_tree.txt
-├── [ 87K]  logo_codeblocks.png
-├── [2.8K]  README.md
+├── [ 50K]  os.png
+├── [2.9K]  README.md
 ├── [4.0K]  Regex_Library
 │   ├── [2.9K]  00_regex_summary.cpp
 │   ├── [ 679]  01_regex_main_class.this.section.has.no.example.cpp
@@ -1270,7 +1271,7 @@
 │       ├── [7.9K]  TEMPFREE
 │       ├── [ 761]  TEMPFREE.cpp
 │       └── [ 719]  TEMPFREE.h
-├── [4.0K]  Type_Support
+├── [ 12K]  Type_Support
 │   ├── [1.6K]  01_type_support_size_t.cpp
 │   ├── [2.0K]  02_type_support_ptrdiff_t.cpp
 │   ├── [1.5K]  03_type_support_nullptr_t.cpp
@@ -1340,11 +1341,23 @@
 │   ├── [1000]  66_type_supprot_type_traits_is_rank.cpp
 │   ├── [1.4K]  67_type_supprot_type_traits_is_extent.cpp
 │   ├── [   0]  67_ZER0_Sat Nov 19 18:27:59 2016
+│   ├── [1.5K]  68_type_supprot_type_traits_is_same.cpp
+│   ├── [1.1K]  69_type_supprot_type_traits_is_base_of.cpp
+│   ├── [1.5K]  70_type_supprot_type_traits_is_convertible.cpp
+│   ├── [2.0K]  71_type_supprot_type_traits_remove_cv.cpp
+│   ├── [1.7K]  72_type_supprot_type_traits_add_cv.cpp
+│   ├── [1.8K]  73_type_supprot_type_traits_remove_reference.cpp
+│   ├── [1.9K]  74_type_supprot_type_traits_add_r-l-value_reference.cpp
+│   ├── [1.6K]  75_type_supprot_type_traits_and_remove_pointer.cpp
+│   ├── [1.6K]  76_type_supprot_type_traits_make_signed_unsigned.cpp
+│   ├── [2.5K]  77_type_supprot_type_traits_remove_extent.cpp
+│   ├── [1.9K]  78_type_supprot_type_traits_remove_all_extents.cpp
+│   ├── [2.9K]  79_type_supprot_type_traits_aligned_storage.cpp
 │   ├── [ 144]  README.md
-│   ├── [7.5K]  temp
-│   ├── [ 470]  temp.cpp
-│   ├── [2.0K]  temp.o
+│   ├── [8.5K]  temp
+│   ├── [1.7K]  temp.cpp
+│   ├── [4.3K]  temp.o
 │   └── [ 11K]  type_type_support_support_summary.txt
 └── [ 401]  up.sh
 
-45 directories, 1302 files
+45 directories, 1315 files
