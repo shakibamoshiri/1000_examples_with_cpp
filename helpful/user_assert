@@ -1,0 +1,3 @@
+#define okay std::cout << ""
+#define wrong(expr) std::cout << "ERROR in line: " << __LINE__ << " with expression: " << #expr << std::endl
+#define user_assert(expr)  ( (expr) ? okay : wrong(#expr) )

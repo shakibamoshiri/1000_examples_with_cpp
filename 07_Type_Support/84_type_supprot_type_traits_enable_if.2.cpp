@@ -17,22 +17,32 @@ Miscellaneous Transformations (in header <type_traits>
     > void_t                    void variadic alias template
 
 */
-/// std::aligned_union
-// template <std::size_t Len, class... Types> struct aligned_union;
+/// std::enable_if
+// template<bool B, class T = void> struct enable_if
 //
-// Provide the member typedef type, which is a POD type of size and
-// alignment suitable for use as uninitialized storage for an object
-// of any of the types listed in 'Types'. The size of the storage is at
-// least 'Len'. std::aligned_union also determines the strictest (largest)
-// alignment requirement amount all Types and makes it available as the
-// constant alignment_value.
-// If sizeof ... (Types) == 0 the behavior is undefined.
+// If B is true, std::enable_if has a public member typedef type, equal to T;
+// otherwise, there is no member type.
+//
+// This metafunction is a convenient way to leverage SFINAE to conditionally
+// remove function from overload resolution based on  type traits and to provide
+// separate function overloads and specifications for different type traits.
+// std::enable_if can be used as an additional function argument (not applicate to operator overload)
+// as a return type (not applicate to constructors and destructors ), or as a
+// class template of function template parameter.
+
 
 #include <iostream>
 #include <type_traits>
 #include <typeinfo>
-#include <string>
+
+
+int main(){
+
+    std::enable_if<true,int>::type t; // okay t is a int
+    std::cout << (typeid(t) == typeid(int) ? "okay" : "not" ) << '\n';
+
+    // std::enable_if<false, double>::type t; // ERROR there is no member type
 
 
 
-int main(){}
+}

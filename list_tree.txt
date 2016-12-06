@@ -1,16 +1,16 @@
 .
-├── Algorithm_library
-├── Container
-│   ├── 01_std_array
-│   ├── 02_std_deque
-│   ├── 03_std_vector
-│   ├── 04_std_list
-│   ├── 05_std_forward_list
-│   ├── 06_std_set
-│   ├── 07_std_multiset
-│   └── 08_std_map
-├── helpful
-├── Inout_Output_Library
+├── 00_Language
+│   ├── 01_preprocessor
+│   ├── 02_expression
+│   ├── 03_declaration
+│   ├── 04_initialization
+│   ├── 05_function
+│   ├── 06_classes
+│   ├── 07_template
+│   ├── 08_exception
+│   ├── 09_statement
+│   └── 10_miscellaneous
+├── 01_Inout_Output_Library
 │   ├── 03_basic_streambuf
 │   │   └── protected_member
 │   ├── 04_basic_istream
@@ -27,22 +27,26 @@
 │   ├── basic_ios
 │   ├── I_O_manipulators
 │   └── ios_base
-├── Iterator_Library
-├── Language
-│   ├── 01_preprocessor
-│   ├── 02_expression
-│   ├── 03_declaration
-│   ├── 04_initialization
-│   ├── 05_function
-│   ├── 06_classes
-│   ├── 07_template
-│   ├── 08_exception
-│   ├── 09_statement
-│   └── 10_miscellaneous
-├── Regex_Library
-├── String_Library
+├── 02_String_Library
 │   ├── null_terminated_string
 │   └── std_basic_string
-└── Type_Support
+├── 03_Container
+│   ├── 01_std_array
+│   ├── 02_std_deque
+│   ├── 03_std_vector
+│   ├── 04_std_list
+│   ├── 05_std_forward_list
+│   ├── 06_std_set
+│   ├── 07_std_multiset
+│   └── 08_std_map
+├── 04_Algorithm_library
+├── 05_Iterator_Library
+├── 06_Regex_Library
+├── 07_Type_Support
+├── 08_Dynamic_Memory_Management
+├── 09_Error_Handling
+├── 10_Initializer_List
+├── 11_Varisdic_Function
+└── helpful
 
-45 directories
+49 directories

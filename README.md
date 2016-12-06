@@ -21,9 +21,13 @@ If you are confusing with my examples, I apologize to you.
 
 
 compiler:
+
 ![my compiler](https://github.com/k-five/1000_examples_with_cpp/blob/master/codeblocks.png)
+
 operating system:
+
 ![my OS](https://github.com/k-five/1000_examples_with_cpp/blob/master/os.png)
+
 
 
 # how many way do you know for "hello world" in C++?
