@@ -1501,11 +1501,19 @@
 │   ├── [1.3K]  temp.cpp
 │   └── [2.0K]  temp.o
 ├── [4.0K]  11_Varisdic_Function
-│   └── [ 917]  temp.cpp
-├── [  25]  1295_examples_are_here_now
+│   ├── [1.7K]  01_varisdic_function_.cpp
+│   ├── [2.4K]  02_varisdic_function_va_start.cpp
+│   ├── [1.8K]  03_varisdic_function_va_arg.cpp
+│   ├── [2.0K]  04_varisdic_function_va_copy.cpp
+│   ├── [1.2K]  05_varisdic_function_va_end.c
+│   ├── [1.2K]  06_varisdic_function_va_list.c
+│   ├── [7.6K]  temp
+│   ├── [1.2K]  temp.cpp
+│   └── [2.0K]  temp.o
+├── [  25]  1317_examples_are_here_now
 ├── [167K]  codeblocks.png
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 92K]  full_list_in_order.txt
+├── [ 94K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   ├── [ 266]  size
@@ -1518,4 +1526,4 @@
 ├── [  25]  repository_size_is_16M
 └── [ 484]  up.sh
 
-49 directories, 1469 files
+49 directories, 1477 files

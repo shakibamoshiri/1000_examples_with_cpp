@@ -20,12 +20,42 @@ number of arguments.
     > va_end    : ends traversal of the variadic function arguments
     > va_list   : holds the information needed by va_start, va_arg, va_end, and va_copy
 */
-/// va_list : it is a typedef name
-//  va_list is a complete object type suitable for holding the
-//  information needed by the macros va_start, va_copy, va_arg an va_end.
 
 #include <iostream>
 #include <cstdarg>
-#include <cmath>
 
-int main() { /* had no example. You can see the previous example */ }
+
+void user_printf (const char* fmt, ...){
+
+    va_list args;
+    va_start( args, fmt );
+
+    while (*fmt != '\0'){
+
+        if (*fmt == 'd'){
+            int i = va_arg( args, int );
+            std::cout << i << '\n';
+        } else if (*fmt == 'c'){
+            // note automatic conversion to integral type
+            int c = va_arg( args, int );
+            std::cout << static_cast<char>(c) << '\n';
+        } else if (*fmt == 'f'){
+            double d = va_arg( args, double);
+            std::cout << d << '\n';
+        }
+
+        ++fmt;
+    }
+    va_end( args );
+} // the end of user_printf
+
+int main(){
+
+    user_printf("fdfcd",
+                3.44,   // double
+                100,    // decimal
+                0.33,   // double
+                'a',    // char
+                10);    // decimal
+
+}

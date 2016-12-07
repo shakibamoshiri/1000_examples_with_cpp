@@ -20,9 +20,10 @@ number of arguments.
     > va_end    : ends traversal of the variadic function arguments
     > va_list   : holds the information needed by va_start, va_arg, va_end, and va_copy
 */
-/// va_list : it is a typedef name
-//  va_list is a complete object type suitable for holding the
-//  information needed by the macros va_start, va_copy, va_arg an va_end.
+/// va_end : void va_end (va_list ap)
+//  The va_end macro preforms cleanup for an 'ap' object initialized
+//  by a call to va_start or va_copy.
+//  va_end may modify 'ap' so that it is no longer unable.
 
 #include <iostream>
 #include <cstdarg>
