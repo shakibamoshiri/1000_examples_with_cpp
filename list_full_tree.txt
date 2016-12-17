@@ -1510,7 +1510,106 @@
 │   ├── [7.6K]  temp
 │   ├── [1.2K]  temp.cpp
 │   └── [2.0K]  temp.o
-├── [  25]  1317_examples_are_here_now
+├── [4.0K]  12_Program_Utility
+│   ├── [5.0K]  01_program_utility.abort.cpp
+│   ├── [2.0K]  02_program_utility.exit.cpp
+│   ├── [1.0K]  03_program_utility.quick_exit.c
+│   ├── [1.8K]  04_program_utility._Exit.cpp
+│   ├── [1.5K]  05_program_utility.atexit.cpp
+│   ├── [1.2K]  06_program_utility.at_quick_exit.cpp
+│   ├── [1.4K]  07_program_utility.EXIT_SUCCESS_EXIT_FAILURE.cpp
+│   ├── [ 825]  08_program_utility.system.cpp
+│   ├── [ 963]  09_program_utility.getenv.cpp
+│   ├── [ 965]  10_program_utility.getenv.2.cpp
+│   ├── [1.2K]  11_program_utility.signal.cpp
+│   ├── [1.2K]  12_program_utility.raise.cpp
+│   ├── [ 797]  13_program_utility.sig_atomic_t.cpp
+│   ├── [ 718]  14_program_utility.SIG_DFL_and_SIG_IGN.cpp
+│   ├── [ 766]  15_program_utility.SIG_ERR.cpp
+│   ├── [ 723]  16_program_utility.SIGABRT_SIGFPE_SIGILL_SIGINT_SIGSEG_SITTERM.cpp
+│   ├── [1.8K]  17_program_utility.setjmp.cpp
+│   ├── [1.3K]  18_program_utility.longjmp.cpp
+│   ├── [ 656]  19_program_utility.jum_buf.cpp
+│   ├── [ 285]  list_count.txt
+│   ├── [7.8K]  temp
+│   ├── [ 656]  temp.cpp
+│   ├── [2.3K]  temp.o
+│   └── [1.7K]  the_suumary_of_program_support_utilities.c
+├── [  25]  1321_examples_are_here_now
+├── [4.0K]  13_Date_and_Time
+│   ├── [4.0K]  01_date_and_time_duration.cpp
+│   ├── [3.7K]  02_date_and_time_duration.operator-assignment.cpp
+│   ├── [3.8K]  03_date_and_time_duration.count.cpp
+│   ├── [4.0K]  04_date_and_time_duration.zero.cpp
+│   ├── [3.6K]  05_date_and_time_duration.min.cpp
+│   ├── [3.6K]  06_date_and_time_duration.max.cpp
+│   ├── [3.8K]  07_date_and_time_duration.operator_plus_and_minus_unary.cpp
+│   ├── [3.8K]  08_date_and_time_duration.operator_decrement_increment.cpp
+│   ├── [4.2K]  09_date_and_time_duration.operator_compound-assignment.cpp
+│   ├── [4.2K]  10_date_and_time_duration_std_common_type.cpp
+│   ├── [3.7K]  11_date_and_time_duration.operator-arithmetic.1.cpp
+│   ├── [4.2K]  12_date_and_time_duration.operator-arithmetic.2.cpp
+│   ├── [3.8K]  13_date_and_time_duration.operator-comparison.cpp
+│   ├── [4.6K]  14_date_and_time_duration.duration_cast.cpp
+│   ├── [3.4K]  15_date_and_time_duration.floor.c
+│   ├── [3.4K]  16_date_and_time_duration.ceil.c
+│   ├── [3.4K]  17_date_and_time_duration.round.c
+│   ├── [3.4K]  18_date_and_time_duration.abs.c
+│   ├── [   0]  18_ZERO_Mon Dec 12 11:34:53 2016
+│   ├── [5.4K]  19_date_and_time_duration.treat_as_floating_point.cpp
+│   ├── [3.7K]  20_date_and_time_duration_value.zero.min.max.c
+│   ├── [4.7K]  21_date_and_time_duration.operator""h.cpp
+│   ├── [5.0K]  22_date_and_time_duration.operator""min.cpp
+│   ├── [4.9K]  23_date_and_time_duration.operator""min.2.cpp
+│   ├── [4.6K]  24_date_and_time_duration.operator""s.cpp
+│   ├── [4.4K]  25_date_and_time_duration.operator""ms.cpp
+│   ├── [4.4K]  26_date_and_time_duration.operator""us.cpp
+│   ├── [4.4K]  27_date_and_time_duration.operator""ns.cpp
+│   ├── [5.7K]  28_date_and_time_duration_helper_type_and_typedef.cpp
+│   ├── [2.2K]  29_date_and_time_system_clock.now.cpp
+│   ├── [3.6K]  30_date_and_time_system_clock.now.2.cpp
+│   ├── [   0]  30_ZERO_Mon Dec 12 16:07:55 2016
+│   ├── [1.9K]  31_date_and_time_system_clock.to_time_t.cpp
+│   ├── [2.0K]  32_date_and_time_system_clock.from_time_t.cpp
+│   ├── [1.9K]  33_date_and_time_steady_clock.now.cpp
+│   ├── [2.6K]  34_date_and_time_high_resolutoin_clock.now.cpp
+│   ├── [3.1K]  35_date_and_time_time_point.cpp
+│   ├── [3.1K]  36_date_and_time_time_point.constructor.cpp
+│   ├── [3.1K]  37_date_and_time_time_point.time_since_epoch.cpp
+│   ├── [3.0K]  38_date_and_time_time_point.operator_compound_assignment.cpp
+│   ├── [3.0K]  39_date_and_time_time_point.min.cpp
+│   ├── [3.0K]  40_date_and_time_time_point.max.cpp
+│   ├── [   0]  40_ZERO_Wed Dec 14 11:58:00 2016
+│   ├── [3.4K]  41_date_and_time_time_point.max.2.cpp
+│   ├── [2.5K]  42_date_and_time_common_type_time_point.cpp
+│   ├── [3.0K]  43_date_and_time_time_point.operator-add.cpp
+│   ├── [3.0K]  44_date_and_time_time_point.operator-subtract.cpp
+│   ├── [3.1K]  45_date_and_time_time_point.operator-comparison.cpp
+│   ├── [3.0K]  46_date_and_time_time_point.time_point_cast.cpp
+│   ├── [2.5K]  47_date_and_time_time_point.floor_and_ceil_and_round.c
+│   ├── [2.5K]  48_date_and_time_C_style_dade_and_time_difftime.cpp
+│   ├── [2.2K]  49_date_and_time_C_style_dade_and_time_time.cpp
+│   ├── [3.2K]  50_date_and_time_C_style_dade_and_time_clock.cpp
+│   ├── [   0]  50_ZERO_Wed Dec 14 15:55:58 2016
+│   ├── [2.3K]  51_date_and_time_C_style_dade_and_time_asctime.cpp
+│   ├── [2.4K]  52_date_and_time_C_style_dade_and_time_ctime.cpp
+│   ├── [2.6K]  53_date_and_time_C_style_dade_and_time_strftime.cpp
+│   ├── [2.4K]  54_date_and_time_C_style_dade_and_time_wcsftime.cpp
+│   ├── [2.2K]  55_date_and_time_C_style_dade_and_time_gmtime.cpp
+│   ├── [2.2K]  56_date_and_time_C_style_dade_and_time_localtime.cpp
+│   ├── [2.5K]  57_date_and_time_C_style_dade_and_time_mktime.cpp
+│   ├── [2.1K]  58_date_and_time_C_style_dade_and_time_CLOCS_PER_SEC.cpp
+│   ├── [2.8K]  59_date_and_time_C_style_dade_and_time_tm.cpp
+│   ├── [2.5K]  60_date_and_time_C_style_dade_and_time_time_t.cpp
+│   ├── [2.0K]  61_date_and_time_C_style_dade_and_time_clock_t.cpp
+│   ├── [8.3K]  irtime
+│   ├── [ 13K]  temp
+│   ├── [2.0K]  temp.cpp
+│   ├── [4.8K]  temp.o
+│   ├── [ 10K]  the_suumary_of_date_and_time.c
+│   └── [ 13K]  utctime
+├── [4.0K]  14_Bitset
+├── [4.0K]  15_Function_Object
 ├── [167K]  codeblocks.png
 ├── [ 150]  find_numbers_of_exmples.txt
 ├── [ 94K]  full_list_in_order.txt
@@ -1519,11 +1618,12 @@
 │   ├── [ 266]  size
 │   └── [ 198]  user_assert
 ├── [ 202]  LICENSE.md
+├── [1.9K]  link
 ├── [   0]  list_full_tree.txt
-├── [1.6K]  list_tree.txt
+├── [1.7K]  list_tree.txt
 ├── [ 50K]  os.png
-├── [2.9K]  README.md
-├── [  25]  repository_size_is_16M
+├── [4.8K]  README.md
+├── [  25]  repository_size_is_17M
 └── [ 484]  up.sh
 
-49 directories, 1477 files
+53 directories, 1573 files
