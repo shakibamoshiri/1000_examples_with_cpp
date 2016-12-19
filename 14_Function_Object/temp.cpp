@@ -3,15 +3,13 @@
             ***************
 
 1. Polymorphic Function Wrapper
-    1.1 function:
-        Class template std::function is a general-purpose polymorphic function wrapper.
-        Instances of std::function can store, copy, and invoke any Callable target - function,
-        lambda expression, bind expression, or other function objects, as well as pointer
-        to member function and pointer to member data.
-        The stored callable object is called the target of std::function. If a std::function
-        contains no target, it is called empty invoking the target of an empty std::function
-        result in std::bad_function_call exception begin thrown.
-        std::function satisfies the requirement of CopyConstructible and CopyAssignable.
+    1.1 function
+    ---------------------------
+    1.2 mem_fncreates:
+        Function template std::mem_fn generates wrapper objects for pointers to members,
+        which can store, copy, and invoke a pointer to member. Both reference and pointer
+        (including smart pointers) to an object cab be used when invoking a std::mem_fn.
+        for more detail see the man website.
 
         member type:
             result_type
@@ -19,90 +17,50 @@
             first_argument_type
             second_argument_type
 
-        member function:
-            constructor
-            destructor
-            operator =
-            swap
-            assign
-            operator bool
-            operator () parenthesis
 
-        target access:
-            target_type
-            target
 
-        non-member function
-            std::swap ( std::function )
-            operator == , !=
-
-        helper class
-            std::uses_allocator< std::function >
 */
-/// std::function constructor
+///  std::user_allocator< std::function >
 //
-//  Constructs a std::function from a variety of sources.
+//   This specialization of std::user_allocator informs other library
+//   components that all objects of type std::function support user-allocator
+//   construction, even though they do not have a nested allocator_type.
 
 
 #include <iostream>
 #include <functional>
 
-struct St0 {
-    int number;
+using SomeVoid = std::function< void (int) >;
 
-    St0 (int temp): number( temp ) {}
+class C {
+private:
+    SomeVoid void_func;
 
-    void print_add (int temp) const { std::cout << number + temp << '\n'; }
+public:
+    C( SomeVoid tempfunc = nullptr ) : void_func( tempfunc ){
+        if( void_func == nullptr )
+            void_func = std::bind( &C::default_func, this, std::placeholders::_1 );  // end of if statement
 
-}; // end of structure St0
+        void_func( 7 );
+    }
 
+    void default_func (int temp){ std::cout << temp << '\n'; }
+};
 
-struct PrintNumber { void operator () (int temp) const { std::cout << temp << '\n'; } }; // end of structure PrintNumber
-
-void print_number (int temp){ std::cout << temp << '\n'; }  // end of function print_number
+void user_func (int temp){ std::cout << (temp + 1) << '\n'; }
 
 int main (){
 
-    // stores a free function
-    std::function< void (int) > fj_display = print_number;
-    fj_display( 10 );
+    C c1;
 
-    // stores a lambda function
-    std::function< void () > fj_display_33 = [](){ print_number( 33 ); };
-    fj_display_33();
-
-    // stores the results of a call to std::bind
-    std::function< void () > fj_display_3322 = std::bind( print_number, 3322 );
-    fj_display_3322;
-
-
-
-
-    // stores a call to a member function
-    std::function< void(const St0&, int) > fj_add_display = &St0::print_add;
-    const St0 one(1234);
-    fj_add_display (one, 766);
-
-    // stores a call to a member function and object
-    using std::placeholders::_1;
-    std::function<  void (int) > fj_add_display2
-    = std::bind
-    ( &St0::print_add,
-     St0,
-      _1);
-
-    fj_add_display2(20);
-
-
+    C c2(user_func);
 
 }
 
+/* output for me:
+
+7
+8
 
 
-
-
-
-
-
-
-
+*/
