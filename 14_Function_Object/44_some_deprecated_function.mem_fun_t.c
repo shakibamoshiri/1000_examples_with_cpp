@@ -33,27 +33,17 @@
 
         mem_fun_ref                     creates a wrapper from a pointer to member function, callable with a reference to object
 */
-///  mem_fun_ref
+//  mem_fun
 
 
 #include <iostream>
 #include <functional>
 #include <string>
 #include <algorithm>
-#include <iterator>
 
-// uses std::mem_fun_ref to bind std::string's member function size()
 
 int main() {
 
-    std::vector< std::string > vector = {"a", "quick", "brown", "fox", "jumped", "over", "a", "lazy", "black", "dog"};
-
-    for( const std::string temp : vector ) std::cout << temp << ' ';
-    std::cout << '\n';
-
-    std::transform( vector.begin(), vector.end(),
-                    std::ostream_iterator< std::size_t >( std::cout, " " ),
-                    std::mem_fun_ref( &std::string::size ) );
 
 
 }
@@ -66,7 +56,7 @@ int main() {
 
 /* output for me:
 
-1 5 5 3 6 4 1 4 5 3
+
 
 */
 
