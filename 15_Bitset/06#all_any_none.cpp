@@ -1,4 +1,3 @@
-
 /*
             std::bitset
             ***********
@@ -56,35 +55,45 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::bitset::flip
-//
-//  Flips bits, i.e. changes true value to false and false value to true
-//  Equivalent to logical NOT operation on part of all of bits.
-//  1. flips all bits ( equivalent to operator ~)
-//  2. flips the bit at position 'pos'
-
+/// std::bitset all, any, none
+//  Checks if all, any, or none of the bits set to true.
 
 #include <iostream>
 #include <bitset>
 
-
 int main() {
 
-    std::bitset< 4 > bit;
+    typedef std::bitset< 4 > bit4;
 
-    std::cout << bit << '\n';
-    std::cout << bit.flip( 0 ) << '\n'; // changes position 0 == 0001
-    std::cout << bit.flip( 2 ) << '\n'; // changes position 2 == 0101
-    std::cout << bit.flip() << '\n';    // changes all bits   == 1010
+    bit4 b1( "0000" );
+    bit4 b2( "0101" );
+    bit4 b3( "1111" );
+
+    std::puts( "bitset\tall\tany\tnone" );
+    std::cout << b1 << '\t'
+              << b1.all() << '\t'
+              << b1.any() << '\t'
+              << b1.none() << std::endl
+
+              << b2 << '\t'
+              << b2.all() << '\t'
+              << b2.any() << '\t'
+              << b2.none() << std::endl
+
+              << b3 << '\t'
+              << b3.all() << '\t'
+              << b3.any() << '\t'
+              << b3.none() << std::endl;
+
 }
 
 
 /* output for me:
 
-0000
-0001
-0101
-1010
+bitset  all     any     none
+0000    0       0       1
+0101    0       1       0
+1111    1       1       0
 
 */
 

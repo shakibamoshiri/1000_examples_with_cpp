@@ -1,4 +1,3 @@
-
 /*
             std::bitset
             ***********
@@ -56,35 +55,39 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::bitset::flip
+/// std::bitset operator &, |, ^, ~
 //
-//  Flips bits, i.e. changes true value to false and false value to true
-//  Equivalent to logical NOT operation on part of all of bits.
-//  1. flips all bits ( equivalent to operator ~)
-//  2. flips the bit at position 'pos'
+// performs binary AND, OR, XOR, NOT
 
 
 #include <iostream>
 #include <bitset>
-
+#include <string>
 
 int main() {
 
-    std::bitset< 4 > bit;
+    std::bitset< 16 > destination;
 
-    std::cout << bit << '\n';
-    std::cout << bit.flip( 0 ) << '\n'; // changes position 0 == 0001
-    std::cout << bit.flip( 2 ) << '\n'; // changes position 2 == 0101
-    std::cout << bit.flip() << '\n';    // changes all bits   == 1010
+    std::string pattern_string = "1001";
+
+    std::bitset< 16 > pattern( pattern_string );
+
+    std::size_t iterator = 0;
+    std::size_t ie = destination.size() / pattern_string.size();
+    while( iterator != ie ){
+        destination <<= pattern_string.size();
+        destination |= pattern;
+
+        ++iterator;
+    }
+
+    std::cout << destination;
 }
 
 
 /* output for me:
 
-0000
-0001
-0101
-1010
+1001100110011001
 
 */
 

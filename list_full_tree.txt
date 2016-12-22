@@ -1535,7 +1535,7 @@
 │   ├── [ 656]  temp.cpp
 │   ├── [2.3K]  temp.o
 │   └── [1.7K]  the_suumary_of_program_support_utilities.c
-├── [  25]  1321_examples_are_here_now
+├── [  25]  1394_examples_are_here_now
 ├── [4.0K]  13_Date_and_Time
 │   ├── [4.0K]  01_date_and_time_duration.cpp
 │   ├── [3.7K]  02_date_and_time_duration.operator-assignment.cpp
@@ -1602,28 +1602,100 @@
 │   ├── [2.8K]  59_date_and_time_C_style_dade_and_time_tm.cpp
 │   ├── [2.5K]  60_date_and_time_C_style_dade_and_time_time_t.cpp
 │   ├── [2.0K]  61_date_and_time_C_style_dade_and_time_clock_t.cpp
+│   ├── [1.0K]  62_example_custom_duratoin_type.cpp
+│   ├── [1.0K]  63_example_2.cpp
 │   ├── [8.3K]  irtime
 │   ├── [ 13K]  temp
-│   ├── [2.0K]  temp.cpp
-│   ├── [4.8K]  temp.o
+│   ├── [1.0K]  temp.cpp
+│   ├── [5.3K]  temp.o
 │   ├── [ 10K]  the_suumary_of_date_and_time.c
 │   └── [ 13K]  utctime
-├── [4.0K]  14_Bitset
-├── [4.0K]  15_Function_Object
+├── [4.0K]  14_Function_Object
+│   ├── [2.9K]  01_function_object.function_wrapper_functoin.constructor.cpp
+│   ├── [1.5K]  02_function_object.function_wrapper_functoin.desstructor.c
+│   ├── [2.3K]  03_function_object.function_wrapper_functoin.operator=.cpp
+│   ├── [2.0K]  04_function_object.function_wrapper_functoin.swap.cpp
+│   ├── [1.7K]  05_function_object.function_wrapper_functoin.assgin.c
+│   ├── [2.0K]  06_function_object.function_wrapper_functoin.operator-bool.cpp
+│   ├── [2.1K]  07_function_object.function_wrapper_functoin.operator-bool.2.cpp
+│   ├── [2.2K]  08_function_object.function_wrapper_functoin.operator-parenthesis.cpp
+│   ├── [1.9K]  09_function_object.function_wrapper_functoin.target_type.cpp
+│   ├── [2.5K]  10_function_object.function_wrapper_functoin.target.cpp
+│   ├── [1.7K]  11_function_object.function_wrapper_std_swap.cpp
+│   ├── [2.1K]  12_function_object.function_wrapper_operator-equal_operator-not-equal.cpp
+│   ├── [1.7K]  13_function_object.function_wrapper_std_user_allocator.cpp
+│   ├── [   0]  13_ZERO_Mon Dec 19 12:47:49 2016
+│   ├── [1.3K]  14_function_object.function_wrapper_mem_fn.cpp
+│   ├── [1.6K]  15_function_object.function_wrapper_mem_fn_2_pointer.cpp
+│   ├── [1.7K]  16_function_object.function_wrapper_mem_fn.3.cpp
+│   ├── [2.0K]  17_function_object.function_wrapper_mem_fn.4_pointer.cpp
+│   ├── [ 738]  18_function_object.function_wrapper_bad_function_call.cpp
+│   ├── [3.3K]  19_function_object.bind_bind.cpp
+│   ├── [2.2K]  20_function_object.bind_bind.2.cpp
+│   ├── [2.7K]  21_function_object.bind_bind.3.cpp
+│   ├── [2.5K]  22_function_object.bind_is_bind_expression.cpp
+│   ├── [2.5K]  23_function_object.bind_is_placeholder.cpp
+│   ├── [   0]  23_ZERO_Tue Dec 20 11:21:58 2016
+│   ├── [2.6K]  24_function_object.bind_placeholders.cpp
+│   ├── [2.0K]  25_function_object.reference_wrapper_reference_wrapper.cpp
+│   ├── [2.0K]  26_function_object.reference_wrapper_ref_cref.cpp
+│   ├── [ 807]  27_function_object.function_object_plus.cpp
+│   ├── [ 815]  28_function_object.function_object_minus.cpp
+│   ├── [ 805]  29_function_object.function_object_less_and_greater.cpp
+│   ├── [ 914]  30_function_object.function_object_less_and_greater.2.cpp
+│   ├── [ 659]  31_function_object.function_object_the-rest.c
+│   ├── [1.7K]  32_function_object.function_object_unary_negate.cpp
+│   ├── [2.0K]  33_function_object.function_object_binary_negate.cpp
+│   ├── [1.6K]  34_function_object.function_not1.cpp
+│   ├── [3.3K]  35_function_object.function_not2.cpp
+│   ├── [2.4K]  36_some_deprecated_function.unary_function.cpp
+│   ├── [2.5K]  37_some_deprecated_function.unary_function.2.cpp
+│   ├── [1.7K]  38_some_deprecated_function.binder1st_binder2nd.c
+│   ├── [2.5K]  39_some_deprecated_function.bind1st_bind2nd.cpp
+│   ├── [1.6K]  40_some_deprecated_function.pointer_to_binary_function.c
+│   ├── [1.7K]  41_some_deprecated_function.pointer_to_unary_function.c
+│   ├── [1.9K]  42_some_deprecated_function.ptr_fun.cpp
+│   ├── [1.9K]  43_some_deprecated_function.mem_fun_t.c
+│   ├── [1.7K]  44_some_deprecated_function.mem_fun_t.c
+│   ├── [1.9K]  45_some_deprecated_function.mem_fun_ref_t.c
+│   ├── [2.2K]  46_some_deprecated_function.mem_fun_ref.cpp
+│   ├── [ 13K]  temp
+│   ├── [2.2K]  temp.cpp
+│   ├── [6.6K]  temp.o
+│   └── [6.5K]  the_summary_of_function_object.c
+├── [4.0K]  15_Bitset
+│   ├── [3.4K]  01#constructor.cpp
+│   ├── [2.3K]  02#operator_equal-to_operator-not-equal-to.cpp
+│   ├── [2.7K]  03#operator_square-bracket.cpp
+│   ├── [2.6K]  04#test.cpp
+│   ├── [2.6K]  05#test,2.cpp
+│   ├── [2.7K]  06#all_any_none.cpp
+│   ├── [2.7K]  07#count.cpp
+│   ├── [2.2K]  08#size.cpp
+│   ├── [2.2K]  09#size.2.cpp
+│   ├── [2.5K]  10#operator_AND_OR_NOT_XOR.cpp
+│   ├── [2.4K]  11#operator_shift-left_shift-right.cpp
+│   ├── [2.3K]  12#set.cpp
+│   ├── [2.5K]  13#reset.cpp
+│   ├── [2.5K]  14#flip.cpp
+│   ├── [   0]  5_ZERO_Tue Dec 20 16:06:45 2016
+│   ├── [8.2K]  temp
+│   ├── [2.5K]  temp.cpp
+│   ├── [4.0K]  temp.o
+│   └── [1.9K]  the_summary_of_std_bitset.c
 ├── [167K]  codeblocks.png
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 94K]  full_list_in_order.txt
+├── [ 99K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   ├── [ 266]  size
 │   └── [ 198]  user_assert
 ├── [ 202]  LICENSE.md
-├── [1.9K]  link
 ├── [   0]  list_full_tree.txt
 ├── [1.7K]  list_tree.txt
 ├── [ 50K]  os.png
-├── [4.8K]  README.md
+├── [2.9K]  README.md
 ├── [  25]  repository_size_is_17M
 └── [ 484]  up.sh
 
-53 directories, 1573 files
+53 directories, 1645 files

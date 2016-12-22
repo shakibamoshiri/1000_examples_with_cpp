@@ -1,4 +1,3 @@
-
 /*
             std::bitset
             ***********
@@ -56,12 +55,10 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::bitset::flip
-//
-//  Flips bits, i.e. changes true value to false and false value to true
-//  Equivalent to logical NOT operation on part of all of bits.
-//  1. flips all bits ( equivalent to operator ~)
-//  2. flips the bit at position 'pos'
+/// std::bitset::reset
+//  Sets bits to false
+//  1. sets all bits to false
+//  2. sets the bit a position 'pos' to false
 
 
 #include <iostream>
@@ -70,21 +67,25 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 
 int main() {
 
-    std::bitset< 4 > bit;
+    std::bitset< 8 > number_42( 42 );
 
-    std::cout << bit << '\n';
-    std::cout << bit.flip( 0 ) << '\n'; // changes position 0 == 0001
-    std::cout << bit.flip( 2 ) << '\n'; // changes position 2 == 0101
-    std::cout << bit.flip() << '\n';    // changes all bits   == 1010
+    std::cout << "bitset of number_42:\t" << number_42 << '\n';
+
+    number_42.reset( 1 );   // bit at pos 1 become false
+    std::cout << "after reset( 1 ):\t" << number_42 << '\n';
+
+    number_42.reset();  // all bits set to false
+    std::cout << "after reset():\t" << number_42 << '\n';
+
 }
 
 
 /* output for me:
 
-0000
-0001
-0101
-1010
+bitset of number_42:    00101010
+after reset( 1 ):       00101000
+after reset():  00000000
+
 
 */
 

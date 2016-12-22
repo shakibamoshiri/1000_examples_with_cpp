@@ -1,4 +1,3 @@
-
 /*
             std::bitset
             ***********
@@ -56,35 +55,43 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::bitset::flip
+/// std::bitset::count
+//  Returns the number of bits that are set to true.
 //
-//  Flips bits, i.e. changes true value to false and false value to true
-//  Equivalent to logical NOT operation on part of all of bits.
-//  1. flips all bits ( equivalent to operator ~)
-//  2. flips the bit at position 'pos'
-
+/// return value:
+//  number of bits that are set to true (after initialization )
 
 #include <iostream>
 #include <bitset>
 
-
 int main() {
 
-    std::bitset< 4 > bit;
+    std::bitset< 8 > bit( "00010010" );
+    std::cout << "initial value:\t" << bit << '\n';
 
-    std::cout << bit << '\n';
-    std::cout << bit.flip( 0 ) << '\n'; // changes position 0 == 0001
-    std::cout << bit.flip( 2 ) << '\n'; // changes position 2 == 0101
-    std::cout << bit.flip() << '\n';    // changes all bits   == 1010
+    // find the first unset bit
+    std::size_t index = 0;
+    while( index < bit.size() && bit.test( index ) ) ++index;
+
+    // continue setting bits until half the bitset is failed
+    while( index < bit.size() && bit.count() < bit.size() / 2 ){
+
+        bit.set( index );
+
+        std::cout << "setting bit " << index << " : " << bit << '\n';
+
+        while( index < bit.size() && bit.test( index ) ) ++index;
+
+    }
+
 }
 
 
 /* output for me:
 
-0000
-0001
-0101
-1010
+initial value:  00010010
+setting bit 0 : 00010011
+setting bit 2 : 00010111
 
 */
 
