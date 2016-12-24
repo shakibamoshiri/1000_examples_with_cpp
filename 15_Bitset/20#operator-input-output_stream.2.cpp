@@ -56,36 +56,34 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::hash( std::bitset )
+/// operator >> , <<
 //
-//  The template specialization of std::hash for std::bitset< N >
-//  allows users to obtain hashes of objects of type std::bitset< N >.
+//  Inserts or extracts a bitset from a character stream.
 
 #include <iostream>
 #include <bitset>
-#include <functional>   // for using std::hash
+#include <sstream>
 
 int main() {
 
-    std::bitset< 4 > bit_1( 1 );
-    std::bitset< 4 > bit_2( 2 );
-    std::bitset< 4 > bit_3( bit_2 );
+    std::string bit_string( "001101" );
+    std::istringstream bit_stream( bit_string );
 
-    std::hash< std::bitset< 4 > > hash_of;
+    std::bitset< 3 > _bit_3_;
+    bit_stream >> _bit_3_;      // it reads "001" and stream still holds "101"
+    std::cout << _bit_3_ << '\n';
 
-    std::size_t hash_1 = hash_of( bit_1 );
-    std::size_t hash_2 = hash_of( bit_2 );
-    std::size_t hash_3 = hash_of( bit_3 );
-
-    std::cout << hash_1 << '\n';
-    std::cout << hash_2 << '\n';
-    std::cout << hash_3 << '\n';
+    std::bitset< 8 > _bit_8_;
+    bit_stream >> _bit_8_;      // it reads "101", populates the 8-bit set as "00000101"
+    std::cout << _bit_8_ << '\n';
 
 
 }
 
 
 /* output for me:
+001
+00000101
 
 */
 

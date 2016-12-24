@@ -56,37 +56,41 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::hash( std::bitset )
+/// std::bitset::to_ulong ( unsigned long )
 //
-//  The template specialization of std::hash for std::bitset< N >
-//  allows users to obtain hashes of objects of type std::bitset< N >.
+//  Converts the contents of the bitset to an unsigned long integer.
 
 #include <iostream>
 #include <bitset>
-#include <functional>   // for using std::hash
+
 
 int main() {
 
-    std::bitset< 4 > bit_1( 1 );
-    std::bitset< 4 > bit_2( 2 );
-    std::bitset< 4 > bit_3( bit_2 );
+    for( unsigned long index = 0; index < 10; ++index ){
 
-    std::hash< std::bitset< 4 > > hash_of;
+        std::bitset< 5 > bit( index );  // starting from zero ( 0 )
+        std::bitset< 5 > bit_inverted = ~ bit;
 
-    std::size_t hash_1 = hash_of( bit_1 );
-    std::size_t hash_2 = hash_of( bit_2 );
-    std::size_t hash_3 = hash_of( bit_3 );
-
-    std::cout << hash_1 << '\n';
-    std::cout << hash_2 << '\n';
-    std::cout << hash_3 << '\n';
-
+        std::cout << index  << '\t'
+                  << bit    << '\t'
+                  << bit_inverted   << '\t'
+                  << bit_inverted.to_ulong() << '\n';
+    }
 
 }
 
 
 /* output for me:
-
+0       00000   11111   31
+1       00001   11110   30
+2       00010   11101   29
+3       00011   11100   28
+4       00100   11011   27
+5       00101   11010   26
+6       00110   11001   25
+7       00111   11000   24
+8       01000   10111   23
+9       01001   10110   22
 */
 
 

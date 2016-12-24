@@ -56,36 +56,29 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::hash( std::bitset )
+/// std::bitset::to_ullong
 //
-//  The template specialization of std::hash for std::bitset< N >
-//  allows users to obtain hashes of objects of type std::bitset< N >.
+//  Converts the contents of the bitset to an unsigned long long integer.
 
 #include <iostream>
 #include <bitset>
-#include <functional>   // for using std::hash
+#include <limits>
 
 int main() {
 
-    std::bitset< 4 > bit_1( 1 );
-    std::bitset< 4 > bit_2( 2 );
-    std::bitset< 4 > bit_3( bit_2 );
+    std::bitset< std::numeric_limits< unsigned long long >::digits > bit( 0x123456789abcdef0LL );
 
-    std::hash< std::bitset< 4 > > hash_of;
+    std::cout << bit << ' ' << std::hex << bit.to_ullong() << '\n';
 
-    std::size_t hash_1 = hash_of( bit_1 );
-    std::size_t hash_2 = hash_of( bit_2 );
-    std::size_t hash_3 = hash_of( bit_3 );
+    bit.flip();
 
-    std::cout << hash_1 << '\n';
-    std::cout << hash_2 << '\n';
-    std::cout << hash_3 << '\n';
-
-
+    std::cout << bit << ' ' << bit.to_ullong() << '\n';
 }
 
 
 /* output for me:
+0001001000110100010101100111100010011010101111001101111011110000 123456789abcdef0
+1110110111001011101010011000011101100101010000110010000100001111 edcba9876543210f
 
 */
 

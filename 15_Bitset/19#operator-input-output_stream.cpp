@@ -56,37 +56,33 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::hash( std::bitset )
+/// operator >> , <<
 //
-//  The template specialization of std::hash for std::bitset< N >
-//  allows users to obtain hashes of objects of type std::bitset< N >.
+//  Inserts or extracts a bitset from a character stream.
 
 #include <iostream>
 #include <bitset>
-#include <functional>   // for using std::hash
+#include <limits>
 
 int main() {
 
-    std::bitset< 4 > bit_1( 1 );
-    std::bitset< 4 > bit_2( 2 );
-    std::bitset< 4 > bit_3( bit_2 );
+    typedef std::numeric_limits< unsigned long long > limit_number;
 
-    std::hash< std::bitset< 4 > > hash_of;
+    unsigned long long number = 0;
 
-    std::size_t hash_1 = hash_of( bit_1 );
-    std::size_t hash_2 = hash_of( bit_2 );
-    std::size_t hash_3 = hash_of( bit_3 );
+    std::cin >> number;
 
-    std::cout << hash_1 << '\n';
-    std::cout << hash_2 << '\n';
-    std::cout << hash_3 << '\n';
+    std::bitset< limit_number::digits > bit( number );
+    std::cout << "your entered number equivalent to: "
+              << bit << '\n';
 
 
 }
 
 
 /* output for me:
-
+987654321
+your entered number equivalent to: 0000000000000000000000000000000000111010110111100110100010110001
 */
 
 

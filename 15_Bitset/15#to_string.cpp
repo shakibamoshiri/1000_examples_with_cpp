@@ -56,37 +56,28 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::hash( std::bitset )
-//
-//  The template specialization of std::hash for std::bitset< N >
-//  allows users to obtain hashes of objects of type std::bitset< N >.
+/// std::bitset::to_string
+//  Converts the contents of the bitset to a string.
+//  Uses zero to represent bits with value of false and one to
+//  represent bits with value of true.
 
 #include <iostream>
 #include <bitset>
-#include <functional>   // for using std::hash
+
 
 int main() {
+    std::bitset< 8 > bit( 42 );
 
-    std::bitset< 4 > bit_1( 1 );
-    std::bitset< 4 > bit_2( 2 );
-    std::bitset< 4 > bit_3( bit_2 );
-
-    std::hash< std::bitset< 4 > > hash_of;
-
-    std::size_t hash_1 = hash_of( bit_1 );
-    std::size_t hash_2 = hash_of( bit_2 );
-    std::size_t hash_3 = hash_of( bit_3 );
-
-    std::cout << hash_1 << '\n';
-    std::cout << hash_2 << '\n';
-    std::cout << hash_3 << '\n';
-
-
+    std::cout << bit.to_string() << '\n'
+              << bit.to_string( '*' ) << '\n'
+              << bit.to_string( 'O', 'X' ) << std::endl;
 }
 
 
 /* output for me:
-
+00101010
+**1*1*1*
+OOXOXOXO
 */
 
 

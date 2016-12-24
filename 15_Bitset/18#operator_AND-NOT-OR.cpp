@@ -56,37 +56,29 @@ Bitsets meets the requirement of CopyConstructible and CopyAssignment
 */
 
 
-/// std::hash( std::bitset )
+/// operator &, |, ^ ( std::bitset )
 //
-//  The template specialization of std::hash for std::bitset< N >
-//  allows users to obtain hashes of objects of type std::bitset< N >.
+//  Performs binary AND, OR, and NOT between two bitsets, left-hand side (lhs) and right-hand side (rhs)
 
 #include <iostream>
 #include <bitset>
-#include <functional>   // for using std::hash
+#include <limits>
 
 int main() {
 
-    std::bitset< 4 > bit_1( 1 );
-    std::bitset< 4 > bit_2( 2 );
-    std::bitset< 4 > bit_3( bit_2 );
+    std::bitset< 4 > bit_1( "0110" );
+    std::bitset< 4 > bit_2( "0011" );
 
-    std::hash< std::bitset< 4 > > hash_of;
-
-    std::size_t hash_1 = hash_of( bit_1 );
-    std::size_t hash_2 = hash_of( bit_2 );
-    std::size_t hash_3 = hash_of( bit_3 );
-
-    std::cout << hash_1 << '\n';
-    std::cout << hash_2 << '\n';
-    std::cout << hash_3 << '\n';
-
-
+    std::cout << "bit_1 & bit_2 " << ( bit_1 & bit_2 ) << '\n';
+    std::cout << "bit_1 | bit_2 " << ( bit_1 | bit_2 ) << '\n';
+    std::cout << "bit_1 ^ bit_2 " << ( bit_1 ^ bit_2 ) << '\n';
 }
 
 
 /* output for me:
-
+bit_1 & bit_2 0010
+bit_1 | bit_2 0111
+bit_1 ^ bit_2 0101
 */
 
 
