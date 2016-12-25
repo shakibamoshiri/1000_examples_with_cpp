@@ -1535,7 +1535,6 @@
 │   ├── [ 656]  temp.cpp
 │   ├── [2.3K]  temp.o
 │   └── [1.7K]  the_suumary_of_program_support_utilities.c
-├── [  25]  1394_examples_are_here_now
 ├── [4.0K]  13_Date_and_Time
 │   ├── [4.0K]  01_date_and_time_duration.cpp
 │   ├── [3.7K]  02_date_and_time_duration.operator-assignment.cpp
@@ -1610,6 +1609,7 @@
 │   ├── [5.3K]  temp.o
 │   ├── [ 10K]  the_suumary_of_date_and_time.c
 │   └── [ 13K]  utctime
+├── [  25]  1447_examples_are_here_now
 ├── [4.0K]  14_Function_Object
 │   ├── [2.9K]  01_function_object.function_wrapper_functoin.constructor.cpp
 │   ├── [1.5K]  02_function_object.function_wrapper_functoin.desstructor.c
@@ -1664,28 +1664,51 @@
 │   ├── [6.6K]  temp.o
 │   └── [6.5K]  the_summary_of_function_object.c
 ├── [4.0K]  15_Bitset
-│   ├── [3.4K]  01#constructor.cpp
-│   ├── [2.3K]  02#operator_equal-to_operator-not-equal-to.cpp
-│   ├── [2.7K]  03#operator_square-bracket.cpp
-│   ├── [2.6K]  04#test.cpp
-│   ├── [2.6K]  05#test,2.cpp
-│   ├── [2.7K]  06#all_any_none.cpp
-│   ├── [2.7K]  07#count.cpp
-│   ├── [2.2K]  08#size.cpp
-│   ├── [2.2K]  09#size.2.cpp
-│   ├── [2.5K]  10#operator_AND_OR_NOT_XOR.cpp
-│   ├── [2.4K]  11#operator_shift-left_shift-right.cpp
-│   ├── [2.3K]  12#set.cpp
-│   ├── [2.5K]  13#reset.cpp
-│   ├── [2.5K]  14#flip.cpp
+│   ├── [3.4K]  01_betsit.constructor.cpp
+│   ├── [2.3K]  02_betsit.operator_equal-to_operator-not-equal-to.cpp
+│   ├── [2.7K]  03_betsit.operator_square-bracket.cpp
+│   ├── [2.6K]  04_betsit.test.cpp
+│   ├── [2.6K]  05_betsit.test,2.cpp
+│   ├── [2.8K]  06_betsit.all_any_none.cpp
+│   ├── [2.7K]  07_betsit.count.cpp
+│   ├── [2.2K]  08_betsit.size.cpp
+│   ├── [2.2K]  09_betsit.size.2.cpp
+│   ├── [2.5K]  10_betsit.operator_AND_OR_NOT_XOR.cpp
+│   ├── [2.4K]  11_betsit.operator_shift-left_shift-right.cpp
+│   ├── [2.3K]  12_betsit.set.cpp
+│   ├── [2.5K]  13_betsit.reset.cpp
+│   ├── [2.5K]  14_betsit.flip.cpp
+│   ├── [2.4K]  15_betsit.to_string.cpp
+│   ├── [2.7K]  16_betsit.to_ulong.cpp
+│   ├── [2.5K]  17_betsit.to_ullong.cpp
+│   ├── [2.5K]  18_betsit.operator_AND-NOT-OR.cpp
+│   ├── [2.5K]  19_betsit.operator-input-output_stream.cpp
+│   ├── [2.5K]  20_betsit.operator-input-output_stream.2.cpp
+│   ├── [2.6K]  21_betsit.hash.cpp
 │   ├── [   0]  5_ZERO_Tue Dec 20 16:06:45 2016
-│   ├── [8.2K]  temp
-│   ├── [2.5K]  temp.cpp
-│   ├── [4.0K]  temp.o
+│   ├── [2.6K]  temp.cpp
+│   ├── [2.3K]  temp.o
 │   └── [1.9K]  the_summary_of_std_bitset.c
+├── [4.0K]  16_Pair
+│   ├── [2.5K]  01_pair.constructor.cpp
+│   ├── [2.0K]  02_pair.operator-assignment.cpp
+│   ├── [1.3K]  03_pair.swap.cpp
+│   ├── [1.6K]  04_pair_std_make_pair.cpp
+│   ├── [1.6K]  05_pair_operator-comparison.cpp
+│   ├── [1.5K]  06_pair_std_swap.cpp
+│   ├── [1.8K]  07_pair_std_get.cpp
+│   ├── [1.6K]  08_pair_std_get.2.cpp
+│   ├── [1.5K]  09_pair_std_get.3.note.cpp
+│   ├── [1.7K]  10_pair_std_tuple_size.cpp
+│   ├── [1.7K]  11_pair_std_tuple_element.cpp
+│   ├── [1.7K]  temp.cpp
+│   ├── [2.4K]  temp.o
+│   └── [1.2K]  the_summary_of_std_pair.c
+├── [4.0K]  17_Tuple
+│   └── [1.7K]  temp.cpp
 ├── [167K]  codeblocks.png
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [ 99K]  full_list_in_order.txt
+├── [102K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   ├── [ 266]  size
@@ -1695,7 +1718,7 @@
 ├── [1.7K]  list_tree.txt
 ├── [ 50K]  os.png
 ├── [2.9K]  README.md
-├── [  25]  repository_size_is_17M
+├── [  25]  repository_size_is_18M
 └── [ 484]  up.sh
 
-53 directories, 1645 files
+55 directories, 1666 files
