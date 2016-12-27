@@ -14,28 +14,28 @@ Helper Classes:
     ignore                      placeholder to skip the elements when unpacking a tuple using tie
 
 */
-/// std::ignore
+/// std::tuple_element< std::tuple >
 
-//  An object of unspecified type such that any value can be assigned
-//  to it with no effect. Intended for use with std::tie when unpacking
-//  a std::tuple as a placeholder for the argument that are not used.
+//  Provides compile-time indexed access to the types of the elements of the tuple.
+
 
 
 #include <iostream>
 #include <tuple>
-#include <string>
-#include <set>
+
+template< class... ARGS >
+struct type_list {
+
+    template< std::size_t N >
+    using type = typename std::tuple_element< N, std::tuple< ARGS... > >::type;
+
+};
 
 int main(){
 
-    std::set< std::string > set_of_string;
-
-    bool inserted;
-
-    std::tie( std::ignore, inserted ) = set_of_string.insert( "string" );
-
-    if( inserted ) std::cout << "value was inserted successfully\n";
-
+    std::cout << std::boolalpha;
+    type_list< int, char, bool >::type< 2 > boolean = true;
+    std::cout << boolean;
 
 }
 

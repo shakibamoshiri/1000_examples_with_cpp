@@ -15,28 +15,39 @@ Member Function:
     operator =                  assigns the contents of one tuple to another
     swap                        swaps the contents of two tuples
 
-*/
 
-/// std::tuple constructor
-//  Constructs a new tuple.
+
+*/
+/// std::tuple swap
+
+//  Calls swap (which might be std::swap, or might be found via ADL)
+//  for each element in *this and its corresponding element in order.
 
 #include <iostream>
 #include <tuple>
 
-// note this function did not work before c++17
-// but right now it works
-// UTC:	Sun Dec 25 09:54:39 2016 GMT
+#include <string>
 
-std::pair< int, int > f(){
-    return {1, 2};
+
+
+
+int main(){
+
+    std::tuple< int, std::string, float > tuple_1, tuple_2;
+
+    tuple_1 = std::make_tuple( 10, "this is the tuple_1", 3.2 );
+
+    tuple_2.swap( tuple_1 );
+
+    std::cout << "the content of tuple_2:\t"
+              << std::get< 0 >( tuple_2 ) << ' '
+              << std::get< 1 >( tuple_2 ) << ' '
+              << std::get< 2 >( tuple_2 ) << '\n';
+
+
 }
 
-int main( ){
+/* output for me
 
-    int one, two;
 
-    std::tie( one, two ) = f();
-
-    std::cout << one << ' ' << two; // 1 2
-
-}
+*/

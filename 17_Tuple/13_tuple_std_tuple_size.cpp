@@ -14,33 +14,44 @@ Helper Classes:
     ignore                      placeholder to skip the elements when unpacking a tuple using tie
 
 */
-/// std::ignore
+/// std::tuple_size( std::tuple )
 
-//  An object of unspecified type such that any value can be assigned
-//  to it with no effect. Intended for use with std::tie when unpacking
-//  a std::tuple as a placeholder for the argument that are not used.
+//  Provides access to the number of elements in a tuple
+//  as a compile-time constant expression.
+
+
 
 
 #include <iostream>
 #include <tuple>
-#include <string>
-#include <set>
+#include <algorithm>
+
+template< typename T >
+void size_of_tuple (T){
+
+    std::cout << std::tuple_size< T >::value;
+}
 
 int main(){
+    std::tuple< int > one( 1 );
 
-    std::set< std::string > set_of_string;
+    size_of_tuple( one );   // 1
 
-    bool inserted;
 
-    std::tie( std::ignore, inserted ) = set_of_string.insert( "string" );
+    size_of_tuple( std::make_tuple(1, "one", 1.1) );    // 3
 
-    if( inserted ) std::cout << "value was inserted successfully\n";
 
+    // error: type mismatching
+//    size_of_tuple( std::tuple<1, "one", 1.1> );
+
+    // or directly
+    std::cout << std::tuple_size< std::tuple< int, float > >::value;     // 2
 
 }
 
 /* output for me
 
+132
 
 */
 
