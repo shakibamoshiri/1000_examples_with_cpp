@@ -53,6 +53,8 @@
 ├── 15_Bitset
 ├── 16_Pair
 ├── 17_Tuple
+├── 18_Hash
+├── 19_swap_move_forward_etc
 └── helpful
 
-55 directories
+57 directories

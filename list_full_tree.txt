@@ -1609,7 +1609,7 @@
 │   ├── [5.3K]  temp.o
 │   ├── [ 10K]  the_suumary_of_date_and_time.c
 │   └── [ 13K]  utctime
-├── [  25]  1447_examples_are_here_now
+├── [  25]  1465_examples_are_here_now
 ├── [4.0K]  14_Function_Object
 │   ├── [2.9K]  01_function_object.function_wrapper_functoin.constructor.cpp
 │   ├── [1.5K]  02_function_object.function_wrapper_functoin.desstructor.c
@@ -1701,24 +1701,74 @@
 │   ├── [1.5K]  09_pair_std_get.3.note.cpp
 │   ├── [1.7K]  10_pair_std_tuple_size.cpp
 │   ├── [1.7K]  11_pair_std_tuple_element.cpp
-│   ├── [1.7K]  temp.cpp
-│   ├── [2.4K]  temp.o
 │   └── [1.2K]  the_summary_of_std_pair.c
 ├── [4.0K]  17_Tuple
-│   └── [1.7K]  temp.cpp
+│   ├── [ 584]  00_tupleNOE.cpp
+│   ├── [2.3K]  01_tuple.consructor.cpp
+│   ├── [1.9K]  02_tuple.consructor.2.cpp
+│   ├── [1.8K]  03_tuple.operator-assignment.cpp
+│   ├── [1.1K]  04_tuple.swap.cpp
+│   ├── [2.0K]  05_tuple_std_make_tuple.cpp
+│   ├── [1.9K]  06_tuple_std_tie.cpp
+│   ├── [1.7K]  07_tuple_std_forward_as_tuple.cpp
+│   ├── [2.4K]  08_tuple_std_tuple_cat.cpp
+│   ├── [2.2K]  09_tuple_std_get.cpp
+│   ├── [1.6K]  10_tuple_operator_comparison.cpp
+│   ├── [2.1K]  11_tuple_operator_comparison.2.cpp
+│   ├── [3.6K]  12_tuple_std_swap.cpp
+│   ├── [1.2K]  13_tuple_std_tuple_size.cpp
+│   ├── [ 902]  14_tuple_std_tuple_size.2.cpp
+│   ├── [1.0K]  15_tuple_std_tuple_element.cpp
+│   ├── [1.4K]  16_tuple_std::uses_allocator.cpp
+│   ├── [1.1K]  17_tuple_std_ignore.cpp
+│   ├── [1.1K]  temp.cpp
+│   ├── [3.4K]  temp.o
+│   └── [1.7K]  the_summary_of_std_tuple.c
+├── [4.0K]  18_Hash
+│   ├── [ 881]  01_std_hash_std_hash.cpp
+│   ├── [2.0K]  02_std_hash_std_hash.2.cpp
+│   ├── [1.5K]  03_std_hash_std_hash.3.cpp
+│   ├── [1.4K]  04_std_hash_std_hash.4.cpp
+│   ├── [1.1K]  08_std_hash_std_unique_ptr.cpp
+│   ├── [1.2K]  12_std_hash_std_thread_id.cpp
+│   ├── [1.1K]  temp.cpp
+│   ├── [7.4K]  temp.o
+│   └── [1.9K]  the_summary_of_std_hash.c
+├── [4.0K]  19_swap_move_forward_etc
+│   ├── [ 404]  01#_std_swap.cpp
+│   ├── [ 496]  02#_std_swap.2.cpp
+│   ├── [ 546]  03#_std_swap.3.cpp
+│   ├── [ 613]  04#_std_swap.4.iter_swap.cpp
+│   ├── [1.5K]  05#_std_exchange.cpp
+│   ├── [1.9K]  06#_std_forward.cpp
+│   ├── [2.0K]  07#_std_move.cpp
+│   ├── [1.1K]  08#_std_move_if_noexcept.cpp
+│   ├── [1.0K]  09#std_piecewise_construct_t.cpp
+│   ├── [ 790]  10#std_piecewise_construct.cpp
+│   ├── [1.9K]  11#std_integer_sequence.cpp
+│   ├── [ 863]  12#std_declval.cpp
+│   ├── [ 879]  13#std_declval.2.cpp
+│   ├── [ 791]  14#as_cosnt.cpp
+│   ├── [1.0K]  15#std_namespace_rel_ops.cpp
+│   ├── [6.7K]  idm.cpp
+│   ├── [ 881]  k5idm.cpp
+│   ├── [ 16K]  prettyprint.hpp
+│   ├── [8.0K]  temp
+│   ├── [ 404]  temp.cpp
+│   └── [2.9K]  temp.o
 ├── [167K]  codeblocks.png
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [102K]  full_list_in_order.txt
+├── [103K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   ├── [ 266]  size
 │   └── [ 198]  user_assert
 ├── [ 202]  LICENSE.md
 ├── [   0]  list_full_tree.txt
-├── [1.7K]  list_tree.txt
+├── [1.8K]  list_tree.txt
 ├── [ 50K]  os.png
 ├── [2.9K]  README.md
-├── [  25]  repository_size_is_18M
+├── [  25]  repository_size_is_19M
 └── [ 484]  up.sh
 
-55 directories, 1666 files
+57 directories, 1714 files
