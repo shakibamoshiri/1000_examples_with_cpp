@@ -132,7 +132,6 @@
 │   │   ├── [2.3K]  9991_morePractice_pointer_to_member-data-and-function.cpp
 │   │   ├── [ 759]  9991_morePractice_R-value_L-value.cpp
 │   │   ├── [ 862]  9992_morePractice_pointer_to_member-data-and-function_2.cpp
-│   │   ├── [7.9K]  temp
 │   │   └── [1.4K]  temp.cpp
 │   ├── [4.0K]  04_initialization
 │   │   ├── [1.8K]  01_initialization_value.cpp
@@ -146,7 +145,6 @@
 │   │   ├── [2.4K]  09_initialization_reference_R-value.cpp
 │   │   ├── [ 982]  10_initialization_zero.cpp
 │   │   ├── [ 957]  11_initialization_constant.cpp
-│   │   ├── [7.7K]  temp
 │   │   └── [ 957]  temp.cpp
 │   ├── [4.0K]  05_function
 │   │   ├── [1.6K]  01_function_declaration_return-type.cpp
@@ -171,7 +169,6 @@
 │   │   ├── [1.8K]  20_function_lambda_7.cpp
 │   │   ├── [2.2K]  21_function_pass-a-lambda-to-a-generic-algorithm.cpp
 │   │   ├── [1.8K]  22_function_address_of_opperator_overloading.cpp
-│   │   ├── [8.0K]  temp
 │   │   └── [ 802]  temp.cpp
 │   ├── [ 12K]  06_classes
 │   │   ├── [2.6K]  01_classes_forward-declaration.cpp
@@ -266,7 +263,6 @@
 │   │   ├── [1.2K]  classes_conversion_constructor_morePractice_2.cpp
 │   │   ├── [1.5K]  classes_conversion_constructor_morePractice_3.cpp
 │   │   ├── [1.3K]  classes_conversion_constructor_morePractice.cpp
-│   │   ├── [7.4K]  temp
 │   │   └── [2.7K]  temp.cpp
 │   ├── [ 12K]  07_template
 │   │   ├── [2.0K]  01_template_explanation.cpp
@@ -366,7 +362,6 @@
 │   │   ├── [1.7K]  88_template_constraints_and_concepts.4.concepts.cpp
 │   │   ├── [8.5K]  89_template_constraints_and_concepts.5.constraints.cpp
 │   │   ├── [2.0K]  90_template_constraints_and_concepts.6.partial.ordering.cpp
-│   │   ├── [7.9K]  temp
 │   │   ├── [2.0K]  temp.cpp
 │   │   ├── [1.7K]  template_alias.template.morePractice.cpp
 │   │   ├── [1.6K]  template_default.initializer.morePractice.cpp
@@ -391,11 +386,9 @@
 │   │   ├── [1.4K]  11_exception_dynamic_exception.cpp
 │   │   ├── [2.3K]  12_exception_dynamic_exception.2.cpp
 │   │   ├── [1.3K]  13_exception_dynamic_exception.3.example.cpp
-│   │   ├── [8.2K]  temp
 │   │   └── [1.3K]  temp.cpp
 │   ├── [4.0K]  09_statement
 │   │   ├── [2.2K]  01_statement_range-base-for.cpp
-│   │   ├── [8.0K]  temp
 │   │   └── [2.2K]  temp.cpp
 │   └── [4.0K]  10_miscellaneous
 │       ├── [1.6K]  01_miscellaneous_asm.cpp
@@ -409,7 +402,6 @@
 │       ├── [7.3K]  09_miscellaneous_empty_base_optimization
 │       ├── [1.2K]  09_miscellaneous_empty_base_optimization.cpp
 │       ├── [1.7K]  10_miscellaneous_empty_base_optimization.2.cpp
-│       ├── [7.5K]  temp
 │       └── [1.2K]  temp.cpp
 ├── [4.0K]  01_Inout_Output_Library
 │   ├── [4.0K]  03_basic_streambuf
@@ -1155,7 +1147,6 @@
 │   ├── [2.4K]  136_algorithm_partial_sum.cpp
 │   ├── [2.2K]  137_algorithm_qsort_C_library.cpp
 │   ├── [3.0K]  138_algorithm_bsearch_C_library.cpp
-│   ├── [7.8K]  temp
 │   ├── [3.0K]  temp.cpp
 │   ├── [2.8K]  temp.o
 │   └── [1.2K]  vocabulray.txt
@@ -1217,7 +1208,6 @@
 │   ├── [2.6K]  Iterator_LIbrary_New_Word.csv
 │   ├── [4.7K]  Iterator_Library_Summary.cpp
 │   ├── [ 499]  print_container
-│   ├── [7.7K]  temp
 │   ├── [1.2K]  temp.cpp
 │   └── [2.3K]  temp.o
 ├── [4.0K]  06_Regex_Library
@@ -1255,520 +1245,591 @@
 │   ├── [3.2K]  31_regex_regex_constants.error_type.cpp
 │   ├── [  95]  README.md
 │   ├── [  90]  README.md~
-│   ├── [139K]  temp
 │   ├── [3.2K]  temp.cpp
 │   └── [245K]  temp.o
-├── [ 12K]  07_Type_Support
-│   ├── [1.6K]  01_type_support_size_t.cpp
-│   ├── [2.0K]  02_type_support_ptrdiff_t.cpp
-│   ├── [1.5K]  03_type_support_nullptr_t.cpp
-│   ├── [1.6K]  04_type_support_NULL_macro.cpp
-│   ├── [1.4K]  05_type_support_max_align_t.cpp
-│   ├── [1.8K]  06_type_support_offsetof_macro.function.cpp
-│   ├── [ 457]  07_type_support_fixed_width_integer_type_c++11.cpp
-│   ├── [3.9K]  08_type_support_class.cpp
-│   ├── [3.1K]  09_type_support_is_specialized.cpp
-│   ├── [3.1K]  10_type_support_is_signed.cpp
-│   ├── [2.7K]  11_type_support_the_rest_of_the_constants.hpp
-│   ├── [1.8K]  12_type_support_numeric_limits_function_min.cpp
-│   ├── [2.0K]  13_type_support_numeric_limits_function_lowest.cpp
-│   ├── [1.8K]  14_type_support_numeric_limits_function_max.cpp
-│   ├── [2.4K]  15_type_support_numeric_limits_function_max.2.cpp
-│   ├── [2.3K]  16_type_support_numeric_limits_function_epsilon.cpp
-│   ├── [1.9K]  17_type_support_numeric_limits_function_round_error.cpp
-│   ├── [   0]  17_ZER0_Tue Nov 15 19:37:22 2016
-│   ├── [1.8K]  18_type_support_numeric_limits_function_infinity.cpp
-│   ├── [2.3K]  19_type_support_numeric_limits_function_quiet_NaN.cpp
-│   ├── [2.5K]  20_type_support_numeric_limits_function_signaling_NaN.cpp
-│   ├── [1.8K]  21_type_support_numeric_limits_function_denorm_min.cpp
-│   ├── [2.9K]  22_type_support_type_info_operator==.cpp
-│   ├── [2.7K]  23_type_support_type_info_before.cpp
-│   ├── [3.6K]  24_type_support_type_info_hash_code.cpp
-│   ├── [3.0K]  25_type_support_type_info_name.cpp
-│   ├── [3.6K]  26_type_support_type_index.cpp
-│   ├── [1.5K]  27_type_support_bad_typeid.cpp
-│   ├── [1.5K]  28_type_support_bad_cast.cpp
-│   ├── [1.8K]  29_type_support_type_traits_is_void.cpp
-│   ├── [1.9K]  30_type_support_type_traits_is_null_pointer.cpp
-│   ├── [2.2K]  31_type_support_type_traits_is_integral.cpp
-│   ├── [2.0K]  32_type_support_type_traits_is_floating_point.cpp
-│   ├── [1.9K]  33_type_support_type_traits_is_array.cpp
-│   ├── [2.0K]  34_type_support_type_traits_is_array.2.cpp
-│   ├── [1.9K]  35_type_support_type_traits_is_enum.cpp
-│   ├── [2.0K]  36_type_support_type_traits_is_union.cpp
-│   ├── [2.0K]  37_type_support_type_traits_is_class.cpp
-│   ├── [2.0K]  38_type_support_type_traits_is_function.cpp
-│   ├── [2.3K]  39_type_support_type_traits_is_pointer.cpp
-│   ├── [2.2K]  40_type_support_type_traits_is_l-value_reference.cpp
-│   ├── [2.2K]  41_type_support_type_traits_is_r-value_reference.cpp
-│   ├── [2.2K]  42_type_support_type_traits_is_member_object_pointer.cpp
-│   ├── [2.2K]  43_type_support_type_traits_is_member_function_pointer.cpp
-│   ├── [2.0K]  44_type_support_type_traits_is_fundamental.cpp
-│   ├── [2.0K]  45_type_support_type_traits_is_arithmetic.cpp
-│   ├── [2.1K]  46_type_support_type_traits_is_arithmetic.2.cpp
-│   ├── [1.5K]  47_type_support_type_traits_is_scalar.cpp
-│   ├── [1.5K]  48_type_support_type_traits_is_object.cpp
-│   ├── [1.5K]  49_type_support_type_traits_is_compound.cpp
-│   ├── [1.8K]  50_type_support_type_traits_is_reference.cpp
-│   ├── [1.5K]  51_type_support_type_traits_is_member_pointer.cpp
-│   ├── [2.0K]  52_type_support_type_traits_is_const.cpp
-│   ├── [1.8K]  53_type_support_type_traits_is_volatile.cpp
-│   ├── [2.3K]  54_type_support_type_traits_is_triavial.cpp
-│   ├── [3.2K]  55_type_support_type_traits_is_triavial_copyable.cpp
-│   ├── [2.4K]  56_type_support_type_traits_is_standard_layout.cpp
-│   ├── [2.2K]  57_type_support_type_traits_is_POS.plain.old.data.cpp
-│   ├── [2.1K]  58_type_support_type_traits_is_literal_type.cpp
-│   ├── [2.3K]  59_type_support_type_traits_is_empty.cpp
-│   ├── [2.2K]  60_type_support_type_traits_is_polymorphic.cpp
-│   ├── [2.0K]  61_type_support_type_traits_is_final.cpp
-│   ├── [2.3K]  62_type_support_type_traits_is_abstract.cpp
-│   ├── [2.4K]  63_type_support_type_traits_is_signed.cpp
-│   ├── [2.3K]  64_type_support_type_traits_is_unsigned.cpp
-│   ├── [1.3K]  65_type_support_type_traits_is_alignment_of.cpp
-│   ├── [1000]  66_type_supprot_type_traits_is_rank.cpp
-│   ├── [1.4K]  67_type_supprot_type_traits_is_extent.cpp
-│   ├── [   0]  67_ZER0_Sat Nov 19 18:27:59 2016
-│   ├── [1.5K]  68_type_supprot_type_traits_is_same.cpp
-│   ├── [1.1K]  69_type_supprot_type_traits_is_base_of.cpp
-│   ├── [1.5K]  70_type_supprot_type_traits_is_convertible.cpp
-│   ├── [2.0K]  71_type_supprot_type_traits_remove_cv.cpp
-│   ├── [1.7K]  72_type_supprot_type_traits_add_cv.cpp
-│   ├── [1.8K]  73_type_supprot_type_traits_remove_reference.cpp
-│   ├── [1.9K]  74_type_supprot_type_traits_add_r-l-value_reference.cpp
-│   ├── [1.6K]  75_type_supprot_type_traits_and_remove_pointer.cpp
-│   ├── [1.6K]  76_type_supprot_type_traits_make_signed_unsigned.cpp
-│   ├── [2.5K]  77_type_supprot_type_traits_remove_extent.cpp
-│   ├── [1.9K]  78_type_supprot_type_traits_remove_all_extents.cpp
-│   ├── [2.9K]  79_type_supprot_type_traits_aligned_storage.cpp
-│   ├── [   0]  79_ZER0_Mon Nov 21 15:46:21 2016
-│   ├── [2.0K]  80_type_supprot_type_traits_aligned_storage.2.cpp
-│   ├── [2.2K]  81_type_supprot_type_traits_aligned_union.cpp
-│   ├── [2.0K]  82_type_supprot_type_traits_decay.cpp
-│   ├── [3.9K]  83_type_supprot_type_traits_enable_if.cpp
-│   ├── [2.0K]  84_type_supprot_type_traits_enable_if.2.cpp
-│   ├── [1.8K]  85_type_supprot_type_traits_condistoinal.cpp
-│   ├── [1.9K]  86_type_supprot_type_traits_common_type.cpp
-│   ├── [1.7K]  87_type_supprot_type_traits_undelying_type.cpp
-│   ├── [2.3K]  88_type_supprot_type_traits_result_of.cpp
-│   ├── [   0]  88_ZER0_Mon Nov 21 18:55:44 2016
-│   ├── [1.4K]  89_type_supprot_type_traits_void_t.c
-│   ├── [ 144]  README.md
-│   ├── [7.5K]  temp
-│   ├── [   1]  temp.cpp
-│   ├── [1.8K]  temp.o
-│   └── [ 11K]  type_type_support_support_summary.txt
-├── [ 16K]  08_Dynamic_Memory_Management
-│   ├── [4.1K]  00_dynamic_momory_management_summary.txt
-│   ├── [2.4K]  01_dynamic_memory_management_pointer_category_unique_ptr.cpp
-│   ├── [2.0K]  02_dynamic_memory_management_pointer_category_unique_ptr.constructor.1.cpp
-│   ├── [2.2K]  03_dynamic_memory_management_pointer_category_unique_ptr.constructor.2.cpp
-│   ├── [2.5K]  04_dynamic_memory_management_pointer_category_unique_ptr.constructor.3.cpp
-│   ├── [1.8K]  05_dynamic_memory_management_pointer_category_unique_ptr.desstructor.cpp
-│   ├── [2.2K]  06_dynamic_memory_management_pointer_category_unique_ptr.operator=.cpp
-│   ├── [1.8K]  07_dynamic_memory_management_pointer_category_unique_ptr.release.cpp
-│   ├── [2.2K]  08_dynamic_memory_management_pointer_category_unique_ptr.reset.cpp
-│   ├── [1.7K]  09_dynamic_memory_management_pointer_category_unique_ptr.swap.cpp
-│   ├── [1.6K]  10_dynamic_memory_management_pointer_category_unique_ptr.get.cpp
-│   ├── [1.5K]  11_dynamic_memory_management_pointer_category_unique_ptr.get_deleter.cpp
-│   ├── [1.6K]  12_dynamic_memory_management_pointer_category_unique_ptr.operator_bool.cpp
-│   ├── [1.7K]  13_dynamic_memory_management_pointer_category_unique_ptr.operator_pointer.cpp
-│   ├── [   0]  13_ZER0_Wed Nov 23 15:53:49 2016
-│   ├── [1.4K]  14_dynamic_memory_management_pointer_category_unique_ptr.operator_square.bracket.cpp
-│   ├── [2.0K]  15_dynamic_memory_management_pointer_category_unique_ptr_std_make_unique.cpp
-│   ├── [1.4K]  16_dynamic_memory_management_pointer_category_unique_ptr.operator_comparison.cpp
-│   ├── [1.4K]  17_dynamic_memory_management_pointer_category_unique_ptr_std_swap.cpp
-│   ├── [1.6K]  18_dynamic_memory_management_pointer_category_unique_ptr_std_hash.cpp
-│   ├── [3.8K]  19_dynamic_memory_management_pointer_category_shared_ptr.cpp
-│   ├── [2.1K]  20_dynamic_memory_management_pointer_category_shared_ptr.constructor.cpp
-│   ├── [1.7K]  21_dynamic_memory_management_pointer_category_shared_ptr.destructor.cpp
-│   ├── [1.7K]  22_dynamic_memory_management_pointer_category_shared_ptr.operator-assignment.cpp
-│   ├── [   0]  22_ZER0_Wed Nov 23 18:59:27 2016
-│   ├── [1.7K]  23_dynamic_memory_management_pointer_category_shared_ptr.operator-assignment.2.cpp
-│   ├── [2.5K]  24_dynamic_memory_management_pointer_category_shared_ptr.reset.cpp
-│   ├── [1.7K]  25_dynamic_memory_management_pointer_category_shared_ptr.swap.cpp
-│   ├── [2.1K]  26_dynamic_memory_management_pointer_category_shared_ptr.operator.star-and-arrow.cpp
-│   ├── [2.3K]  27_dynamic_memory_management_pointer_category_shared_ptr.use_count.cpp
-│   ├── [2.5K]  28_dynamic_memory_management_pointer_category_shared_ptr.unique.cpp
-│   ├── [1.6K]  29_dynamic_memory_management_pointer_category_shared_ptr.operator-bool.cpp
-│   ├── [2.5K]  30_dynamic_memory_management_pointer_category_shared_ptr.owner_before.cpp
-│   ├── [2.2K]  31_dynamic_memory_management_pointer_category_shared_ptr.make_shared.cpp
-│   ├── [   0]  31_ZER0_Sat Nov 26 19:06:32 2016
-│   ├── [1.4K]  32_dynamic_memory_management_pointer_category_shared_ptr.allocate_shared.cpp
-│   ├── [2.0K]  33_dynamic_memory_management_pointer_category_shared_ptr_static_and_dynamic_and_const_cast.cpp
-│   ├── [2.1K]  34_dynamic_memory_management_pointer_category_shared_ptr_std_deg_deleter.cpp
-│   ├── [1.9K]  35_dynamic_memory_management_pointer_category_shared_ptr.operator-comparison.cpp
-│   ├── [1.3K]  36_dynamic_memory_management_pointer_category_shared_ptr.operator-output.cpp
-│   ├── [1.1K]  37_dynamic_memory_management_pointer_category_shared_ptr_std_atomic.cpp
-│   ├── [1.7K]  38_dynamic_memory_management_pointer_category_shared_ptr_std_hash.cpp
-│   ├── [2.1K]  39_dynamic_memory_management_pointer_category_weak_ptr.cpp
-│   ├── [   0]  39_ZER0_Mon Nov 28 16:24:16 2016
-│   ├── [1.5K]  40_dynamic_memory_management_pointer_category_weak_ptr.constructor.cpp
-│   ├── [1.6K]  41_dynamic_memory_management_pointer_category_weak_ptr.destructor.cpp
-│   ├── [1.9K]  42_dynamic_memory_management_pointer_category_weak_ptr.operator-assignment.cpp
-│   ├── [1.6K]  43_dynamic_memory_management_pointer_category_weak_ptr.reset.cpp
-│   ├── [1.6K]  44_dynamic_memory_management_pointer_category_weak_ptr.swap.cpp
-│   ├── [1.6K]  45_dynamic_memory_management_pointer_category_weak_ptr.use_count.cpp
-│   ├── [1.7K]  46_dynamic_memory_management_pointer_category_weak_ptr.expired.cpp
-│   ├── [1.9K]  47_dynamic_memory_management_pointer_category_weak_ptr.lock.cpp
-│   ├── [2.1K]  48_dynamic_memory_management_pointer_category_weak_ptr.owner_before.cpp
-│   ├── [1.7K]  49_dynamic_memory_management_pointer_category_weak_ptr_std_swap.cpp
-│   ├── [1.6K]  50_dynamic_memory_management_pointer_category_auto_ptr.cpp
-│   ├── [   0]  50_ZER0_Wed Nov 30 16:18:44 2016
-│   ├── [1.5K]  51_dynamic_memory_management_pointer_category_owner_less.c
-│   ├── [2.0K]  52_dynamic_memory_management_pointer_category_enable_shared_from_this.cpp
-│   ├── [1.5K]  53_dynamic_memory_management_pointer_category_bad_weak_ptr.cpp
-│   ├── [2.0K]  54_dynamic_memory_management_pointer_category_default_delete.cpp
-│   ├── [1.9K]  55_dynamic_memory_management_allocators_allocate.cpp
-│   ├── [2.4K]  56_dynamic_memory_management_allocators_allocate.2.cpp
-│   ├── [   0]  56_ZER0_Sat Dec  3 15:31:34 2016
-│   ├── [1.8K]  57_dynamic_memory_management_uninitialized_storage_uninitialized_copy.cpp
-│   ├── [1.8K]  58_dynamic_memory_management_uninitialized_storage_uninitialized_copy_n.cpp
-│   ├── [1.7K]  59_dynamic_memory_management_uninitialized_storage_uninitialized_fill.cpp
-│   ├── [1.7K]  60_dynamic_memory_management_uninitialized_storage_uninitialized_fill_n.cpp
-│   ├── [1.9K]  61_dynamic_memory_management_uninitialized_storage_raw_storage_iterator.cpp
-│   ├── [2.0K]  62_dynamic_memory_management_uninitialized_storage_get_temporary_buffer.cpp
-│   ├── [1.8K]  63_dynamic_memory_management_uninitialized_storage_return_temporary_buffer.cpp
-│   ├── [ 653]  64_dynamic_memory_management_garbage_collector_support_incomplete.c
-│   ├── [1.8K]  65_dynamic_memory_management_miscellaneous_pointer_traits.cpp
-│   ├── [1.2K]  66_dynamic_memory_management_miscellaneous_addressof.cpp
-│   ├── [2.1K]  67_dynamic_memory_management_miscellaneous_align.cpp
-│   ├── [1.0K]  68_dynamic_memory_management_c_memory_management_malloc.cpp
-│   ├── [ 936]  69_dynamic_memory_management_c_memory_management_calloc.cpp
-│   ├── [1.3K]  70_dynamic_memory_management_c_memory_management_realloc.cpp
-│   ├── [ 894]  71_dynamic_memory_management_c_memory_management_free.cpp
-│   ├── [   0]  71_ZER0_Sun Dec  4 12:17:54 2016
-│   ├── [1.9K]  72_dynamic_memory_management_low_level_memory_management_operator-new.cpp
-│   ├── [1.8K]  73_dynamic_memory_management_low_level_memory_management_operator-new.2.cpp
-│   ├── [1.7K]  74_dynamic_memory_management_low_level_memory_management_operator-new.3.cpp
-│   ├── [2.1K]  75_dynamic_memory_management_low_level_memory_management_operator-new.4.cpp
-│   ├── [2.4K]  76_dynamic_memory_management_low_level_memory_management_operator-new.5.cpp
-│   ├── [2.5K]  77_dynamic_memory_management_low_level_memory_management_operator-new.6.cpp
-│   ├── [1.6K]  78_dynamic_memory_management_low_level_memory_management_operator-new.7.cpp
-│   ├── [2.4K]  79_dynamic_memory_management_low_level_memory_management_operator-delete.cpp
-│   ├── [ 999]  80_dynamic_memory_management_low_level_memory_management_get_new_handler.c
-│   ├── [2.5K]  81_dynamic_memory_management_low_level_memory_management_set_new_handler.cpp
-│   ├── [1.2K]  82_dynamic_memory_management_low_level_memory_management_bad_alloc.cpp
-│   ├── [2.0K]  83_dynamic_memory_management_low_level_memory_management_bad_array_new_length.cpp
-│   ├── [1.1K]  84_dynamic_memory_management_low_level_memory_management_nothrow_t.cpp
-│   ├── [1.2K]  85_dynamic_memory_management_low_level_memory_management_new_handler.cpp
-│   ├── [1.5K]  86_dynamic_memory_management_low_level_memory_management_nothrow.cpp
-│   ├── [8.1K]  temp
-│   ├── [1.5K]  temp.cpp
-│   └── [2.5K]  temp.o
-├── [4.0K]  09_Error_Handling
-│   ├── [1.7K]  01_error_handling_exception_capture_and_storage_exception.cpp
-│   ├── [1.6K]  02_error_handling_exception_capture_and_storage_uncaught_exception.cpp
-│   ├── [2.2K]  03_error_handling_exception_capture_and_storage_exception_ptr.cpp
-│   ├── [2.0K]  04_error_handling_exception_capture_and_storage_make_exception_ptr.cpp
-│   ├── [2.0K]  05_error_handling_exception_capture_and_storage_current_exception.cpp
-│   ├── [1.8K]  06_error_handling_exception_capture_and_storage_rethrow_exception.cpp
-│   ├── [2.5K]  07_error_handling_exception_capture_and_storage_nexted_exception.cpp
-│   ├── [2.3K]  08_error_handling_exception_capture_and_storage_throw_with_nexted.cpp
-│   ├── [2.3K]  09_error_handling_exception_capture_and_storage_rethrow_if_nexted.cpp
-│   ├── [1.0K]  10_error_handling_exception_handling_of_failures_terminate.c
-│   ├── [1.0K]  11_error_handling_exception_handling_of_failures_terminate_handler.c
-│   ├── [ 925]  12_error_handling_exception_handling_of_failures_get_terminate.c
-│   ├── [ 984]  13_error_handling_exception_handling_of_failures_set_terminate.c
-│   ├── [1.1K]  14_error_handling_exception_handling_of_exceptoin_bad_exception.cpp
-│   ├── [1.4K]  15_error_handling_exception_exception_category.c
-│   ├── [ 721]  16_error_handling_erroe_number_errno.cpp
-│   ├── [3.3K]  17_error_handling_erroe_number_error_numbers.cpp
-│   ├── [   0]  17_ZERO_Tue Dec  6 11:18:58 2016
-│   ├── [1.3K]  18_error_handling_static_assertion_static_assert.cpp
-│   ├── [1016]  19_error_handling_static_assertion_assert.cpp
-│   ├── [1.2K]  20_error_handling_system_error_error_category.c
-│   ├── [1.3K]  21_error_handling_system_error_generic_category.cpp
-│   ├── [1.5K]  22_error_handling_system_error_system_category.cpp
-│   ├── [1.1K]  23_error_handling_system_error_error_condition.c
-│   ├── [7.7K]  24_error_handling_system_error_std_errc.cpp
-│   ├── [1.3K]  25_error_handling_system_error_error_code.c
-│   ├── [1.4K]  26_error_handling_system_error_system_error.cpp
-│   ├── [8.3K]  temp
-│   ├── [1.4K]  temp.cpp
-│   ├── [3.0K]  temp.o
-│   └── [4.4K]  the_summary_of_error_handling.c
-├── [4.0K]  10_Initializer_List
-│   ├── [2.5K]  01_initializer_list.cpp
-│   ├── [1.5K]  02_initializer_list.constructor.cpp
-│   ├── [1.5K]  03_initializer_list.size.cpp
-│   ├── [1.2K]  04_initializer_list.begin.cpp
-│   ├── [1.4K]  05_initializer_list.end.cpp
-│   ├── [1.2K]  06_initializer_list_std_begin.cpp
-│   ├── [1.3K]  07_initializer_list_std_end.cpp
-│   ├── [1.3K]  08_initializer_list_std_rbegin.cpp
-│   ├── [1.3K]  09_initializer_list_std_rend.cpp
-│   ├── [7.6K]  temp
-│   ├── [1.3K]  temp.cpp
-│   └── [2.0K]  temp.o
-├── [4.0K]  11_Varisdic_Function
-│   ├── [1.7K]  01_varisdic_function_.cpp
-│   ├── [2.4K]  02_varisdic_function_va_start.cpp
-│   ├── [1.8K]  03_varisdic_function_va_arg.cpp
-│   ├── [2.0K]  04_varisdic_function_va_copy.cpp
-│   ├── [1.2K]  05_varisdic_function_va_end.c
-│   ├── [1.2K]  06_varisdic_function_va_list.c
-│   ├── [7.6K]  temp
-│   ├── [1.2K]  temp.cpp
-│   └── [2.0K]  temp.o
-├── [4.0K]  12_Program_Utility
-│   ├── [5.0K]  01_program_utility.abort.cpp
-│   ├── [2.0K]  02_program_utility.exit.cpp
-│   ├── [1.0K]  03_program_utility.quick_exit.c
-│   ├── [1.8K]  04_program_utility._Exit.cpp
-│   ├── [1.5K]  05_program_utility.atexit.cpp
-│   ├── [1.2K]  06_program_utility.at_quick_exit.cpp
-│   ├── [1.4K]  07_program_utility.EXIT_SUCCESS_EXIT_FAILURE.cpp
-│   ├── [ 825]  08_program_utility.system.cpp
-│   ├── [ 963]  09_program_utility.getenv.cpp
-│   ├── [ 965]  10_program_utility.getenv.2.cpp
-│   ├── [1.2K]  11_program_utility.signal.cpp
-│   ├── [1.2K]  12_program_utility.raise.cpp
-│   ├── [ 797]  13_program_utility.sig_atomic_t.cpp
-│   ├── [ 718]  14_program_utility.SIG_DFL_and_SIG_IGN.cpp
-│   ├── [ 766]  15_program_utility.SIG_ERR.cpp
-│   ├── [ 723]  16_program_utility.SIGABRT_SIGFPE_SIGILL_SIGINT_SIGSEG_SITTERM.cpp
-│   ├── [1.8K]  17_program_utility.setjmp.cpp
-│   ├── [1.3K]  18_program_utility.longjmp.cpp
-│   ├── [ 656]  19_program_utility.jum_buf.cpp
-│   ├── [ 285]  list_count.txt
-│   ├── [7.8K]  temp
-│   ├── [ 656]  temp.cpp
-│   ├── [2.3K]  temp.o
-│   └── [1.7K]  the_suumary_of_program_support_utilities.c
-├── [4.0K]  13_Date_and_Time
-│   ├── [4.0K]  01_date_and_time_duration.cpp
-│   ├── [3.7K]  02_date_and_time_duration.operator-assignment.cpp
-│   ├── [3.8K]  03_date_and_time_duration.count.cpp
-│   ├── [4.0K]  04_date_and_time_duration.zero.cpp
-│   ├── [3.6K]  05_date_and_time_duration.min.cpp
-│   ├── [3.6K]  06_date_and_time_duration.max.cpp
-│   ├── [3.8K]  07_date_and_time_duration.operator_plus_and_minus_unary.cpp
-│   ├── [3.8K]  08_date_and_time_duration.operator_decrement_increment.cpp
-│   ├── [4.2K]  09_date_and_time_duration.operator_compound-assignment.cpp
-│   ├── [4.2K]  10_date_and_time_duration_std_common_type.cpp
-│   ├── [3.7K]  11_date_and_time_duration.operator-arithmetic.1.cpp
-│   ├── [4.2K]  12_date_and_time_duration.operator-arithmetic.2.cpp
-│   ├── [3.8K]  13_date_and_time_duration.operator-comparison.cpp
-│   ├── [4.6K]  14_date_and_time_duration.duration_cast.cpp
-│   ├── [3.4K]  15_date_and_time_duration.floor.c
-│   ├── [3.4K]  16_date_and_time_duration.ceil.c
-│   ├── [3.4K]  17_date_and_time_duration.round.c
-│   ├── [3.4K]  18_date_and_time_duration.abs.c
-│   ├── [   0]  18_ZERO_Mon Dec 12 11:34:53 2016
-│   ├── [5.4K]  19_date_and_time_duration.treat_as_floating_point.cpp
-│   ├── [3.7K]  20_date_and_time_duration_value.zero.min.max.c
-│   ├── [4.7K]  21_date_and_time_duration.operator""h.cpp
-│   ├── [5.0K]  22_date_and_time_duration.operator""min.cpp
-│   ├── [4.9K]  23_date_and_time_duration.operator""min.2.cpp
-│   ├── [4.6K]  24_date_and_time_duration.operator""s.cpp
-│   ├── [4.4K]  25_date_and_time_duration.operator""ms.cpp
-│   ├── [4.4K]  26_date_and_time_duration.operator""us.cpp
-│   ├── [4.4K]  27_date_and_time_duration.operator""ns.cpp
-│   ├── [5.7K]  28_date_and_time_duration_helper_type_and_typedef.cpp
-│   ├── [2.2K]  29_date_and_time_system_clock.now.cpp
-│   ├── [3.6K]  30_date_and_time_system_clock.now.2.cpp
-│   ├── [   0]  30_ZERO_Mon Dec 12 16:07:55 2016
-│   ├── [1.9K]  31_date_and_time_system_clock.to_time_t.cpp
-│   ├── [2.0K]  32_date_and_time_system_clock.from_time_t.cpp
-│   ├── [1.9K]  33_date_and_time_steady_clock.now.cpp
-│   ├── [2.6K]  34_date_and_time_high_resolutoin_clock.now.cpp
-│   ├── [3.1K]  35_date_and_time_time_point.cpp
-│   ├── [3.1K]  36_date_and_time_time_point.constructor.cpp
-│   ├── [3.1K]  37_date_and_time_time_point.time_since_epoch.cpp
-│   ├── [3.0K]  38_date_and_time_time_point.operator_compound_assignment.cpp
-│   ├── [3.0K]  39_date_and_time_time_point.min.cpp
-│   ├── [3.0K]  40_date_and_time_time_point.max.cpp
-│   ├── [   0]  40_ZERO_Wed Dec 14 11:58:00 2016
-│   ├── [3.4K]  41_date_and_time_time_point.max.2.cpp
-│   ├── [2.5K]  42_date_and_time_common_type_time_point.cpp
-│   ├── [3.0K]  43_date_and_time_time_point.operator-add.cpp
-│   ├── [3.0K]  44_date_and_time_time_point.operator-subtract.cpp
-│   ├── [3.1K]  45_date_and_time_time_point.operator-comparison.cpp
-│   ├── [3.0K]  46_date_and_time_time_point.time_point_cast.cpp
-│   ├── [2.5K]  47_date_and_time_time_point.floor_and_ceil_and_round.c
-│   ├── [2.5K]  48_date_and_time_C_style_dade_and_time_difftime.cpp
-│   ├── [2.2K]  49_date_and_time_C_style_dade_and_time_time.cpp
-│   ├── [3.2K]  50_date_and_time_C_style_dade_and_time_clock.cpp
-│   ├── [   0]  50_ZERO_Wed Dec 14 15:55:58 2016
-│   ├── [2.3K]  51_date_and_time_C_style_dade_and_time_asctime.cpp
-│   ├── [2.4K]  52_date_and_time_C_style_dade_and_time_ctime.cpp
-│   ├── [2.6K]  53_date_and_time_C_style_dade_and_time_strftime.cpp
-│   ├── [2.4K]  54_date_and_time_C_style_dade_and_time_wcsftime.cpp
-│   ├── [2.2K]  55_date_and_time_C_style_dade_and_time_gmtime.cpp
-│   ├── [2.2K]  56_date_and_time_C_style_dade_and_time_localtime.cpp
-│   ├── [2.5K]  57_date_and_time_C_style_dade_and_time_mktime.cpp
-│   ├── [2.1K]  58_date_and_time_C_style_dade_and_time_CLOCS_PER_SEC.cpp
-│   ├── [2.8K]  59_date_and_time_C_style_dade_and_time_tm.cpp
-│   ├── [2.5K]  60_date_and_time_C_style_dade_and_time_time_t.cpp
-│   ├── [2.0K]  61_date_and_time_C_style_dade_and_time_clock_t.cpp
-│   ├── [1.0K]  62_example_custom_duratoin_type.cpp
-│   ├── [1.0K]  63_example_2.cpp
-│   ├── [8.3K]  irtime
-│   ├── [ 13K]  temp
-│   ├── [1.0K]  temp.cpp
-│   ├── [5.3K]  temp.o
-│   ├── [ 10K]  the_suumary_of_date_and_time.c
-│   └── [ 13K]  utctime
-├── [  25]  1465_examples_are_here_now
-├── [4.0K]  14_Function_Object
-│   ├── [2.9K]  01_function_object.function_wrapper_functoin.constructor.cpp
-│   ├── [1.5K]  02_function_object.function_wrapper_functoin.desstructor.c
-│   ├── [2.3K]  03_function_object.function_wrapper_functoin.operator=.cpp
-│   ├── [2.0K]  04_function_object.function_wrapper_functoin.swap.cpp
-│   ├── [1.7K]  05_function_object.function_wrapper_functoin.assgin.c
-│   ├── [2.0K]  06_function_object.function_wrapper_functoin.operator-bool.cpp
-│   ├── [2.1K]  07_function_object.function_wrapper_functoin.operator-bool.2.cpp
-│   ├── [2.2K]  08_function_object.function_wrapper_functoin.operator-parenthesis.cpp
-│   ├── [1.9K]  09_function_object.function_wrapper_functoin.target_type.cpp
-│   ├── [2.5K]  10_function_object.function_wrapper_functoin.target.cpp
-│   ├── [1.7K]  11_function_object.function_wrapper_std_swap.cpp
-│   ├── [2.1K]  12_function_object.function_wrapper_operator-equal_operator-not-equal.cpp
-│   ├── [1.7K]  13_function_object.function_wrapper_std_user_allocator.cpp
-│   ├── [   0]  13_ZERO_Mon Dec 19 12:47:49 2016
-│   ├── [1.3K]  14_function_object.function_wrapper_mem_fn.cpp
-│   ├── [1.6K]  15_function_object.function_wrapper_mem_fn_2_pointer.cpp
-│   ├── [1.7K]  16_function_object.function_wrapper_mem_fn.3.cpp
-│   ├── [2.0K]  17_function_object.function_wrapper_mem_fn.4_pointer.cpp
-│   ├── [ 738]  18_function_object.function_wrapper_bad_function_call.cpp
-│   ├── [3.3K]  19_function_object.bind_bind.cpp
-│   ├── [2.2K]  20_function_object.bind_bind.2.cpp
-│   ├── [2.7K]  21_function_object.bind_bind.3.cpp
-│   ├── [2.5K]  22_function_object.bind_is_bind_expression.cpp
-│   ├── [2.5K]  23_function_object.bind_is_placeholder.cpp
-│   ├── [   0]  23_ZERO_Tue Dec 20 11:21:58 2016
-│   ├── [2.6K]  24_function_object.bind_placeholders.cpp
-│   ├── [2.0K]  25_function_object.reference_wrapper_reference_wrapper.cpp
-│   ├── [2.0K]  26_function_object.reference_wrapper_ref_cref.cpp
-│   ├── [ 807]  27_function_object.function_object_plus.cpp
-│   ├── [ 815]  28_function_object.function_object_minus.cpp
-│   ├── [ 805]  29_function_object.function_object_less_and_greater.cpp
-│   ├── [ 914]  30_function_object.function_object_less_and_greater.2.cpp
-│   ├── [ 659]  31_function_object.function_object_the-rest.c
-│   ├── [1.7K]  32_function_object.function_object_unary_negate.cpp
-│   ├── [2.0K]  33_function_object.function_object_binary_negate.cpp
-│   ├── [1.6K]  34_function_object.function_not1.cpp
-│   ├── [3.3K]  35_function_object.function_not2.cpp
-│   ├── [2.4K]  36_some_deprecated_function.unary_function.cpp
-│   ├── [2.5K]  37_some_deprecated_function.unary_function.2.cpp
-│   ├── [1.7K]  38_some_deprecated_function.binder1st_binder2nd.c
-│   ├── [2.5K]  39_some_deprecated_function.bind1st_bind2nd.cpp
-│   ├── [1.6K]  40_some_deprecated_function.pointer_to_binary_function.c
-│   ├── [1.7K]  41_some_deprecated_function.pointer_to_unary_function.c
-│   ├── [1.9K]  42_some_deprecated_function.ptr_fun.cpp
-│   ├── [1.9K]  43_some_deprecated_function.mem_fun_t.c
-│   ├── [1.7K]  44_some_deprecated_function.mem_fun_t.c
-│   ├── [1.9K]  45_some_deprecated_function.mem_fun_ref_t.c
-│   ├── [2.2K]  46_some_deprecated_function.mem_fun_ref.cpp
-│   ├── [ 13K]  temp
-│   ├── [2.2K]  temp.cpp
-│   ├── [6.6K]  temp.o
-│   └── [6.5K]  the_summary_of_function_object.c
-├── [4.0K]  15_Bitset
-│   ├── [3.4K]  01_betsit.constructor.cpp
-│   ├── [2.3K]  02_betsit.operator_equal-to_operator-not-equal-to.cpp
-│   ├── [2.7K]  03_betsit.operator_square-bracket.cpp
-│   ├── [2.6K]  04_betsit.test.cpp
-│   ├── [2.6K]  05_betsit.test,2.cpp
-│   ├── [2.8K]  06_betsit.all_any_none.cpp
-│   ├── [2.7K]  07_betsit.count.cpp
-│   ├── [2.2K]  08_betsit.size.cpp
-│   ├── [2.2K]  09_betsit.size.2.cpp
-│   ├── [2.5K]  10_betsit.operator_AND_OR_NOT_XOR.cpp
-│   ├── [2.4K]  11_betsit.operator_shift-left_shift-right.cpp
-│   ├── [2.3K]  12_betsit.set.cpp
-│   ├── [2.5K]  13_betsit.reset.cpp
-│   ├── [2.5K]  14_betsit.flip.cpp
-│   ├── [2.4K]  15_betsit.to_string.cpp
-│   ├── [2.7K]  16_betsit.to_ulong.cpp
-│   ├── [2.5K]  17_betsit.to_ullong.cpp
-│   ├── [2.5K]  18_betsit.operator_AND-NOT-OR.cpp
-│   ├── [2.5K]  19_betsit.operator-input-output_stream.cpp
-│   ├── [2.5K]  20_betsit.operator-input-output_stream.2.cpp
-│   ├── [2.6K]  21_betsit.hash.cpp
-│   ├── [   0]  5_ZERO_Tue Dec 20 16:06:45 2016
-│   ├── [2.6K]  temp.cpp
-│   ├── [2.3K]  temp.o
-│   └── [1.9K]  the_summary_of_std_bitset.c
-├── [4.0K]  16_Pair
-│   ├── [2.5K]  01_pair.constructor.cpp
-│   ├── [2.0K]  02_pair.operator-assignment.cpp
-│   ├── [1.3K]  03_pair.swap.cpp
-│   ├── [1.6K]  04_pair_std_make_pair.cpp
-│   ├── [1.6K]  05_pair_operator-comparison.cpp
-│   ├── [1.5K]  06_pair_std_swap.cpp
-│   ├── [1.8K]  07_pair_std_get.cpp
-│   ├── [1.6K]  08_pair_std_get.2.cpp
-│   ├── [1.5K]  09_pair_std_get.3.note.cpp
-│   ├── [1.7K]  10_pair_std_tuple_size.cpp
-│   ├── [1.7K]  11_pair_std_tuple_element.cpp
-│   └── [1.2K]  the_summary_of_std_pair.c
-├── [4.0K]  17_Tuple
-│   ├── [ 584]  00_tupleNOE.cpp
-│   ├── [2.3K]  01_tuple.consructor.cpp
-│   ├── [1.9K]  02_tuple.consructor.2.cpp
-│   ├── [1.8K]  03_tuple.operator-assignment.cpp
-│   ├── [1.1K]  04_tuple.swap.cpp
-│   ├── [2.0K]  05_tuple_std_make_tuple.cpp
-│   ├── [1.9K]  06_tuple_std_tie.cpp
-│   ├── [1.7K]  07_tuple_std_forward_as_tuple.cpp
-│   ├── [2.4K]  08_tuple_std_tuple_cat.cpp
-│   ├── [2.2K]  09_tuple_std_get.cpp
-│   ├── [1.6K]  10_tuple_operator_comparison.cpp
-│   ├── [2.1K]  11_tuple_operator_comparison.2.cpp
-│   ├── [3.6K]  12_tuple_std_swap.cpp
-│   ├── [1.2K]  13_tuple_std_tuple_size.cpp
-│   ├── [ 902]  14_tuple_std_tuple_size.2.cpp
-│   ├── [1.0K]  15_tuple_std_tuple_element.cpp
-│   ├── [1.4K]  16_tuple_std::uses_allocator.cpp
-│   ├── [1.1K]  17_tuple_std_ignore.cpp
-│   ├── [1.1K]  temp.cpp
-│   ├── [3.4K]  temp.o
-│   └── [1.7K]  the_summary_of_std_tuple.c
-├── [4.0K]  18_Hash
-│   ├── [ 881]  01_std_hash_std_hash.cpp
-│   ├── [2.0K]  02_std_hash_std_hash.2.cpp
-│   ├── [1.5K]  03_std_hash_std_hash.3.cpp
-│   ├── [1.4K]  04_std_hash_std_hash.4.cpp
-│   ├── [1.1K]  08_std_hash_std_unique_ptr.cpp
-│   ├── [1.2K]  12_std_hash_std_thread_id.cpp
-│   ├── [1.1K]  temp.cpp
-│   ├── [7.4K]  temp.o
-│   └── [1.9K]  the_summary_of_std_hash.c
-├── [4.0K]  19_swap_move_forward_etc
-│   ├── [ 404]  01#_std_swap.cpp
-│   ├── [ 496]  02#_std_swap.2.cpp
-│   ├── [ 546]  03#_std_swap.3.cpp
-│   ├── [ 613]  04#_std_swap.4.iter_swap.cpp
-│   ├── [1.5K]  05#_std_exchange.cpp
-│   ├── [1.9K]  06#_std_forward.cpp
-│   ├── [2.0K]  07#_std_move.cpp
-│   ├── [1.1K]  08#_std_move_if_noexcept.cpp
-│   ├── [1.0K]  09#std_piecewise_construct_t.cpp
-│   ├── [ 790]  10#std_piecewise_construct.cpp
-│   ├── [1.9K]  11#std_integer_sequence.cpp
-│   ├── [ 863]  12#std_declval.cpp
-│   ├── [ 879]  13#std_declval.2.cpp
-│   ├── [ 791]  14#as_cosnt.cpp
-│   ├── [1.0K]  15#std_namespace_rel_ops.cpp
-│   ├── [6.7K]  idm.cpp
-│   ├── [ 881]  k5idm.cpp
-│   ├── [ 16K]  prettyprint.hpp
-│   ├── [8.0K]  temp
-│   ├── [ 404]  temp.cpp
-│   └── [2.9K]  temp.o
+├── [4.0K]  07_Utility_Library
+│   ├── [ 12K]  01_Type_Support
+│   │   ├── [1.6K]  01_type_support_size_t.cpp
+│   │   ├── [2.0K]  02_type_support_ptrdiff_t.cpp
+│   │   ├── [1.5K]  03_type_support_nullptr_t.cpp
+│   │   ├── [1.6K]  04_type_support_NULL_macro.cpp
+│   │   ├── [1.4K]  05_type_support_max_align_t.cpp
+│   │   ├── [1.8K]  06_type_support_offsetof_macro.function.cpp
+│   │   ├── [ 457]  07_type_support_fixed_width_integer_type_c++11.cpp
+│   │   ├── [3.9K]  08_type_support_class.cpp
+│   │   ├── [3.1K]  09_type_support_is_specialized.cpp
+│   │   ├── [3.1K]  10_type_support_is_signed.cpp
+│   │   ├── [2.7K]  11_type_support_the_rest_of_the_constants.hpp
+│   │   ├── [1.8K]  12_type_support_numeric_limits_function_min.cpp
+│   │   ├── [2.0K]  13_type_support_numeric_limits_function_lowest.cpp
+│   │   ├── [1.8K]  14_type_support_numeric_limits_function_max.cpp
+│   │   ├── [2.4K]  15_type_support_numeric_limits_function_max.2.cpp
+│   │   ├── [2.3K]  16_type_support_numeric_limits_function_epsilon.cpp
+│   │   ├── [1.9K]  17_type_support_numeric_limits_function_round_error.cpp
+│   │   ├── [   0]  17_ZER0_Tue Nov 15 19:37:22 2016
+│   │   ├── [1.8K]  18_type_support_numeric_limits_function_infinity.cpp
+│   │   ├── [2.3K]  19_type_support_numeric_limits_function_quiet_NaN.cpp
+│   │   ├── [2.5K]  20_type_support_numeric_limits_function_signaling_NaN.cpp
+│   │   ├── [1.8K]  21_type_support_numeric_limits_function_denorm_min.cpp
+│   │   ├── [2.9K]  22_type_support_type_info_operator==.cpp
+│   │   ├── [2.7K]  23_type_support_type_info_before.cpp
+│   │   ├── [3.6K]  24_type_support_type_info_hash_code.cpp
+│   │   ├── [3.0K]  25_type_support_type_info_name.cpp
+│   │   ├── [3.6K]  26_type_support_type_index.cpp
+│   │   ├── [1.5K]  27_type_support_bad_typeid.cpp
+│   │   ├── [1.5K]  28_type_support_bad_cast.cpp
+│   │   ├── [1.8K]  29_type_support_type_traits_is_void.cpp
+│   │   ├── [1.9K]  30_type_support_type_traits_is_null_pointer.cpp
+│   │   ├── [2.2K]  31_type_support_type_traits_is_integral.cpp
+│   │   ├── [2.0K]  32_type_support_type_traits_is_floating_point.cpp
+│   │   ├── [1.9K]  33_type_support_type_traits_is_array.cpp
+│   │   ├── [2.0K]  34_type_support_type_traits_is_array.2.cpp
+│   │   ├── [1.9K]  35_type_support_type_traits_is_enum.cpp
+│   │   ├── [2.0K]  36_type_support_type_traits_is_union.cpp
+│   │   ├── [2.0K]  37_type_support_type_traits_is_class.cpp
+│   │   ├── [2.0K]  38_type_support_type_traits_is_function.cpp
+│   │   ├── [2.3K]  39_type_support_type_traits_is_pointer.cpp
+│   │   ├── [2.2K]  40_type_support_type_traits_is_l-value_reference.cpp
+│   │   ├── [2.2K]  41_type_support_type_traits_is_r-value_reference.cpp
+│   │   ├── [2.2K]  42_type_support_type_traits_is_member_object_pointer.cpp
+│   │   ├── [2.2K]  43_type_support_type_traits_is_member_function_pointer.cpp
+│   │   ├── [2.0K]  44_type_support_type_traits_is_fundamental.cpp
+│   │   ├── [2.0K]  45_type_support_type_traits_is_arithmetic.cpp
+│   │   ├── [2.1K]  46_type_support_type_traits_is_arithmetic.2.cpp
+│   │   ├── [1.5K]  47_type_support_type_traits_is_scalar.cpp
+│   │   ├── [1.5K]  48_type_support_type_traits_is_object.cpp
+│   │   ├── [1.5K]  49_type_support_type_traits_is_compound.cpp
+│   │   ├── [1.8K]  50_type_support_type_traits_is_reference.cpp
+│   │   ├── [1.5K]  51_type_support_type_traits_is_member_pointer.cpp
+│   │   ├── [2.0K]  52_type_support_type_traits_is_const.cpp
+│   │   ├── [1.8K]  53_type_support_type_traits_is_volatile.cpp
+│   │   ├── [2.3K]  54_type_support_type_traits_is_triavial.cpp
+│   │   ├── [3.2K]  55_type_support_type_traits_is_triavial_copyable.cpp
+│   │   ├── [2.4K]  56_type_support_type_traits_is_standard_layout.cpp
+│   │   ├── [2.2K]  57_type_support_type_traits_is_POS.plain.old.data.cpp
+│   │   ├── [2.1K]  58_type_support_type_traits_is_literal_type.cpp
+│   │   ├── [2.3K]  59_type_support_type_traits_is_empty.cpp
+│   │   ├── [2.2K]  60_type_support_type_traits_is_polymorphic.cpp
+│   │   ├── [2.0K]  61_type_support_type_traits_is_final.cpp
+│   │   ├── [2.3K]  62_type_support_type_traits_is_abstract.cpp
+│   │   ├── [2.4K]  63_type_support_type_traits_is_signed.cpp
+│   │   ├── [2.3K]  64_type_support_type_traits_is_unsigned.cpp
+│   │   ├── [1.3K]  65_type_support_type_traits_is_alignment_of.cpp
+│   │   ├── [1000]  66_type_supprot_type_traits_is_rank.cpp
+│   │   ├── [1.4K]  67_type_supprot_type_traits_is_extent.cpp
+│   │   ├── [   0]  67_ZER0_Sat Nov 19 18:27:59 2016
+│   │   ├── [1.5K]  68_type_supprot_type_traits_is_same.cpp
+│   │   ├── [1.1K]  69_type_supprot_type_traits_is_base_of.cpp
+│   │   ├── [1.5K]  70_type_supprot_type_traits_is_convertible.cpp
+│   │   ├── [2.0K]  71_type_supprot_type_traits_remove_cv.cpp
+│   │   ├── [1.7K]  72_type_supprot_type_traits_add_cv.cpp
+│   │   ├── [1.8K]  73_type_supprot_type_traits_remove_reference.cpp
+│   │   ├── [1.9K]  74_type_supprot_type_traits_add_r-l-value_reference.cpp
+│   │   ├── [1.6K]  75_type_supprot_type_traits_and_remove_pointer.cpp
+│   │   ├── [1.6K]  76_type_supprot_type_traits_make_signed_unsigned.cpp
+│   │   ├── [2.5K]  77_type_supprot_type_traits_remove_extent.cpp
+│   │   ├── [1.9K]  78_type_supprot_type_traits_remove_all_extents.cpp
+│   │   ├── [2.9K]  79_type_supprot_type_traits_aligned_storage.cpp
+│   │   ├── [   0]  79_ZER0_Mon Nov 21 15:46:21 2016
+│   │   ├── [2.0K]  80_type_supprot_type_traits_aligned_storage.2.cpp
+│   │   ├── [2.2K]  81_type_supprot_type_traits_aligned_union.cpp
+│   │   ├── [2.0K]  82_type_supprot_type_traits_decay.cpp
+│   │   ├── [3.9K]  83_type_supprot_type_traits_enable_if.cpp
+│   │   ├── [2.0K]  84_type_supprot_type_traits_enable_if.2.cpp
+│   │   ├── [1.8K]  85_type_supprot_type_traits_condistoinal.cpp
+│   │   ├── [1.9K]  86_type_supprot_type_traits_common_type.cpp
+│   │   ├── [1.7K]  87_type_supprot_type_traits_undelying_type.cpp
+│   │   ├── [2.3K]  88_type_supprot_type_traits_result_of.cpp
+│   │   ├── [   0]  88_ZER0_Mon Nov 21 18:55:44 2016
+│   │   ├── [1.4K]  89_type_supprot_type_traits_void_t.c
+│   │   ├── [ 144]  README.md
+│   │   ├── [   1]  temp.cpp
+│   │   ├── [1.8K]  temp.o
+│   │   └── [ 11K]  type_type_support_support_summary.txt
+│   ├── [ 16K]  02_Dynamic_Memory_Management
+│   │   ├── [4.1K]  00_dynamic_momory_management_summary.txt
+│   │   ├── [2.4K]  01_dynamic_memory_management_pointer_category_unique_ptr.cpp
+│   │   ├── [2.0K]  02_dynamic_memory_management_pointer_category_unique_ptr.constructor.1.cpp
+│   │   ├── [2.2K]  03_dynamic_memory_management_pointer_category_unique_ptr.constructor.2.cpp
+│   │   ├── [2.5K]  04_dynamic_memory_management_pointer_category_unique_ptr.constructor.3.cpp
+│   │   ├── [1.8K]  05_dynamic_memory_management_pointer_category_unique_ptr.desstructor.cpp
+│   │   ├── [2.2K]  06_dynamic_memory_management_pointer_category_unique_ptr.operator=.cpp
+│   │   ├── [1.8K]  07_dynamic_memory_management_pointer_category_unique_ptr.release.cpp
+│   │   ├── [2.2K]  08_dynamic_memory_management_pointer_category_unique_ptr.reset.cpp
+│   │   ├── [1.7K]  09_dynamic_memory_management_pointer_category_unique_ptr.swap.cpp
+│   │   ├── [1.6K]  10_dynamic_memory_management_pointer_category_unique_ptr.get.cpp
+│   │   ├── [1.5K]  11_dynamic_memory_management_pointer_category_unique_ptr.get_deleter.cpp
+│   │   ├── [1.6K]  12_dynamic_memory_management_pointer_category_unique_ptr.operator_bool.cpp
+│   │   ├── [1.7K]  13_dynamic_memory_management_pointer_category_unique_ptr.operator_pointer.cpp
+│   │   ├── [   0]  13_ZER0_Wed Nov 23 15:53:49 2016
+│   │   ├── [1.4K]  14_dynamic_memory_management_pointer_category_unique_ptr.operator_square.bracket.cpp
+│   │   ├── [2.0K]  15_dynamic_memory_management_pointer_category_unique_ptr_std_make_unique.cpp
+│   │   ├── [1.4K]  16_dynamic_memory_management_pointer_category_unique_ptr.operator_comparison.cpp
+│   │   ├── [1.4K]  17_dynamic_memory_management_pointer_category_unique_ptr_std_swap.cpp
+│   │   ├── [1.6K]  18_dynamic_memory_management_pointer_category_unique_ptr_std_hash.cpp
+│   │   ├── [3.8K]  19_dynamic_memory_management_pointer_category_shared_ptr.cpp
+│   │   ├── [2.1K]  20_dynamic_memory_management_pointer_category_shared_ptr.constructor.cpp
+│   │   ├── [1.7K]  21_dynamic_memory_management_pointer_category_shared_ptr.destructor.cpp
+│   │   ├── [1.7K]  22_dynamic_memory_management_pointer_category_shared_ptr.operator-assignment.cpp
+│   │   ├── [   0]  22_ZER0_Wed Nov 23 18:59:27 2016
+│   │   ├── [1.7K]  23_dynamic_memory_management_pointer_category_shared_ptr.operator-assignment.2.cpp
+│   │   ├── [2.5K]  24_dynamic_memory_management_pointer_category_shared_ptr.reset.cpp
+│   │   ├── [1.7K]  25_dynamic_memory_management_pointer_category_shared_ptr.swap.cpp
+│   │   ├── [2.1K]  26_dynamic_memory_management_pointer_category_shared_ptr.operator.star-and-arrow.cpp
+│   │   ├── [2.3K]  27_dynamic_memory_management_pointer_category_shared_ptr.use_count.cpp
+│   │   ├── [2.5K]  28_dynamic_memory_management_pointer_category_shared_ptr.unique.cpp
+│   │   ├── [1.6K]  29_dynamic_memory_management_pointer_category_shared_ptr.operator-bool.cpp
+│   │   ├── [2.5K]  30_dynamic_memory_management_pointer_category_shared_ptr.owner_before.cpp
+│   │   ├── [2.2K]  31_dynamic_memory_management_pointer_category_shared_ptr.make_shared.cpp
+│   │   ├── [   0]  31_ZER0_Sat Nov 26 19:06:32 2016
+│   │   ├── [1.4K]  32_dynamic_memory_management_pointer_category_shared_ptr.allocate_shared.cpp
+│   │   ├── [2.0K]  33_dynamic_memory_management_pointer_category_shared_ptr_static_and_dynamic_and_const_cast.cpp
+│   │   ├── [2.1K]  34_dynamic_memory_management_pointer_category_shared_ptr_std_deg_deleter.cpp
+│   │   ├── [1.9K]  35_dynamic_memory_management_pointer_category_shared_ptr.operator-comparison.cpp
+│   │   ├── [1.3K]  36_dynamic_memory_management_pointer_category_shared_ptr.operator-output.cpp
+│   │   ├── [1.1K]  37_dynamic_memory_management_pointer_category_shared_ptr_std_atomic.cpp
+│   │   ├── [1.7K]  38_dynamic_memory_management_pointer_category_shared_ptr_std_hash.cpp
+│   │   ├── [2.1K]  39_dynamic_memory_management_pointer_category_weak_ptr.cpp
+│   │   ├── [   0]  39_ZER0_Mon Nov 28 16:24:16 2016
+│   │   ├── [1.5K]  40_dynamic_memory_management_pointer_category_weak_ptr.constructor.cpp
+│   │   ├── [1.6K]  41_dynamic_memory_management_pointer_category_weak_ptr.destructor.cpp
+│   │   ├── [1.9K]  42_dynamic_memory_management_pointer_category_weak_ptr.operator-assignment.cpp
+│   │   ├── [1.6K]  43_dynamic_memory_management_pointer_category_weak_ptr.reset.cpp
+│   │   ├── [1.6K]  44_dynamic_memory_management_pointer_category_weak_ptr.swap.cpp
+│   │   ├── [1.6K]  45_dynamic_memory_management_pointer_category_weak_ptr.use_count.cpp
+│   │   ├── [1.7K]  46_dynamic_memory_management_pointer_category_weak_ptr.expired.cpp
+│   │   ├── [1.9K]  47_dynamic_memory_management_pointer_category_weak_ptr.lock.cpp
+│   │   ├── [2.1K]  48_dynamic_memory_management_pointer_category_weak_ptr.owner_before.cpp
+│   │   ├── [1.7K]  49_dynamic_memory_management_pointer_category_weak_ptr_std_swap.cpp
+│   │   ├── [1.6K]  50_dynamic_memory_management_pointer_category_auto_ptr.cpp
+│   │   ├── [   0]  50_ZER0_Wed Nov 30 16:18:44 2016
+│   │   ├── [1.5K]  51_dynamic_memory_management_pointer_category_owner_less.c
+│   │   ├── [2.0K]  52_dynamic_memory_management_pointer_category_enable_shared_from_this.cpp
+│   │   ├── [1.5K]  53_dynamic_memory_management_pointer_category_bad_weak_ptr.cpp
+│   │   ├── [2.0K]  54_dynamic_memory_management_pointer_category_default_delete.cpp
+│   │   ├── [1.9K]  55_dynamic_memory_management_allocators_allocate.cpp
+│   │   ├── [2.4K]  56_dynamic_memory_management_allocators_allocate.2.cpp
+│   │   ├── [   0]  56_ZER0_Sat Dec  3 15:31:34 2016
+│   │   ├── [1.8K]  57_dynamic_memory_management_uninitialized_storage_uninitialized_copy.cpp
+│   │   ├── [1.8K]  58_dynamic_memory_management_uninitialized_storage_uninitialized_copy_n.cpp
+│   │   ├── [1.7K]  59_dynamic_memory_management_uninitialized_storage_uninitialized_fill.cpp
+│   │   ├── [1.7K]  60_dynamic_memory_management_uninitialized_storage_uninitialized_fill_n.cpp
+│   │   ├── [1.9K]  61_dynamic_memory_management_uninitialized_storage_raw_storage_iterator.cpp
+│   │   ├── [2.0K]  62_dynamic_memory_management_uninitialized_storage_get_temporary_buffer.cpp
+│   │   ├── [1.8K]  63_dynamic_memory_management_uninitialized_storage_return_temporary_buffer.cpp
+│   │   ├── [ 653]  64_dynamic_memory_management_garbage_collector_support_incomplete.c
+│   │   ├── [1.8K]  65_dynamic_memory_management_miscellaneous_pointer_traits.cpp
+│   │   ├── [1.2K]  66_dynamic_memory_management_miscellaneous_addressof.cpp
+│   │   ├── [2.1K]  67_dynamic_memory_management_miscellaneous_align.cpp
+│   │   ├── [1.0K]  68_dynamic_memory_management_c_memory_management_malloc.cpp
+│   │   ├── [ 936]  69_dynamic_memory_management_c_memory_management_calloc.cpp
+│   │   ├── [1.3K]  70_dynamic_memory_management_c_memory_management_realloc.cpp
+│   │   ├── [ 894]  71_dynamic_memory_management_c_memory_management_free.cpp
+│   │   ├── [   0]  71_ZER0_Sun Dec  4 12:17:54 2016
+│   │   ├── [1.9K]  72_dynamic_memory_management_low_level_memory_management_operator-new.cpp
+│   │   ├── [1.8K]  73_dynamic_memory_management_low_level_memory_management_operator-new.2.cpp
+│   │   ├── [1.7K]  74_dynamic_memory_management_low_level_memory_management_operator-new.3.cpp
+│   │   ├── [2.1K]  75_dynamic_memory_management_low_level_memory_management_operator-new.4.cpp
+│   │   ├── [2.4K]  76_dynamic_memory_management_low_level_memory_management_operator-new.5.cpp
+│   │   ├── [2.5K]  77_dynamic_memory_management_low_level_memory_management_operator-new.6.cpp
+│   │   ├── [1.6K]  78_dynamic_memory_management_low_level_memory_management_operator-new.7.cpp
+│   │   ├── [2.4K]  79_dynamic_memory_management_low_level_memory_management_operator-delete.cpp
+│   │   ├── [ 999]  80_dynamic_memory_management_low_level_memory_management_get_new_handler.c
+│   │   ├── [2.5K]  81_dynamic_memory_management_low_level_memory_management_set_new_handler.cpp
+│   │   ├── [1.2K]  82_dynamic_memory_management_low_level_memory_management_bad_alloc.cpp
+│   │   ├── [2.0K]  83_dynamic_memory_management_low_level_memory_management_bad_array_new_length.cpp
+│   │   ├── [1.1K]  84_dynamic_memory_management_low_level_memory_management_nothrow_t.cpp
+│   │   ├── [1.2K]  85_dynamic_memory_management_low_level_memory_management_new_handler.cpp
+│   │   ├── [1.5K]  86_dynamic_memory_management_low_level_memory_management_nothrow.cpp
+│   │   ├── [1.5K]  temp.cpp
+│   │   └── [2.5K]  temp.o
+│   ├── [4.0K]  03_Error_Handling
+│   │   ├── [1.7K]  01_error_handling_exception_capture_and_storage_exception.cpp
+│   │   ├── [1.6K]  02_error_handling_exception_capture_and_storage_uncaught_exception.cpp
+│   │   ├── [2.2K]  03_error_handling_exception_capture_and_storage_exception_ptr.cpp
+│   │   ├── [2.0K]  04_error_handling_exception_capture_and_storage_make_exception_ptr.cpp
+│   │   ├── [2.0K]  05_error_handling_exception_capture_and_storage_current_exception.cpp
+│   │   ├── [1.8K]  06_error_handling_exception_capture_and_storage_rethrow_exception.cpp
+│   │   ├── [2.5K]  07_error_handling_exception_capture_and_storage_nexted_exception.cpp
+│   │   ├── [2.3K]  08_error_handling_exception_capture_and_storage_throw_with_nexted.cpp
+│   │   ├── [2.3K]  09_error_handling_exception_capture_and_storage_rethrow_if_nexted.cpp
+│   │   ├── [1.0K]  10_error_handling_exception_handling_of_failures_terminate.c
+│   │   ├── [1.0K]  11_error_handling_exception_handling_of_failures_terminate_handler.c
+│   │   ├── [ 925]  12_error_handling_exception_handling_of_failures_get_terminate.c
+│   │   ├── [ 984]  13_error_handling_exception_handling_of_failures_set_terminate.c
+│   │   ├── [1.1K]  14_error_handling_exception_handling_of_exceptoin_bad_exception.cpp
+│   │   ├── [1.4K]  15_error_handling_exception_exception_category.c
+│   │   ├── [ 721]  16_error_handling_erroe_number_errno.cpp
+│   │   ├── [3.3K]  17_error_handling_erroe_number_error_numbers.cpp
+│   │   ├── [   0]  17_ZERO_Tue Dec  6 11:18:58 2016
+│   │   ├── [1.3K]  18_error_handling_static_assertion_static_assert.cpp
+│   │   ├── [1016]  19_error_handling_static_assertion_assert.cpp
+│   │   ├── [1.2K]  20_error_handling_system_error_error_category.c
+│   │   ├── [1.3K]  21_error_handling_system_error_generic_category.cpp
+│   │   ├── [1.5K]  22_error_handling_system_error_system_category.cpp
+│   │   ├── [1.1K]  23_error_handling_system_error_error_condition.c
+│   │   ├── [7.7K]  24_error_handling_system_error_std_errc.cpp
+│   │   ├── [1.3K]  25_error_handling_system_error_error_code.c
+│   │   ├── [1.4K]  26_error_handling_system_error_system_error.cpp
+│   │   ├── [1.4K]  temp.cpp
+│   │   ├── [3.0K]  temp.o
+│   │   └── [4.4K]  the_summary_of_error_handling.c
+│   ├── [4.0K]  04_Initializer_List
+│   │   ├── [2.5K]  01_initializer_list.cpp
+│   │   ├── [1.5K]  02_initializer_list.constructor.cpp
+│   │   ├── [1.5K]  03_initializer_list.size.cpp
+│   │   ├── [1.2K]  04_initializer_list.begin.cpp
+│   │   ├── [1.4K]  05_initializer_list.end.cpp
+│   │   ├── [1.2K]  06_initializer_list_std_begin.cpp
+│   │   ├── [1.3K]  07_initializer_list_std_end.cpp
+│   │   ├── [1.3K]  08_initializer_list_std_rbegin.cpp
+│   │   ├── [1.3K]  09_initializer_list_std_rend.cpp
+│   │   ├── [1.3K]  temp.cpp
+│   │   └── [2.0K]  temp.o
+│   ├── [4.0K]  05_Varisdic_Function
+│   │   ├── [1.7K]  01_varisdic_function_.cpp
+│   │   ├── [2.4K]  02_varisdic_function_va_start.cpp
+│   │   ├── [1.8K]  03_varisdic_function_va_arg.cpp
+│   │   ├── [2.0K]  04_varisdic_function_va_copy.cpp
+│   │   ├── [1.2K]  05_varisdic_function_va_end.c
+│   │   ├── [1.2K]  06_varisdic_function_va_list.c
+│   │   ├── [1.2K]  temp.cpp
+│   │   └── [2.0K]  temp.o
+│   ├── [4.0K]  06_Program_Utility
+│   │   ├── [5.0K]  01_program_utility.abort.cpp
+│   │   ├── [2.0K]  02_program_utility.exit.cpp
+│   │   ├── [1.0K]  03_program_utility.quick_exit.c
+│   │   ├── [1.8K]  04_program_utility._Exit.cpp
+│   │   ├── [1.5K]  05_program_utility.atexit.cpp
+│   │   ├── [1.2K]  06_program_utility.at_quick_exit.cpp
+│   │   ├── [1.4K]  07_program_utility.EXIT_SUCCESS_EXIT_FAILURE.cpp
+│   │   ├── [ 825]  08_program_utility.system.cpp
+│   │   ├── [ 963]  09_program_utility.getenv.cpp
+│   │   ├── [ 965]  10_program_utility.getenv.2.cpp
+│   │   ├── [1.2K]  11_program_utility.signal.cpp
+│   │   ├── [1.2K]  12_program_utility.raise.cpp
+│   │   ├── [ 797]  13_program_utility.sig_atomic_t.cpp
+│   │   ├── [ 718]  14_program_utility.SIG_DFL_and_SIG_IGN.cpp
+│   │   ├── [ 766]  15_program_utility.SIG_ERR.cpp
+│   │   ├── [ 723]  16_program_utility.SIGABRT_SIGFPE_SIGILL_SIGINT_SIGSEG_SITTERM.cpp
+│   │   ├── [1.8K]  17_program_utility.setjmp.cpp
+│   │   ├── [1.3K]  18_program_utility.longjmp.cpp
+│   │   ├── [ 656]  19_program_utility.jum_buf.cpp
+│   │   ├── [ 285]  list_count.txt
+│   │   ├── [ 656]  temp.cpp
+│   │   ├── [2.3K]  temp.o
+│   │   └── [1.7K]  the_suumary_of_program_support_utilities.c
+│   ├── [4.0K]  07_Date_and_Time
+│   │   ├── [4.0K]  01_date_and_time_duration.cpp
+│   │   ├── [3.7K]  02_date_and_time_duration.operator-assignment.cpp
+│   │   ├── [3.8K]  03_date_and_time_duration.count.cpp
+│   │   ├── [4.0K]  04_date_and_time_duration.zero.cpp
+│   │   ├── [3.6K]  05_date_and_time_duration.min.cpp
+│   │   ├── [3.6K]  06_date_and_time_duration.max.cpp
+│   │   ├── [3.8K]  07_date_and_time_duration.operator_plus_and_minus_unary.cpp
+│   │   ├── [3.8K]  08_date_and_time_duration.operator_decrement_increment.cpp
+│   │   ├── [4.2K]  09_date_and_time_duration.operator_compound-assignment.cpp
+│   │   ├── [4.2K]  10_date_and_time_duration_std_common_type.cpp
+│   │   ├── [3.7K]  11_date_and_time_duration.operator-arithmetic.1.cpp
+│   │   ├── [4.2K]  12_date_and_time_duration.operator-arithmetic.2.cpp
+│   │   ├── [3.8K]  13_date_and_time_duration.operator-comparison.cpp
+│   │   ├── [4.6K]  14_date_and_time_duration.duration_cast.cpp
+│   │   ├── [3.4K]  15_date_and_time_duration.floor.c
+│   │   ├── [3.4K]  16_date_and_time_duration.ceil.c
+│   │   ├── [3.4K]  17_date_and_time_duration.round.c
+│   │   ├── [3.4K]  18_date_and_time_duration.abs.c
+│   │   ├── [   0]  18_ZERO_Mon Dec 12 11:34:53 2016
+│   │   ├── [5.4K]  19_date_and_time_duration.treat_as_floating_point.cpp
+│   │   ├── [3.7K]  20_date_and_time_duration_value.zero.min.max.c
+│   │   ├── [4.7K]  21_date_and_time_duration.operator""h.cpp
+│   │   ├── [5.0K]  22_date_and_time_duration.operator""min.cpp
+│   │   ├── [4.9K]  23_date_and_time_duration.operator""min.2.cpp
+│   │   ├── [4.6K]  24_date_and_time_duration.operator""s.cpp
+│   │   ├── [4.4K]  25_date_and_time_duration.operator""ms.cpp
+│   │   ├── [4.4K]  26_date_and_time_duration.operator""us.cpp
+│   │   ├── [4.4K]  27_date_and_time_duration.operator""ns.cpp
+│   │   ├── [5.7K]  28_date_and_time_duration_helper_type_and_typedef.cpp
+│   │   ├── [2.2K]  29_date_and_time_system_clock.now.cpp
+│   │   ├── [3.6K]  30_date_and_time_system_clock.now.2.cpp
+│   │   ├── [   0]  30_ZERO_Mon Dec 12 16:07:55 2016
+│   │   ├── [1.9K]  31_date_and_time_system_clock.to_time_t.cpp
+│   │   ├── [2.0K]  32_date_and_time_system_clock.from_time_t.cpp
+│   │   ├── [1.9K]  33_date_and_time_steady_clock.now.cpp
+│   │   ├── [2.6K]  34_date_and_time_high_resolutoin_clock.now.cpp
+│   │   ├── [3.1K]  35_date_and_time_time_point.cpp
+│   │   ├── [3.1K]  36_date_and_time_time_point.constructor.cpp
+│   │   ├── [3.1K]  37_date_and_time_time_point.time_since_epoch.cpp
+│   │   ├── [3.0K]  38_date_and_time_time_point.operator_compound_assignment.cpp
+│   │   ├── [3.0K]  39_date_and_time_time_point.min.cpp
+│   │   ├── [3.0K]  40_date_and_time_time_point.max.cpp
+│   │   ├── [   0]  40_ZERO_Wed Dec 14 11:58:00 2016
+│   │   ├── [3.4K]  41_date_and_time_time_point.max.2.cpp
+│   │   ├── [2.5K]  42_date_and_time_common_type_time_point.cpp
+│   │   ├── [3.0K]  43_date_and_time_time_point.operator-add.cpp
+│   │   ├── [3.0K]  44_date_and_time_time_point.operator-subtract.cpp
+│   │   ├── [3.1K]  45_date_and_time_time_point.operator-comparison.cpp
+│   │   ├── [3.0K]  46_date_and_time_time_point.time_point_cast.cpp
+│   │   ├── [2.5K]  47_date_and_time_time_point.floor_and_ceil_and_round.c
+│   │   ├── [2.5K]  48_date_and_time_C_style_dade_and_time_difftime.cpp
+│   │   ├── [2.2K]  49_date_and_time_C_style_dade_and_time_time.cpp
+│   │   ├── [3.2K]  50_date_and_time_C_style_dade_and_time_clock.cpp
+│   │   ├── [   0]  50_ZERO_Wed Dec 14 15:55:58 2016
+│   │   ├── [2.3K]  51_date_and_time_C_style_dade_and_time_asctime.cpp
+│   │   ├── [2.4K]  52_date_and_time_C_style_dade_and_time_ctime.cpp
+│   │   ├── [2.6K]  53_date_and_time_C_style_dade_and_time_strftime.cpp
+│   │   ├── [2.4K]  54_date_and_time_C_style_dade_and_time_wcsftime.cpp
+│   │   ├── [2.2K]  55_date_and_time_C_style_dade_and_time_gmtime.cpp
+│   │   ├── [2.2K]  56_date_and_time_C_style_dade_and_time_localtime.cpp
+│   │   ├── [2.5K]  57_date_and_time_C_style_dade_and_time_mktime.cpp
+│   │   ├── [2.1K]  58_date_and_time_C_style_dade_and_time_CLOCS_PER_SEC.cpp
+│   │   ├── [2.8K]  59_date_and_time_C_style_dade_and_time_tm.cpp
+│   │   ├── [2.5K]  60_date_and_time_C_style_dade_and_time_time_t.cpp
+│   │   ├── [2.0K]  61_date_and_time_C_style_dade_and_time_clock_t.cpp
+│   │   ├── [1.0K]  62_example_custom_duratoin_type.cpp
+│   │   ├── [1.0K]  63_example_2.cpp
+│   │   ├── [8.3K]  irtime
+│   │   ├── [1.0K]  temp.cpp
+│   │   ├── [5.3K]  temp.o
+│   │   ├── [ 10K]  the_suumary_of_date_and_time.c
+│   │   └── [ 13K]  utctime
+│   ├── [4.0K]  08_Function_Object
+│   │   ├── [2.9K]  01_function_object.function_wrapper_functoin.constructor.cpp
+│   │   ├── [1.5K]  02_function_object.function_wrapper_functoin.desstructor.c
+│   │   ├── [2.3K]  03_function_object.function_wrapper_functoin.operator=.cpp
+│   │   ├── [2.0K]  04_function_object.function_wrapper_functoin.swap.cpp
+│   │   ├── [1.7K]  05_function_object.function_wrapper_functoin.assgin.c
+│   │   ├── [2.0K]  06_function_object.function_wrapper_functoin.operator-bool.cpp
+│   │   ├── [2.1K]  07_function_object.function_wrapper_functoin.operator-bool.2.cpp
+│   │   ├── [2.2K]  08_function_object.function_wrapper_functoin.operator-parenthesis.cpp
+│   │   ├── [1.9K]  09_function_object.function_wrapper_functoin.target_type.cpp
+│   │   ├── [2.5K]  10_function_object.function_wrapper_functoin.target.cpp
+│   │   ├── [1.7K]  11_function_object.function_wrapper_std_swap.cpp
+│   │   ├── [2.1K]  12_function_object.function_wrapper_operator-equal_operator-not-equal.cpp
+│   │   ├── [1.7K]  13_function_object.function_wrapper_std_user_allocator.cpp
+│   │   ├── [   0]  13_ZERO_Mon Dec 19 12:47:49 2016
+│   │   ├── [1.3K]  14_function_object.function_wrapper_mem_fn.cpp
+│   │   ├── [1.6K]  15_function_object.function_wrapper_mem_fn_2_pointer.cpp
+│   │   ├── [1.7K]  16_function_object.function_wrapper_mem_fn.3.cpp
+│   │   ├── [2.0K]  17_function_object.function_wrapper_mem_fn.4_pointer.cpp
+│   │   ├── [ 738]  18_function_object.function_wrapper_bad_function_call.cpp
+│   │   ├── [3.3K]  19_function_object.bind_bind.cpp
+│   │   ├── [2.2K]  20_function_object.bind_bind.2.cpp
+│   │   ├── [2.7K]  21_function_object.bind_bind.3.cpp
+│   │   ├── [2.5K]  22_function_object.bind_is_bind_expression.cpp
+│   │   ├── [2.5K]  23_function_object.bind_is_placeholder.cpp
+│   │   ├── [   0]  23_ZERO_Tue Dec 20 11:21:58 2016
+│   │   ├── [2.6K]  24_function_object.bind_placeholders.cpp
+│   │   ├── [2.0K]  25_function_object.reference_wrapper_reference_wrapper.cpp
+│   │   ├── [2.0K]  26_function_object.reference_wrapper_ref_cref.cpp
+│   │   ├── [ 807]  27_function_object.function_object_plus.cpp
+│   │   ├── [ 815]  28_function_object.function_object_minus.cpp
+│   │   ├── [ 805]  29_function_object.function_object_less_and_greater.cpp
+│   │   ├── [ 914]  30_function_object.function_object_less_and_greater.2.cpp
+│   │   ├── [ 659]  31_function_object.function_object_the-rest.c
+│   │   ├── [1.7K]  32_function_object.function_object_unary_negate.cpp
+│   │   ├── [2.0K]  33_function_object.function_object_binary_negate.cpp
+│   │   ├── [1.6K]  34_function_object.function_not1.cpp
+│   │   ├── [3.3K]  35_function_object.function_not2.cpp
+│   │   ├── [2.4K]  36_some_deprecated_function.unary_function.cpp
+│   │   ├── [2.5K]  37_some_deprecated_function.unary_function.2.cpp
+│   │   ├── [1.7K]  38_some_deprecated_function.binder1st_binder2nd.c
+│   │   ├── [2.5K]  39_some_deprecated_function.bind1st_bind2nd.cpp
+│   │   ├── [1.6K]  40_some_deprecated_function.pointer_to_binary_function.c
+│   │   ├── [1.7K]  41_some_deprecated_function.pointer_to_unary_function.c
+│   │   ├── [1.9K]  42_some_deprecated_function.ptr_fun.cpp
+│   │   ├── [1.9K]  43_some_deprecated_function.mem_fun_t.c
+│   │   ├── [1.7K]  44_some_deprecated_function.mem_fun_t.c
+│   │   ├── [1.9K]  45_some_deprecated_function.mem_fun_ref_t.c
+│   │   ├── [2.2K]  46_some_deprecated_function.mem_fun_ref.cpp
+│   │   ├── [2.2K]  temp.cpp
+│   │   ├── [6.6K]  temp.o
+│   │   └── [6.5K]  the_summary_of_function_object.c
+│   ├── [4.0K]  09_Bitset
+│   │   ├── [3.4K]  01_betsit.constructor.cpp
+│   │   ├── [2.3K]  02_betsit.operator_equal-to_operator-not-equal-to.cpp
+│   │   ├── [2.7K]  03_betsit.operator_square-bracket.cpp
+│   │   ├── [2.6K]  04_betsit.test.cpp
+│   │   ├── [2.6K]  05_betsit.test,2.cpp
+│   │   ├── [2.8K]  06_betsit.all_any_none.cpp
+│   │   ├── [2.7K]  07_betsit.count.cpp
+│   │   ├── [2.2K]  08_betsit.size.cpp
+│   │   ├── [2.2K]  09_betsit.size.2.cpp
+│   │   ├── [2.5K]  10_betsit.operator_AND_OR_NOT_XOR.cpp
+│   │   ├── [2.4K]  11_betsit.operator_shift-left_shift-right.cpp
+│   │   ├── [2.3K]  12_betsit.set.cpp
+│   │   ├── [2.5K]  13_betsit.reset.cpp
+│   │   ├── [2.5K]  14_betsit.flip.cpp
+│   │   ├── [2.4K]  15_betsit.to_string.cpp
+│   │   ├── [2.7K]  16_betsit.to_ulong.cpp
+│   │   ├── [2.5K]  17_betsit.to_ullong.cpp
+│   │   ├── [2.5K]  18_betsit.operator_AND-NOT-OR.cpp
+│   │   ├── [2.5K]  19_betsit.operator-input-output_stream.cpp
+│   │   ├── [2.5K]  20_betsit.operator-input-output_stream.2.cpp
+│   │   ├── [2.6K]  21_betsit.hash.cpp
+│   │   ├── [   0]  5_ZERO_Tue Dec 20 16:06:45 2016
+│   │   ├── [2.6K]  temp.cpp
+│   │   ├── [2.3K]  temp.o
+│   │   └── [1.9K]  the_summary_of_std_bitset.c
+│   ├── [4.0K]  10_Pair
+│   │   ├── [2.5K]  01_pair.constructor.cpp
+│   │   ├── [2.0K]  02_pair.operator-assignment.cpp
+│   │   ├── [1.3K]  03_pair.swap.cpp
+│   │   ├── [1.6K]  04_pair_std_make_pair.cpp
+│   │   ├── [1.6K]  05_pair_operator-comparison.cpp
+│   │   ├── [1.5K]  06_pair_std_swap.cpp
+│   │   ├── [1.8K]  07_pair_std_get.cpp
+│   │   ├── [1.6K]  08_pair_std_get.2.cpp
+│   │   ├── [1.5K]  09_pair_std_get.3.note.cpp
+│   │   ├── [1.7K]  10_pair_std_tuple_size.cpp
+│   │   ├── [1.7K]  11_pair_std_tuple_element.cpp
+│   │   └── [1.2K]  the_summary_of_std_pair.c
+│   ├── [4.0K]  11_Tuple
+│   │   ├── [ 584]  00_tupleNOE.cpp
+│   │   ├── [2.3K]  01_tuple.consructor.cpp
+│   │   ├── [1.9K]  02_tuple.consructor.2.cpp
+│   │   ├── [1.8K]  03_tuple.operator-assignment.cpp
+│   │   ├── [1.1K]  04_tuple.swap.cpp
+│   │   ├── [2.0K]  05_tuple_std_make_tuple.cpp
+│   │   ├── [1.9K]  06_tuple_std_tie.cpp
+│   │   ├── [1.7K]  07_tuple_std_forward_as_tuple.cpp
+│   │   ├── [2.4K]  08_tuple_std_tuple_cat.cpp
+│   │   ├── [2.2K]  09_tuple_std_get.cpp
+│   │   ├── [1.6K]  10_tuple_operator_comparison.cpp
+│   │   ├── [2.1K]  11_tuple_operator_comparison.2.cpp
+│   │   ├── [3.6K]  12_tuple_std_swap.cpp
+│   │   ├── [1.2K]  13_tuple_std_tuple_size.cpp
+│   │   ├── [ 902]  14_tuple_std_tuple_size.2.cpp
+│   │   ├── [1.0K]  15_tuple_std_tuple_element.cpp
+│   │   ├── [1.4K]  16_tuple_std::uses_allocator.cpp
+│   │   ├── [1.1K]  17_tuple_std_ignore.cpp
+│   │   ├── [1.1K]  temp.cpp
+│   │   ├── [3.4K]  temp.o
+│   │   └── [1.7K]  the_summary_of_std_tuple.c
+│   ├── [4.0K]  12_Hash
+│   │   ├── [ 881]  01_std_hash_std_hash.cpp
+│   │   ├── [2.0K]  02_std_hash_std_hash.2.cpp
+│   │   ├── [1.5K]  03_std_hash_std_hash.3.cpp
+│   │   ├── [1.4K]  04_std_hash_std_hash.4.cpp
+│   │   ├── [1.1K]  08_std_hash_std_unique_ptr.cpp
+│   │   ├── [1.2K]  12_std_hash_std_thread_id.cpp
+│   │   ├── [1.1K]  temp.cpp
+│   │   ├── [7.4K]  temp.o
+│   │   └── [1.9K]  the_summary_of_std_hash.c
+│   └── [4.0K]  13_swap_move_forward_etc
+│       ├── [ 404]  01#_std_swap.cpp
+│       ├── [ 496]  02#_std_swap.2.cpp
+│       ├── [ 546]  03#_std_swap.3.cpp
+│       ├── [ 613]  04#_std_swap.4.iter_swap.cpp
+│       ├── [1.5K]  05#_std_exchange.cpp
+│       ├── [1.9K]  06#_std_forward.cpp
+│       ├── [2.0K]  07#_std_move.cpp
+│       ├── [1.1K]  08#_std_move_if_noexcept.cpp
+│       ├── [1.0K]  09#std_piecewise_construct_t.cpp
+│       ├── [ 790]  10#std_piecewise_construct.cpp
+│       ├── [1.9K]  11#std_integer_sequence.cpp
+│       ├── [ 863]  12#std_declval.cpp
+│       ├── [ 879]  13#std_declval.2.cpp
+│       ├── [ 791]  14#as_cosnt.cpp
+│       ├── [1.0K]  15#std_namespace_rel_ops.cpp
+│       ├── [6.7K]  idm.cpp
+│       ├── [ 881]  k5idm.cpp
+│       ├── [ 16K]  prettyprint.hpp
+│       ├── [ 404]  temp.cpp
+│       └── [2.9K]  temp.o
+├── [4.0K]  08_Thread_Library
+│   ├── [4.0K]  01_thread
+│   │   ├── [2.1K]  01#.constructor.cpp
+│   │   ├── [2.9K]  02#.constructor.2.cpp
+│   │   ├── [2.5K]  03#.destructor.cpp
+│   │   ├── [2.1K]  04#.operator=.cpp
+│   │   ├── [2.4K]  05#.joinable.cpp
+│   │   ├── [2.0K]  06#.get_id.cpp
+│   │   ├── [2.6K]  07#.native_handle.cpp
+│   │   ├── [1.9K]  08#.hardware_concurrency.cpp
+│   │   ├── [2.3K]  09#.join.cpp
+│   │   ├── [2.5K]  10#.detach.cpp
+│   │   ├── [2.6K]  11#.swap.cpp
+│   │   ├── [2.6K]  12#_std_swap.cpp
+│   │   ├── [1.5K]  13#_std_this_thread_yield.cpp
+│   │   ├── [1.1K]  14#_std_this_thread_get_id.cpp
+│   │   ├── [1.4K]  15#_std_this_thread_sleep_for.cpp
+│   │   ├── [1.2K]  16#_std_this_thread_sleep_until.cpp
+│   │   ├── [1.0K]  temp.cpp
+│   │   ├── [3.1K]  temp.o
+│   │   └── [1.4K]  the_summary_of_std_thread.c
+│   ├── [4.0K]  02_mutual_exclusion
+│   │   ├── [1.6K]  01_std_mutex_mutex.cpp
+│   │   ├── [1.1K]  02_std_mutex.constructor.c
+│   │   ├── [1.1K]  03_std_mutex.destructor.c
+│   │   ├── [1.1K]  04_std_mutex.operator=.c
+│   │   ├── [1.8K]  05_std_mutex.lock.cpp
+│   │   ├── [2.3K]  06_std_mutex.try_lock.cpp
+│   │   ├── [1.8K]  07_std_mutex.unlock.cpp
+│   │   ├── [ 945]  08_std_mutex.native_handle.cpp
+│   │   ├── [  52]  README.md
+│   │   ├── [1.6K]  temp.cpp
+│   │   ├── [2.7K]  temp.o
+│   │   └── [ 743]  the_summary_of_std_mutex.c
+│   ├── [4.0K]  03_generic_mutex_management
+│   │   ├── [1.4K]  01_std_lock_guard.cpp
+│   │   ├── [1.9K]  01_std_unique_lock.cpp
+│   │   ├── [  56]  README.md
+│   │   ├── [1.9K]  temp.cpp
+│   │   ├── [7.6K]  temp.o
+│   │   └── [ 503]  the_summary_of_std_GMM.c
+│   ├── [4.0K]  04_generic_looking_algorithm
+│   │   ├── [2.7K]  01_std_try_lock.cpp
+│   │   ├── [4.0K]  02_std_lock.cpp
+│   │   ├── [ 660]  03_std_once_flag.cpp
+│   │   ├── [1.6K]  04_std_call_once.cpp
+│   │   ├── [1.6K]  temp.cpp
+│   │   ├── [ 11K]  temp.o
+│   │   └── [ 410]  the_summary_of_GMA.c
+│   ├── [4.0K]  05_condition_variable
+│   │   ├── [2.6K]  01_condition_variable.cpp
+│   │   ├── [1.1K]  02_condition_variable_any.cpp
+│   │   ├── [1.5K]  03_notify_all_at_thread_exit.cpp
+│   │   ├── [ 905]  04_cv_status.cpp
+│   │   ├── [  56]  README.md
+│   │   ├── [ 14K]  temp
+│   │   ├── [ 905]  temp.cpp
+│   │   ├── [8.4K]  temp.o
+│   │   └── [ 741]  the_summary_of_condition_variable.c
+│   └── [4.0K]  06_future
+│       ├── [1.6K]  01_01_promise.cpp
+│       ├── [2.9K]  01_07_promise.set_value.cpp
+│       ├── [1.5K]  01_08_promise.set_value_at_thread_exit.cpp
+│       ├── [1.6K]  01_09_promise.set_exception.cpp
+│       ├── [1.8K]  02_01_packaged_task.cpp
+│       ├── [1.4K]  02_02_packaged_task.constructor.cpp
+│       ├── [2.1K]  02_03_packaged_task.make_ready_at_thread_exit.cpp
+│       ├── [1.5K]  02_10_packaged_task.reset.cpp
+│       ├── [1.5K]  03_01_future.cpp
+│       ├── [1.5K]  03_08_future.wait.cpp
+│       ├── [1.7K]  03_09_future.wait_for.cpp
+│       ├── [2.4K]  04_01_shared_future.cpp
+│       ├── [1.3K]  05_01_async.cpp
+│       ├── [ 732]  06_01_lanuch.c
+│       ├── [ 783]  07_01_future_status.c
+│       ├── [1017]  08_01_future_error.cpp
+│       ├── [ 593]  09_01_future_category.cpp
+│       ├── [ 721]  10_01_future_errc.cpp
+│       ├── [  56]  README.md
+│       └── [1.3K]  the_summary_of_future.c
+├── [  25]  1533_examples_are_here_now
 ├── [167K]  codeblocks.png
 ├── [ 150]  find_numbers_of_exmples.txt
-├── [103K]  full_list_in_order.txt
+├── [114K]  full_list_in_order.txt
 ├── [4.0K]  helpful
 │   ├── [ 752]  print_container
 │   ├── [ 266]  size
 │   └── [ 198]  user_assert
 ├── [ 202]  LICENSE.md
 ├── [   0]  list_full_tree.txt
-├── [1.8K]  list_tree.txt
+├── [2.1K]  list_tree.txt
 ├── [ 50K]  os.png
 ├── [2.9K]  README.md
-├── [  25]  repository_size_is_19M
+├── [  25]  repository_size_is_20M
 └── [ 484]  up.sh
 
-57 directories, 1714 files
+65 directories, 1767 files

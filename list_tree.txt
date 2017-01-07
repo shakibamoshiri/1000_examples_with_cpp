@@ -42,19 +42,27 @@
 ├── 04_Algorithm_library
 ├── 05_Iterator_Library
 ├── 06_Regex_Library
-├── 07_Type_Support
-├── 08_Dynamic_Memory_Management
-├── 09_Error_Handling
-├── 10_Initializer_List
-├── 11_Varisdic_Function
-├── 12_Program_Utility
-├── 13_Date_and_Time
-├── 14_Function_Object
-├── 15_Bitset
-├── 16_Pair
-├── 17_Tuple
-├── 18_Hash
-├── 19_swap_move_forward_etc
+├── 07_Utility_Library
+│   ├── 01_Type_Support
+│   ├── 02_Dynamic_Memory_Management
+│   ├── 03_Error_Handling
+│   ├── 04_Initializer_List
+│   ├── 05_Varisdic_Function
+│   ├── 06_Program_Utility
+│   ├── 07_Date_and_Time
+│   ├── 08_Function_Object
+│   ├── 09_Bitset
+│   ├── 10_Pair
+│   ├── 11_Tuple
+│   ├── 12_Hash
+│   └── 13_swap_move_forward_etc
+├── 08_Thread_Library
+│   ├── 01_thread
+│   ├── 02_mutual_exclusion
+│   ├── 03_generic_mutex_management
+│   ├── 04_generic_looking_algorithm
+│   ├── 05_condition_variable
+│   └── 06_future
 └── helpful
 
-57 directories
+65 directories
