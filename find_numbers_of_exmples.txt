@@ -1,9 +1,0 @@
-
-ls -R | grep -c '.cpp$'
-
-ls -R | ack -c '.cpp$'
-
-find . -type f -name '*.cpp' | cat -n
-
-find . -type f -name '*.cpp' | perl -lne 'END { print $. }'
-
