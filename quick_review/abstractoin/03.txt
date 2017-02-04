@@ -1,0 +1,2 @@
+hello world
+for the second times adding to 'ofs'
