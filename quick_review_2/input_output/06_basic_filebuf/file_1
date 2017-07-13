@@ -1,0 +1,2 @@
+If the get pointer (gptr) has a value and this is less than the end pointer (egptr): The
+function re
